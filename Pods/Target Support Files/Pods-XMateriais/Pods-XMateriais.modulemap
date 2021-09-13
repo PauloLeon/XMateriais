@@ -1,0 +1,6 @@
+framework module Pods_XMateriais {
+  umbrella header "Pods-XMateriais-umbrella.h"
+
+  export *
+  module * { export * }
+}
