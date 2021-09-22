@@ -15,6 +15,17 @@
 		0B39E24526EFBC170050A6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */; };
 		0B39E25026EFBC170050A6C4 /* XMateriaisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E24F26EFBC170050A6C4 /* XMateriaisTests.swift */; };
 		0B39E25B26EFBC170050A6C4 /* XMateriaisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E25A26EFBC170050A6C4 /* XMateriaisUITests.swift */; };
+		0B5906C226FAB1B10021B47E /* GT-Walsheim-Light-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */; };
+		0B5906C326FAB1B10021B47E /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */; };
+		0B5906C426FAB1B10021B47E /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */; };
+		0B5906C526FAB1B10021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BC26FAB1B00021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf */; };
+		0B5906C626FAB1B10021B47E /* GT-Walsheim-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BD26FAB1B00021B47E /* GT-Walsheim-Bold.otf */; };
+		0B5906C726FAB1B10021B47E /* GT-Walsheim-Ultra-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BE26FAB1B00021B47E /* GT-Walsheim-Ultra-Light.otf */; };
+		0B5906C826FAB1B10021B47E /* GT-Walsheim-Regular-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BF26FAB1B00021B47E /* GT-Walsheim-Regular-Oblique.otf */; };
+		0B5906C926FAB1B10021B47E /* GT-Walsheim-Bold-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906C026FAB1B00021B47E /* GT-Walsheim-Bold-Oblique.otf */; };
+		0B5906CA26FAB1B10021B47E /* GT-Walsheim-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906C126FAB1B10021B47E /* GT-Walsheim-Light.otf */; };
+		0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5906CB26FAB9660021B47E /* FirstTutorialViewController.swift */; };
+		0B63D52B26FAAB81005599FA /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B63D52A26FAAB81005599FA /* Tutorial.storyboard */; };
 		D95449A5B3235626E8595649 /* Pods_XMateriais.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +61,17 @@
 		0B39E25626EFBC170050A6C4 /* XMateriaisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMateriaisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39E25A26EFBC170050A6C4 /* XMateriaisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMateriaisUITests.swift; sourceTree = "<group>"; };
 		0B39E25C26EFBC170050A6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light-Oblique.otf"; sourceTree = "<group>"; };
+		0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
+		0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
+		0B5906BC26FAB1B00021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Ultra-Light-Oblique.otf"; sourceTree = "<group>"; };
+		0B5906BD26FAB1B00021B47E /* GT-Walsheim-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Bold.otf"; sourceTree = "<group>"; };
+		0B5906BE26FAB1B00021B47E /* GT-Walsheim-Ultra-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Ultra-Light.otf"; sourceTree = "<group>"; };
+		0B5906BF26FAB1B00021B47E /* GT-Walsheim-Regular-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular-Oblique.otf"; sourceTree = "<group>"; };
+		0B5906C026FAB1B00021B47E /* GT-Walsheim-Bold-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Bold-Oblique.otf"; sourceTree = "<group>"; };
+		0B5906C126FAB1B10021B47E /* GT-Walsheim-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light.otf"; sourceTree = "<group>"; };
+		0B5906CB26FAB9660021B47E /* FirstTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialViewController.swift; sourceTree = "<group>"; };
+		0B63D52A26FAAB81005599FA /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMateriais.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A72365F8456804CE9CF7AEC /* Pods-XMateriais.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.debug.xcconfig"; sourceTree = "<group>"; };
 		CF7FB2B438B297F6F33B95F6 /* Pods-XMateriais.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,13 +128,9 @@
 		0B39E23426EFBC150050A6C4 /* XMateriais */ = {
 			isa = PBXGroup;
 			children = (
-				0B39E23526EFBC150050A6C4 /* AppDelegate.swift */,
-				0B39E23926EFBC150050A6C4 /* ViewController.swift */,
-				0B39E23B26EFBC150050A6C4 /* Main.storyboard */,
-				0B39E24126EFBC170050A6C4 /* Assets.xcassets */,
-				0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */,
-				0B39E24626EFBC170050A6C4 /* Info.plist */,
-				0B39E23E26EFBC150050A6C4 /* XMateriais.xcdatamodeld */,
+				0B63D52D26FAABB5005599FA /* Login */,
+				0B63D52926FAAB6C005599FA /* Tutorial */,
+				0B63D53326FAAC44005599FA /* Resources */,
 			);
 			path = XMateriais;
 			sourceTree = "<group>";
@@ -133,6 +151,93 @@
 				0B39E25C26EFBC170050A6C4 /* Info.plist */,
 			);
 			path = XMateriaisUITests;
+			sourceTree = "<group>";
+		};
+		0B5906B826FAB17F0021B47E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0B5906C026FAB1B00021B47E /* GT-Walsheim-Bold-Oblique.otf */,
+				0B5906BD26FAB1B00021B47E /* GT-Walsheim-Bold.otf */,
+				0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */,
+				0B5906C126FAB1B10021B47E /* GT-Walsheim-Light.otf */,
+				0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */,
+				0B5906BF26FAB1B00021B47E /* GT-Walsheim-Regular-Oblique.otf */,
+				0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */,
+				0B5906BC26FAB1B00021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf */,
+				0B5906BE26FAB1B00021B47E /* GT-Walsheim-Ultra-Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0B63D52926FAAB6C005599FA /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				0B63D53126FAAC17005599FA /* Controllers */,
+				0B63D52C26FAAB90005599FA /* Views */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		0B63D52C26FAAB90005599FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B63D52A26FAAB81005599FA /* Tutorial.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B63D52D26FAABB5005599FA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0B63D52F26FAABCE005599FA /* Controllers */,
+				0B63D53026FAAC11005599FA /* ViewModels */,
+				0B63D52E26FAABC3005599FA /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0B63D52E26FAABC3005599FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B39E23B26EFBC150050A6C4 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B63D52F26FAABCE005599FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B63D53026FAAC11005599FA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0B63D53126FAAC17005599FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B5906CB26FAB9660021B47E /* FirstTutorialViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B63D53326FAAC44005599FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B5906B826FAB17F0021B47E /* Fonts */,
+				0B39E23926EFBC150050A6C4 /* ViewController.swift */,
+				0B39E23E26EFBC150050A6C4 /* XMateriais.xcdatamodeld */,
+				0B39E23526EFBC150050A6C4 /* AppDelegate.swift */,
+				0B39E24126EFBC170050A6C4 /* Assets.xcassets */,
+				0B39E24626EFBC170050A6C4 /* Info.plist */,
+				0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A511DFD2D8F15B2DB3654764 /* Frameworks */ = {
@@ -257,9 +362,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5906CA26FAB1B10021B47E /* GT-Walsheim-Light.otf in Resources */,
+				0B5906C726FAB1B10021B47E /* GT-Walsheim-Ultra-Light.otf in Resources */,
+				0B5906C926FAB1B10021B47E /* GT-Walsheim-Bold-Oblique.otf in Resources */,
 				0B39E24526EFBC170050A6C4 /* LaunchScreen.storyboard in Resources */,
+				0B5906C826FAB1B10021B47E /* GT-Walsheim-Regular-Oblique.otf in Resources */,
+				0B5906C326FAB1B10021B47E /* GT-Walsheim-Medium.otf in Resources */,
 				0B39E24226EFBC170050A6C4 /* Assets.xcassets in Resources */,
+				0B5906C626FAB1B10021B47E /* GT-Walsheim-Bold.otf in Resources */,
+				0B5906C226FAB1B10021B47E /* GT-Walsheim-Light-Oblique.otf in Resources */,
+				0B5906C526FAB1B10021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf in Resources */,
+				0B63D52B26FAAB81005599FA /* Tutorial.storyboard in Resources */,
 				0B39E23D26EFBC150050A6C4 /* Main.storyboard in Resources */,
+				0B5906C426FAB1B10021B47E /* GT-Walsheim-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
+				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
 			);
@@ -487,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DP3A43FSN8;
-				INFOPLIST_FILE = XMateriais/Info.plist;
+				INFOPLIST_FILE = XMateriais/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,7 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DP3A43FSN8;
-				INFOPLIST_FILE = XMateriais/Info.plist;
+				INFOPLIST_FILE = XMateriais/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
