@@ -154,11 +154,11 @@
 		0B39E23426EFBC150050A6C4 /* XMateriais */ = {
 			isa = PBXGroup;
 			children = (
-				0BFC6664270073030018E5D1 /* WebView */,
-				0BFC6653270064490018E5D1 /* LoggedCollaborator */,
-				0BFC66522700643C0018E5D1 /* LoggedResearcher */,
 				0B63D52926FAAB6C005599FA /* Tutorial */,
 				0B63D52D26FAABB5005599FA /* Login */,
+				0BFC6653270064490018E5D1 /* LoggedCollaborator */,
+				0BFC66522700643C0018E5D1 /* LoggedResearcher */,
+				0BFC6664270073030018E5D1 /* WebView */,
 				0B78A5482700402D00DF6A0A /* Utils */,
 				0B63D53326FAAC44005599FA /* Resources */,
 			);
