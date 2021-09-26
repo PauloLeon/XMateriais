@@ -69,7 +69,10 @@ class FirstTutorialViewController: UIViewController {
         if backButton.isHidden {
             updateView(isHidden: backButton.isHidden)
         } else {
-            //pushview
+            let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(vc, animated: true, completion: nil)
         }
     }
 }

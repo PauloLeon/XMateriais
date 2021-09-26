@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23526EFBC150050A6C4 /* AppDelegate.swift */; };
 		0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23926EFBC150050A6C4 /* ViewController.swift */; };
-		0B39E23D26EFBC150050A6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E23B26EFBC150050A6C4 /* Main.storyboard */; };
+		0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E23B26EFBC150050A6C4 /* Login.storyboard */; };
 		0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23E26EFBC150050A6C4 /* XMateriais.xcdatamodeld */; };
 		0B39E24226EFBC170050A6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E24126EFBC170050A6C4 /* Assets.xcassets */; };
 		0B39E24526EFBC170050A6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */; };
@@ -25,7 +25,11 @@
 		0B5906C926FAB1B10021B47E /* GT-Walsheim-Bold-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906C026FAB1B00021B47E /* GT-Walsheim-Bold-Oblique.otf */; };
 		0B5906CA26FAB1B10021B47E /* GT-Walsheim-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906C126FAB1B10021B47E /* GT-Walsheim-Light.otf */; };
 		0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5906CB26FAB9660021B47E /* FirstTutorialViewController.swift */; };
+		0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5906CF26FAC75C0021B47E /* LoginViewController.swift */; };
 		0B63D52B26FAAB81005599FA /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B63D52A26FAAB81005599FA /* Tutorial.storyboard */; };
+		0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A544270038EC00DF6A0A /* SignInViewController.swift */; };
+		0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A546270038FC00DF6A0A /* SignUpViewController.swift */; };
+		0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */; };
 		D95449A5B3235626E8595649 /* Pods_XMateriais.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +54,7 @@
 		0B39E23226EFBC150050A6C4 /* XMateriais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMateriais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39E23526EFBC150050A6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B39E23926EFBC150050A6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B39E23C26EFBC150050A6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B39E23C26EFBC150050A6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		0B39E23F26EFBC150050A6C4 /* XMateriais.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMateriais.xcdatamodel; sourceTree = "<group>"; };
 		0B39E24126EFBC170050A6C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B39E24426EFBC170050A6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,7 +75,11 @@
 		0B5906C026FAB1B00021B47E /* GT-Walsheim-Bold-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Bold-Oblique.otf"; sourceTree = "<group>"; };
 		0B5906C126FAB1B10021B47E /* GT-Walsheim-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light.otf"; sourceTree = "<group>"; };
 		0B5906CB26FAB9660021B47E /* FirstTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialViewController.swift; sourceTree = "<group>"; };
+		0B5906CF26FAC75C0021B47E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0B63D52A26FAAB81005599FA /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		0B78A544270038EC00DF6A0A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0B78A546270038FC00DF6A0A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMateriais.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A72365F8456804CE9CF7AEC /* Pods-XMateriais.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.debug.xcconfig"; sourceTree = "<group>"; };
 		CF7FB2B438B297F6F33B95F6 /* Pods-XMateriais.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +136,9 @@
 		0B39E23426EFBC150050A6C4 /* XMateriais */ = {
 			isa = PBXGroup;
 			children = (
-				0B63D52D26FAABB5005599FA /* Login */,
 				0B63D52926FAAB6C005599FA /* Tutorial */,
+				0B63D52D26FAABB5005599FA /* Login */,
+				0B78A5482700402D00DF6A0A /* Utils */,
 				0B63D53326FAAC44005599FA /* Resources */,
 			);
 			path = XMateriais;
@@ -199,7 +208,7 @@
 		0B63D52E26FAABC3005599FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0B39E23B26EFBC150050A6C4 /* Main.storyboard */,
+				0B39E23B26EFBC150050A6C4 /* Login.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +216,9 @@
 		0B63D52F26FAABCE005599FA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B5906CF26FAC75C0021B47E /* LoginViewController.swift */,
+				0B78A544270038EC00DF6A0A /* SignInViewController.swift */,
+				0B78A546270038FC00DF6A0A /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +250,14 @@
 				0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B78A5482700402D00DF6A0A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A511DFD2D8F15B2DB3654764 /* Frameworks */ = {
@@ -373,7 +393,7 @@
 				0B5906C226FAB1B10021B47E /* GT-Walsheim-Light-Oblique.otf in Resources */,
 				0B5906C526FAB1B10021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf in Resources */,
 				0B63D52B26FAAB81005599FA /* Tutorial.storyboard in Resources */,
-				0B39E23D26EFBC150050A6C4 /* Main.storyboard in Resources */,
+				0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */,
 				0B5906C426FAB1B10021B47E /* GT-Walsheim-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,8 +445,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
+				0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */,
 				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
+				0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */,
+				0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */,
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
+				0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */,
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,12 +487,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0B39E23B26EFBC150050A6C4 /* Main.storyboard */ = {
+		0B39E23B26EFBC150050A6C4 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0B39E23C26EFBC150050A6C4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */ = {
