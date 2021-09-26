@@ -1,20 +1,24 @@
 PODS:
+  - InputMask (5.0.0)
   - IQKeyboardManagerSwift (6.5.4)
   - SwiftLint (0.38.2)
 
 DEPENDENCIES:
+  - InputMask
   - IQKeyboardManagerSwift
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - InputMask
     - IQKeyboardManagerSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
+  InputMask: 8a10dbc8ac3f94f0a5b4c380424bbe6795c69b16
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
 
-PODFILE CHECKSUM: eacc47a1f62ff19ad1445a45f5fae17923be4318
+PODFILE CHECKSUM: b4cb54263909df6b5cc44b292dae7a73bbefa634
 
 COCOAPODS: 1.5.3

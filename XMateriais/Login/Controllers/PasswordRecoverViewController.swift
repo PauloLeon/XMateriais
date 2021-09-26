@@ -33,8 +33,8 @@ class PasswordRecoverViewController: UIViewController {
     // MARK: IBActions's
 
     @IBAction func continueButtonPressed(_ sender: UIButton) {
-        if emailTextField.text == "" || emailTextField.text == nil {
-            createAlert(title: "Por favor, insira um e-mail", message: "tente novamente")
+        if emailTextField.text == "" || emailTextField.text == nil || !isValidEmail(testStr: emailTextField.text!) {
+            createAlert(title: "Por favor, insira um e-mail válido", message: "tente novamente")
         } else {
             createAlert(title: "Fluxo não habilitado", message: "tente mais tarde")
         }
@@ -49,5 +49,12 @@ extension PasswordRecoverViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
 }
