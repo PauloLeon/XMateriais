@@ -174,6 +174,9 @@
                                 <state key="normal" title="@xmat.eriais">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Zbh-70-Bu7" kind="show" id="YHR-1s-d3g"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-eb-1yO">
                                 <rect key="frame" x="16" y="135" width="343" height="1"/>
@@ -297,6 +300,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5i-g8-Yx7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="342" y="902"/>
+        </scene>
+        <!--Instagram Web View Controller-->
+        <scene sceneID="1d0-mM-kGy">
+            <objects>
+                <viewController id="Zbh-70-Bu7" customClass="InstagramWebViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WI8-cf-Hhh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kq7-GR-qZQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W9I-Zq-T61"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzg-wh-KfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="906"/>
         </scene>
     </scenes>
     <resources>
