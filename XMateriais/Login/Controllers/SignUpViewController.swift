@@ -79,7 +79,7 @@ class SignUpViewController: UIViewController {
             continueButton.layer.borderWidth = kBorderWidth
             continueButton.backgroundColor = UIColor.getPrimaryColor()
             continueButton.layer.borderColor = UIColor.getPrimaryColor().cgColor
-            continueButton.setTitleColor(UIColor.black, for: .normal)
+            continueButton.setTitleColor(UIColor.white, for: .normal)
         }
     }
     

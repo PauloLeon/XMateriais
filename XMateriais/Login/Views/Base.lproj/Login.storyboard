@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="GT-Walsheim-Bold.otf">
+            <string>GTWalsheim-Bold</string>
+        </array>
         <array key="GT-Walsheim-Light.otf">
             <string>GTWalsheimLight</string>
         </array>
@@ -48,7 +51,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
                                 <state key="normal" title="Já possuo uma conta">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXU-Le-voO"/>
@@ -66,7 +69,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VsX-I2-2IY"/>
-                                    <segue destination="x7h-IQ-4VD" kind="show" identifier="SIgnUpSegue" id="wKE-pH-QdA"/>
+                                    <segue destination="x7h-IQ-4VD" kind="show" identifier="SignUpSegue" id="wKE-pH-QdA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,11 +144,10 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
                                 <state key="normal" title="Entrar">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="continueButtonDidPressed:" destination="y4X-9z-Olp" eventType="touchUpInside" id="YTb-tQ-KXH"/>
-                                    <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0o2-Tx-WCu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Vl-dDg">
@@ -155,7 +157,7 @@
                                     <color key="titleColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x7h-IQ-4VD" kind="show" identifier="SIgnUpSegue2" id="0tk-WE-Gka"/>
+                                    <segue destination="x7h-IQ-4VD" kind="show" identifier="SignUpSegue2" id="0tk-WE-Gka"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-rd-qRU">
@@ -244,28 +246,26 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
                                 <state key="normal" title="Enviar">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="continueButtonDidPressed:" destination="y4X-9z-Olp" eventType="touchUpInside" id="DWz-po-QXr"/>
                                     <action selector="continueButtonPressed:" destination="OYm-Rg-XwY" eventType="touchUpInside" id="yy9-qy-i7T"/>
-                                    <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZNa-4L-b1U"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2U-76-rIL">
-                                <rect key="frame" x="16" y="465" width="343" height="14"/>
+                                <rect key="frame" x="16" y="460" width="343" height="16.5"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido, verifique o endereço digitado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRg-hx-14W">
-                                <rect key="frame" x="15" y="529" width="344" height="14"/>
+                                <rect key="frame" x="15" y="526.5" width="344" height="16.5"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail cadastrado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-Za-QL2">
-                                <rect key="frame" x="16" y="487" width="343" height="34"/>
+                                <rect key="frame" x="16" y="484.5" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -277,7 +277,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha? Não tem problema. Por favor, informe abaixo o seu e-mail cadastrado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-8k-FAg">
-                                <rect key="frame" x="16" y="401" width="343" height="32"/>
+                                <rect key="frame" x="16" y="390.5" width="343" height="37.5"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -349,13 +349,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oba! Você chegou ao X-mat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-Oq-d0h">
-                                <rect key="frame" x="16" y="395" width="343" height="14"/>
+                                <rect key="frame" x="16" y="387.5" width="343" height="16.5"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha a seguir qual tipo de usuário você deseja cadastrar." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKW-cI-JGb">
-                                <rect key="frame" x="16" y="433" width="343" height="28"/>
+                                <rect key="frame" x="16" y="428" width="343" height="33"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -379,11 +379,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
                                 <state key="normal" title="Continuar">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="continueButtonDidPressed:" destination="x7h-IQ-4VD" eventType="touchUpInside" id="KTB-xg-ncS"/>
-                                    <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzf-0z-ACi"/>
+                                    <segue destination="65c-DL-lGZ" kind="show" identifier="" id="t0S-Ex-bI0"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZz-Rq-T4M">
@@ -474,6 +474,286 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQr-Ah-bIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1285.5999999999999" y="512.29385307346331"/>
+        </scene>
+        <!--Confirmação de Cadastro-->
+        <scene sceneID="X0Z-vY-Tuj">
+            <objects>
+                <viewController id="65c-DL-lGZ" customClass="ConfirmSIgnUpViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OC1-0J-Wa8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-7T-2kV">
+                                <rect key="frame" x="67.5" y="68" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0gj-DI-eCB"/>
+                                    <constraint firstAttribute="width" constant="240" id="5Pn-Ww-0I1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inserir o código enviado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-1p-yqC">
+                                <rect key="frame" x="16" y="445.5" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foi enviado para o e-mail cadastrado um código de 4 dígitos. Por favor, informe abaixo o código enviado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ta-Eq-XwO">
+                                <rect key="frame" x="16" y="357.5" width="343" height="56"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt5-ln-3cp">
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="LKI-Lz-gkD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonDidPressed:" destination="65c-DL-lGZ" eventType="touchUpInside" id="in9-XD-aXa"/>
+                                    <segue destination="ChU-95-afk" kind="show" identifier="ConfirmSegue" id="NCx-1W-oCd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0k-mK-3bK">
+                                <rect key="frame" x="16" y="536" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="pZG-l7-bhP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <state key="normal" title="Enviar novamente">
+                                    <color key="titleColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="retryButtonDidPressed:" destination="65c-DL-lGZ" eventType="touchUpInside" id="7Dt-dM-Qcb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*O código informado não é válido." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-cR-mRr">
+                                <rect key="frame" x="16" y="487.5" width="343" height="16.5"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yqv-1p-yqC" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="0Jz-iX-6ZJ"/>
+                            <constraint firstItem="a0k-mK-3bK" firstAttribute="top" secondItem="TG2-cR-mRr" secondAttribute="bottom" constant="32" id="6PR-ko-JZY"/>
+                            <constraint firstItem="yIW-7T-2kV" firstAttribute="top" secondItem="Qmw-xX-iSs" secondAttribute="top" constant="24" id="7We-5A-NGW"/>
+                            <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="Lt5-ln-3cp" secondAttribute="trailing" constant="16" id="7ch-oq-2zI"/>
+                            <constraint firstItem="yIW-7T-2kV" firstAttribute="centerX" secondItem="OC1-0J-Wa8" secondAttribute="centerX" id="DvJ-mj-9aA"/>
+                            <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="TG2-cR-mRr" secondAttribute="trailing" constant="16" id="E1C-u3-TJx"/>
+                            <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="Yqv-1p-yqC" secondAttribute="trailing" constant="16" id="Eoh-6X-vhq"/>
+                            <constraint firstItem="Lt5-ln-3cp" firstAttribute="top" secondItem="a0k-mK-3bK" secondAttribute="bottom" constant="42" id="Lm2-81-4t0"/>
+                            <constraint firstItem="7Ta-Eq-XwO" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="Ot9-Cy-zsg"/>
+                            <constraint firstItem="a0k-mK-3bK" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="Qjj-0q-kFN"/>
+                            <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="a0k-mK-3bK" secondAttribute="trailing" constant="16" id="UrO-kT-se8"/>
+                            <constraint firstItem="TG2-cR-mRr" firstAttribute="top" secondItem="Yqv-1p-yqC" secondAttribute="bottom" constant="8" id="bAa-wq-NfB"/>
+                            <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="7Ta-Eq-XwO" secondAttribute="trailing" constant="16" id="cuu-O4-F4I"/>
+                            <constraint firstItem="TG2-cR-mRr" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="m1C-7k-lWb"/>
+                            <constraint firstItem="Lt5-ln-3cp" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="ofs-BP-OhC"/>
+                            <constraint firstItem="Qmw-xX-iSs" firstAttribute="bottom" secondItem="Lt5-ln-3cp" secondAttribute="bottom" constant="24" id="rS2-wQ-1es"/>
+                            <constraint firstItem="Yqv-1p-yqC" firstAttribute="top" secondItem="7Ta-Eq-XwO" secondAttribute="bottom" constant="32" id="raq-UP-2EB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qmw-xX-iSs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirmação de Cadastro" id="ZwY-cl-Szl"/>
+                    <connections>
+                        <outlet property="codeTextField" destination="Yqv-1p-yqC" id="k0D-ej-d0l"/>
+                        <outlet property="errorCodeLabel" destination="TG2-cR-mRr" id="Ny6-hq-YXh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUn-75-doj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="512"/>
+        </scene>
+        <!--Confirmação de cadastro-->
+        <scene sceneID="w1q-ul-RHI">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmSuccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ChU-95-afk" customClass="ConfirmSuccessViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhu-y4-0Up">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2vZ-Nr-Dvn">
+                                <rect key="frame" x="67.5" y="68" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="T1h-MR-ydk"/>
+                                    <constraint firstAttribute="width" constant="240" id="ijk-g8-TZf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JQ-ji-pTq">
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Lny-TC-9OH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QoG-i9-aX8" kind="show" id="Dyc-23-94r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sua conta foi criada com sucesso e agora você pode começar a preencher testes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-m5-Ciz">
+                                <rect key="frame" x="16" y="375" width="343" height="37.5"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Código confirmado!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pK-12-Ddv">
+                                <rect key="frame" x="16" y="324" width="343" height="19"/>
+                                <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="16"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dJb-m5-Ciz" firstAttribute="leading" secondItem="v7s-Rd-sGd" secondAttribute="leading" constant="16" id="5RZ-ql-ctV"/>
+                            <constraint firstItem="v7s-Rd-sGd" firstAttribute="trailing" secondItem="4pK-12-Ddv" secondAttribute="trailing" constant="16" id="B6G-CL-46r"/>
+                            <constraint firstItem="4pK-12-Ddv" firstAttribute="leading" secondItem="v7s-Rd-sGd" secondAttribute="leading" constant="16" id="G3M-cQ-eyt"/>
+                            <constraint firstItem="v7s-Rd-sGd" firstAttribute="trailing" secondItem="dJb-m5-Ciz" secondAttribute="trailing" constant="16" id="XMv-QI-tCW"/>
+                            <constraint firstItem="2vZ-Nr-Dvn" firstAttribute="top" secondItem="v7s-Rd-sGd" secondAttribute="top" constant="24" id="cWM-Z8-k15"/>
+                            <constraint firstItem="dJb-m5-Ciz" firstAttribute="top" secondItem="4pK-12-Ddv" secondAttribute="bottom" constant="32" id="gY2-id-FAa"/>
+                            <constraint firstItem="v7s-Rd-sGd" firstAttribute="trailing" secondItem="4JQ-ji-pTq" secondAttribute="trailing" constant="16" id="k9y-ff-plR"/>
+                            <constraint firstItem="2vZ-Nr-Dvn" firstAttribute="centerX" secondItem="hhu-y4-0Up" secondAttribute="centerX" id="o1M-RT-cOt"/>
+                            <constraint firstItem="4JQ-ji-pTq" firstAttribute="leading" secondItem="v7s-Rd-sGd" secondAttribute="leading" constant="16" id="rlE-WQ-gVd"/>
+                            <constraint firstItem="v7s-Rd-sGd" firstAttribute="bottom" secondItem="4JQ-ji-pTq" secondAttribute="bottom" constant="24" id="yna-ih-8jc"/>
+                            <constraint firstItem="4pK-12-Ddv" firstAttribute="centerY" secondItem="hhu-y4-0Up" secondAttribute="centerY" id="yx0-oV-3ZY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v7s-Rd-sGd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirmação de cadastro" id="3el-zt-9t4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETu-vj-0vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2831" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JPJ-fG-ssr">
+            <objects>
+                <viewController id="QoG-i9-aX8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bgp-yc-vfx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="Yi2-qA-Sl9">
+                                <rect key="frame" x="56" y="76" width="263" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="HQt-4z-JNj"/>
+                                    <constraint firstAttribute="height" constant="242" id="ST9-cw-ccw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-DX-J84">
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="mjL-Nw-QwD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i1N-3G-e8t" kind="show" id="OXW-sV-WFb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O X-Materiais é uma ferramenta para apoiar profissionais na análise das formas com que as pessoas compreendem um material." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-2V-2gq">
+                                <rect key="frame" x="16" y="438" width="343" height="49"/>
+                                <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yi2-qA-Sl9" firstAttribute="top" secondItem="16K-OL-SBa" secondAttribute="top" constant="32" id="DHK-gY-eh6"/>
+                            <constraint firstItem="Yi2-qA-Sl9" firstAttribute="centerX" secondItem="Bgp-yc-vfx" secondAttribute="centerX" id="Hhh-qU-3Zb"/>
+                            <constraint firstItem="LAu-2V-2gq" firstAttribute="leading" secondItem="16K-OL-SBa" secondAttribute="leading" constant="16" id="KDR-sJ-6EZ"/>
+                            <constraint firstItem="Rnm-DX-J84" firstAttribute="leading" secondItem="16K-OL-SBa" secondAttribute="leading" constant="16" id="TY1-ll-0v5"/>
+                            <constraint firstItem="16K-OL-SBa" firstAttribute="bottom" secondItem="Rnm-DX-J84" secondAttribute="bottom" constant="24" id="Yka-ln-crF"/>
+                            <constraint firstItem="16K-OL-SBa" firstAttribute="trailing" secondItem="Rnm-DX-J84" secondAttribute="trailing" constant="16" id="bfj-fn-urf"/>
+                            <constraint firstItem="Rnm-DX-J84" firstAttribute="top" secondItem="LAu-2V-2gq" secondAttribute="bottom" constant="120" id="mao-5w-tf1"/>
+                            <constraint firstItem="16K-OL-SBa" firstAttribute="trailing" secondItem="LAu-2V-2gq" secondAttribute="trailing" constant="16" id="oIL-7E-jrE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="16K-OL-SBa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ju-BR-CAC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2c-80-UU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3575" y="512"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Abu-z9-8Z4">
+            <objects>
+                <viewController id="i1N-3G-e8t" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qVB-yR-Ef7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-i3-UqS">
+                                <rect key="frame" x="56" y="76" width="263" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="OOJ-Tr-zZO"/>
+                                    <constraint firstAttribute="height" constant="242" id="inw-ua-IMT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="242" id="w07-Pr-OYf"/>
+                                    <constraint firstAttribute="width" constant="263" id="xnf-5n-nFo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvV-Pv-xi4">
+                                <rect key="frame" x="16" y="438" width="343" height="49"/>
+                                <string key="text">A análise é feita em diferentes níveis: interativo, sensorial interpretativo e afetivo e é composto por quatro etapas. Vamos começar?</string>
+                                <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpI-hi-vjE">
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="odM-3o-hj4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7QV-3A-huQ" kind="show" id="24H-Do-4yI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KpI-hi-vjE" firstAttribute="leading" secondItem="9dH-hp-9SL" secondAttribute="leading" constant="16" id="7aV-bt-GTu"/>
+                            <constraint firstItem="DZg-i3-UqS" firstAttribute="top" secondItem="9dH-hp-9SL" secondAttribute="top" constant="32" id="GgH-WX-Djh"/>
+                            <constraint firstItem="nvV-Pv-xi4" firstAttribute="leading" secondItem="9dH-hp-9SL" secondAttribute="leading" constant="16" id="VhN-au-UnM"/>
+                            <constraint firstItem="DZg-i3-UqS" firstAttribute="centerX" secondItem="qVB-yR-Ef7" secondAttribute="centerX" id="WUi-aI-yll"/>
+                            <constraint firstItem="KpI-hi-vjE" firstAttribute="top" secondItem="nvV-Pv-xi4" secondAttribute="bottom" constant="120" id="Xbf-9S-H3Q"/>
+                            <constraint firstItem="9dH-hp-9SL" firstAttribute="trailing" secondItem="KpI-hi-vjE" secondAttribute="trailing" constant="16" id="Zje-Uw-DTg"/>
+                            <constraint firstItem="9dH-hp-9SL" firstAttribute="bottom" secondItem="KpI-hi-vjE" secondAttribute="bottom" constant="24" id="bL1-Sf-vsb"/>
+                            <constraint firstItem="9dH-hp-9SL" firstAttribute="trailing" secondItem="nvV-Pv-xi4" secondAttribute="trailing" constant="16" id="hGh-Ds-gtS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9dH-hp-9SL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ykm-1z-FIh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Wb-iwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324" y="512"/>
+        </scene>
+        <!--LoggedResearcher-->
+        <scene sceneID="XR7-2l-JlJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoggedResearcher" id="7QV-3A-huQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k6V-mN-fHv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-EM-7h6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5070" y="470"/>
         </scene>
     </scenes>
     <resources>
