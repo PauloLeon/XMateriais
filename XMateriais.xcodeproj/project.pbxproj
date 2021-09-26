@@ -30,6 +30,8 @@
 		0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A544270038EC00DF6A0A /* SignInViewController.swift */; };
 		0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A546270038FC00DF6A0A /* SignUpViewController.swift */; };
 		0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */; };
+		0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */; };
+		0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */; };
 		D95449A5B3235626E8595649 /* Pods_XMateriais.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		0B78A544270038EC00DF6A0A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0B78A546270038FC00DF6A0A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
+		0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMateriais.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A72365F8456804CE9CF7AEC /* Pods-XMateriais.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.debug.xcconfig"; sourceTree = "<group>"; };
 		CF7FB2B438B297F6F33B95F6 /* Pods-XMateriais.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 				0B5906CF26FAC75C0021B47E /* LoginViewController.swift */,
 				0B78A544270038EC00DF6A0A /* SignInViewController.swift */,
 				0B78A546270038FC00DF6A0A /* SignUpViewController.swift */,
+				0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */,
+				0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -446,9 +452,11 @@
 			files = (
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
 				0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */,
+				0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */,
 				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
 				0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */,
 				0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */,
+				0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */,
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
 				0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */,
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
