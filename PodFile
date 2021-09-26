@@ -1,4 +1,5 @@
 target 'XMateriais' do
   use_frameworks!
   pod 'SwiftLint'
+  pod 'IQKeyboardManagerSwift'
 end
