@@ -31,6 +31,11 @@ class SignUpViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavigationBorder()
+    }
+    
     // MARK: Private Functions
     
     private func setupUI() {
@@ -82,6 +87,12 @@ class SignUpViewController: UIViewController {
             continueButton.layer.borderColor = UIColor.getPrimaryColor().cgColor
             continueButton.setTitleColor(UIColor.white, for: .normal)
         }
+    }
+    
+    private func removeNavigationBorder() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
     // MARK: IBActions's

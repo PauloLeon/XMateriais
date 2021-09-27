@@ -24,6 +24,11 @@ class ConfirmSIgnUpViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavigationBorder()
+    }
+    
     // MARK: Private Functions
     
     private func setupUI() {
@@ -32,6 +37,12 @@ class ConfirmSIgnUpViewController: UIViewController {
     
     private func setTextFieldDelegate() {
         codeTextField.delegate = self
+    }
+    
+    private func removeNavigationBorder() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
 
     // MARK: IBActions's

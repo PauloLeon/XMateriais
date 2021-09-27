@@ -21,11 +21,6 @@ class LoggedResearcherViewController: UIViewController {
         super.viewWillAppear(animated)
         removeNavigationBorder()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        addNavigationBorder()
-    }
 
     // MARK: Private Functions
     
@@ -36,13 +31,6 @@ class LoggedResearcherViewController: UIViewController {
     private func removeNavigationBorder() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.layoutIfNeeded()
-    }
-    
-    
-    private func addNavigationBorder() {
-        self.navigationController?.navigationBar.setBackgroundImage(nil, for:.default)
-        self.navigationController?.navigationBar.shadowImage = nil
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
 }

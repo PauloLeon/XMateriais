@@ -23,12 +23,23 @@ class PasswordRecoverViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavigationBorder()
+    }
+    
     // MARK: Private Functions
     
     private func setupUI() {
         emailTextField.delegate = self
         errorEmailLabel.isHidden = true
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    private func removeNavigationBorder() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
     // MARK: IBActions's

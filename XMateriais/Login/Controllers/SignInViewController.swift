@@ -31,6 +31,11 @@ class SignInViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavigationBorder()
+    }
+    
     // MARK: Private Functions
     
     private func setupUI() {
@@ -50,7 +55,13 @@ class SignInViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
-
+    
+    private func removeNavigationBorder() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
+    }
+    
     // MARK: IBActions's
 
     @IBAction func resetPasswordDidPressed(_ sender: UIButton) {

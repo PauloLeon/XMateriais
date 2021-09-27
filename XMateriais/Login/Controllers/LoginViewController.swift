@@ -26,7 +26,12 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupView()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavigationBorder()
+    }
+    
     // MARK: Private Functions
 
     private func setupView() {
@@ -36,6 +41,12 @@ class LoginViewController: UIViewController {
         signUpButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         self.navigationController?.navigationBar.tintColor = UIColor.getPrimaryColor()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    private func removeNavigationBorder() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
     // MARK: IBActions's

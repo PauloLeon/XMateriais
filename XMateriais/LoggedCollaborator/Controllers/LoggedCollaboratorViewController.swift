@@ -22,11 +22,6 @@ class LoggedCollaboratorViewController: UIViewController {
         removeNavigationBorder()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        addNavigationBorder()
-    }
-
     // MARK: Private Functions
     
     private func renameNavigationBackButton() {
@@ -36,13 +31,6 @@ class LoggedCollaboratorViewController: UIViewController {
     private func removeNavigationBorder() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.layoutIfNeeded()
-    }
-    
-    
-    private func addNavigationBorder() {
-        self.navigationController?.navigationBar.setBackgroundImage(nil, for:.default)
-        self.navigationController?.navigationBar.shadowImage = nil
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
 }
