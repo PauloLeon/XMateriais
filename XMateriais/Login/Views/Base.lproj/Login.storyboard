@@ -114,30 +114,30 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-AB-oXy">
-                                <rect key="frame" x="16" y="214.5" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="220.5" width="343" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido, verifique o endereço digitado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ7-Pj-3am">
-                                <rect key="frame" x="16" y="281" width="344" height="16.5"/>
+                                <rect key="frame" x="16" y="284.5" width="344" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.81960784313725488" green="0.16078431372549018" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail cadastrado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9GZ-Nr-c2p">
-                                <rect key="frame" x="16" y="239" width="343" height="34"/>
+                                <rect key="frame" x="16" y="242.5" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZF-mE-7Mx">
-                                <rect key="frame" x="16" y="325.5" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="326.5" width="343" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-n1-KLp">
-                                <rect key="frame" x="16" y="562" width="343" height="36"/>
+                                <rect key="frame" x="16" y="565" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="1XL-ew-B2M"/>
@@ -151,7 +151,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Vl-dDg">
-                                <rect key="frame" x="16" y="614" width="343" height="29"/>
+                                <rect key="frame" x="16" y="617" width="343" height="26"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
                                 <state key="normal" title="Não tem conta? Faça o seu cadastro">
                                     <color key="titleColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -161,18 +161,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-rd-qRU">
-                                <rect key="frame" x="16" y="392" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="390.5" width="343" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRl-DO-qkc">
-                                <rect key="frame" x="16" y="350" width="343" height="34"/>
+                                <rect key="frame" x="16" y="348.5" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR6-lZ-36M">
-                                <rect key="frame" x="16" y="424.5" width="343" height="29"/>
+                                <rect key="frame" x="16" y="420.5" width="343" height="26"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
                                 <state key="normal" title="Esqueceu a sua senha?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,7 +319,7 @@
         <!--Efetuar cadastro-->
         <scene sceneID="ERc-1Q-YJl">
             <objects>
-                <viewController id="n1u-nl-qD9" sceneMemberID="viewController">
+                <viewController id="n1u-nl-qD9" customClass="RegistrationCollaboratorViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N8d-sX-Hww">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="760"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,101 +331,101 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Is2-26-YqA">
-                                                <rect key="frame" x="16" y="8" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="8" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMw-Mo-AnU">
-                                                <rect key="frame" x="16" y="32.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="30" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-Ls-Qsr">
-                                                <rect key="frame" x="16" y="82.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="80" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVW-2j-DmI">
-                                                <rect key="frame" x="16" y="149" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="144" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-ha-IOY">
-                                                <rect key="frame" x="16" y="107" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="102" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTG-ga-YVP">
-                                                <rect key="frame" x="16" y="173.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="166" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira a data do seu nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KG-3z-2bm">
-                                                <rect key="frame" x="16" y="198" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="188" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gênero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-cS-7ZV">
-                                                <rect key="frame" x="16" y="248" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="238" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione um gênero" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJ8-VD-IGJ">
-                                                <rect key="frame" x="16" y="272.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="260" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolaridade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcj-VN-HZ1">
-                                                <rect key="frame" x="16" y="322.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="310" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione uma escolaridade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-F1-534">
-                                                <rect key="frame" x="16" y="347" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="332" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVY-iV-8Fk">
-                                                <rect key="frame" x="16" y="397" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="382" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua ocupação" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-Ns-60l">
-                                                <rect key="frame" x="16" y="421.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="404" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6es-rc-w84">
-                                                <rect key="frame" x="16" y="471.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="454" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcT-Am-406">
-                                                <rect key="frame" x="16" y="496" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="476" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZD-dy-poE">
-                                                <rect key="frame" x="16" y="546" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="526" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
-                                                <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DnN-O1-of3">
-                                                <rect key="frame" x="16" y="570.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="548" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8Z-nh-huI">
-                                                <rect key="frame" x="16" y="628.5" width="343" height="36"/>
+                                                <rect key="frame" x="16" y="606" width="343" height="36"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Csy-Fm-7ed"/>
@@ -434,6 +434,9 @@
                                                 <state key="normal" title="Continuar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="continueButtonPressed:" destination="n1u-nl-qD9" eventType="touchUpInside" id="Q6j-kE-qIh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -516,6 +519,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="Efetuar cadastro" id="ZzC-Qb-hTS"/>
                     <size key="freeformSize" width="375" height="760"/>
+                    <connections>
+                        <outlet property="birthdayTextField" destination="2KG-3z-2bm" id="y9g-9d-v2a"/>
+                        <outlet property="confirmPasswordTextField" destination="DnN-O1-of3" id="yf4-6A-fxN"/>
+                        <outlet property="continueButton" destination="N8Z-nh-huI" id="Kqj-9l-hEw"/>
+                        <outlet property="emailTextField" destination="XNZ-ha-IOY" id="f2b-Pn-kno"/>
+                        <outlet property="errorEmailLabel" destination="YVW-2j-DmI" id="h5P-1k-iSX"/>
+                        <outlet property="genderTextField" destination="RJ8-VD-IGJ" id="gpx-Gz-8o4"/>
+                        <outlet property="jobTextField" destination="lsD-Ns-60l" id="T7y-OA-WOy"/>
+                        <outlet property="nameTextField" destination="vMw-Mo-AnU" id="ozZ-vR-C5l"/>
+                        <outlet property="passwordTextField" destination="bcT-Am-406" id="Ctg-Ha-1qn"/>
+                        <outlet property="schoolingTextField" destination="wlU-F1-534" id="urp-iY-8Hc"/>
+                        <outlet property="warningPasswordLabel" destination="xZD-dy-poE" id="WqV-1M-c2e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYK-v7-vpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -588,7 +604,6 @@
                                 </state>
                                 <connections>
                                     <action selector="continueButtonDidPressed:" destination="x7h-IQ-4VD" eventType="touchUpInside" id="KTB-xg-ncS"/>
-                                    <segue destination="n1u-nl-qD9" kind="show" id="9H6-Lx-kbG"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZz-Rq-T4M">
@@ -674,6 +689,8 @@
                         <outlet property="collaboratorButton" destination="3h9-bi-OTI" id="rlS-A1-DDa"/>
                         <outlet property="continueButton" destination="ps9-cM-YvW" id="mXi-df-bqE"/>
                         <outlet property="researcherButton" destination="kmg-8A-93e" id="BoF-xa-UD6"/>
+                        <segue destination="6Qq-9k-81g" kind="show" identifier="researcherSegue" id="Z38-z5-Ont"/>
+                        <segue destination="n1u-nl-qD9" kind="show" identifier="collaboratorSegue" id="fbs-AU-x7P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQr-Ah-bIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -963,113 +980,113 @@
         <!--Efetuar cadastro-->
         <scene sceneID="8k4-zg-e5D">
             <objects>
-                <viewController id="6Qq-9k-81g" sceneMemberID="viewController">
+                <viewController id="6Qq-9k-81g" customClass="RegistrationResearcherViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="umu-1u-c9g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQB-eb-SZC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="756"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2C-AN-Lyh" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asl-Mk-WiD">
-                                                <rect key="frame" x="16" y="8" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="8" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YbH-qq-HfC">
-                                                <rect key="frame" x="16" y="32.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="30" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMb-rX-FSw">
-                                                <rect key="frame" x="16" y="82.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="80" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwH-V8-rVt">
-                                                <rect key="frame" x="16" y="149" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="144" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cYa-yb-pUU">
-                                                <rect key="frame" x="16" y="107" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="102" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2R-bl-Nxk">
-                                                <rect key="frame" x="16" y="173.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="166" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira a data do seu nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-jJ-T03">
-                                                <rect key="frame" x="16" y="198" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="188" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gênero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-uC-eS7">
-                                                <rect key="frame" x="16" y="248" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="238" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione um gênero" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDi-4Q-HjD">
-                                                <rect key="frame" x="16" y="272.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="260" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolaridade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVp-4Q-jra">
-                                                <rect key="frame" x="16" y="322.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="310" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione uma escolaridade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYO-lO-SHF">
-                                                <rect key="frame" x="16" y="347" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="332" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vx-9G-gmZ">
-                                                <rect key="frame" x="16" y="397" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="382" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua ocupação" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3d6-rM-A3k">
-                                                <rect key="frame" x="16" y="421.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="404" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMQ-JF-FdD">
-                                                <rect key="frame" x="16" y="546" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="526" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKa-p0-2E8">
-                                                <rect key="frame" x="16" y="570.5" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="548" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLD-L1-L4Q">
-                                                <rect key="frame" x="16" y="620.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="598" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-F6-a07">
-                                                <rect key="frame" x="16" y="645" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="620" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eq-iU-Dvn">
-                                                <rect key="frame" x="16" y="703" width="343" height="36"/>
+                                                <rect key="frame" x="16" y="678" width="343" height="36"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="d7P-87-CaQ"/>
@@ -1078,15 +1095,18 @@
                                                 <state key="normal" title="Continuar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="continueButtonDidPressed:" destination="6Qq-9k-81g" eventType="touchUpInside" id="dud-a5-a2B"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instituição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zo-CA-wyr">
-                                                <rect key="frame" x="16" y="471.5" width="343" height="16.5"/>
+                                                <rect key="frame" x="16" y="454" width="343" height="14"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a instituição vinculada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptj-au-g6f">
-                                                <rect key="frame" x="16" y="496" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="476" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1177,6 +1197,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="Efetuar cadastro" id="ebT-qf-cfI"/>
                     <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="birthdayTextField" destination="B4a-jJ-T03" id="nnN-B0-jrL"/>
+                        <outlet property="confirmPasswordTextField" destination="qPT-F6-a07" id="akY-kr-xk6"/>
+                        <outlet property="emailTextField" destination="cYa-yb-pUU" id="jke-ng-B6Y"/>
+                        <outlet property="errorEmailLabel" destination="zwH-V8-rVt" id="hf2-hj-UBe"/>
+                        <outlet property="errorPasswordLabel" destination="CLD-L1-L4Q" id="yeW-hv-31K"/>
+                        <outlet property="genderTextField" destination="iDi-4Q-HjD" id="lMq-Pc-FeV"/>
+                        <outlet property="institutionTextField" destination="ptj-au-g6f" id="SxD-aH-5yg"/>
+                        <outlet property="jobTextField" destination="3d6-rM-A3k" id="XZK-El-2lL"/>
+                        <outlet property="nameTextField" destination="YbH-qq-HfC" id="Sli-H6-OMq"/>
+                        <outlet property="passwordTextField" destination="mKa-p0-2E8" id="B6Z-o8-VPt"/>
+                        <outlet property="schoolingTextField" destination="rYO-lO-SHF" id="4tG-aN-rAN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mg7-51-jZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

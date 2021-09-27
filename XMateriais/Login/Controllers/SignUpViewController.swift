@@ -112,6 +112,13 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-
+        switch signUpType {
+        case kCollaboratorType:
+            self.performSegue(withIdentifier: "collaboratorSegue", sender: self)
+        case kResearcherType:
+            self.performSegue(withIdentifier: "researcherSegue", sender: self)
+        default:
+            return
+        }
     }
 }
