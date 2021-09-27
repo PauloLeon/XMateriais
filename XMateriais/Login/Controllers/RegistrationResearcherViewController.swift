@@ -93,8 +93,41 @@ class RegistrationResearcherViewController: UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
+    private func isFormValid() -> Bool {
+        errorPasswordLabel.isHidden = true
+        errorEmailLabel.isHidden = true
+        if nameTextField.text!.isEmpty || emailTextField.text!.isEmpty ||  birthdayTextField.text!.isEmpty ||
+        genderTextField.text!.isEmpty || schoolingTextField.text!.isEmpty || jobTextField.text!.isEmpty || institutionTextField.text!.isEmpty || passwordTextField.text!.isEmpty || confirmPasswordTextField.text!.isEmpty {
+            createAlert(title: "Cadastro Incompleto", message: "Preencha todos os campos corretamente")
+            return false
+        }
+        
+        if !isValidEmail(testStr: emailTextField.text!) {
+            createAlert(title: "Por favor, insira um e-mail válido", message: "tente novamente")
+            errorEmailLabel.isHidden = false
+            return false
+        }
+        
+        if passwordTextField.text! != confirmPasswordTextField.text! {
+            createAlert(title: "Campos de senha estão diferentes", message: "tente novamente")
+            return false
+        }
+        
+        if passwordTextField.text!.count < 6 {
+            createAlert(title: "Sua senha precisa ter 6 ou mais dígitos", message: "tente novamente")
+            errorPasswordLabel.isHidden = false
+            return false
+        }
+        return true
+    }
+    
     // MARK: IBActions's
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
+        if isFormValid() {
+            
+        } else {
+            return
+        }
     }
 }
 
@@ -106,5 +139,12 @@ extension RegistrationResearcherViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
 }

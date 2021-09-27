@@ -92,11 +92,42 @@ class RegistrationCollaboratorViewController: UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
-    // MARK: IBActions's
-    @IBAction func continueButtonPressed(_ sender: Any) {
+    private func isFormValid() -> Bool {
+        warningPasswordLabel.isHidden = true
+        errorEmailLabel.isHidden = true
+        if nameTextField.text!.isEmpty || emailTextField.text!.isEmpty ||  birthdayTextField.text!.isEmpty ||
+            genderTextField.text!.isEmpty || schoolingTextField.text!.isEmpty || jobTextField.text!.isEmpty || passwordTextField.text!.isEmpty || confirmPasswordTextField.text!.isEmpty {
+            createAlert(title: "Cadastro Incompleto", message: "Preencha todos os campos corretamente")
+            return false
+        }
         
+        if !isValidEmail(testStr: emailTextField.text!) {
+            createAlert(title: "Por favor, insira um e-mail válido", message: "tente novamente")
+            errorEmailLabel.isHidden = false
+            return false
+        }
+        
+        if passwordTextField.text! != confirmPasswordTextField.text! {
+            createAlert(title: "Campos de senha estão diferentes", message: "tente novamente")
+            return false
+        }
+        
+        if passwordTextField.text!.count < 6 {
+            createAlert(title: "Sua senha precisa ter 6 ou mais dígitos", message: "tente novamente")
+            warningPasswordLabel.isHidden = false
+            return false
+        }
+        return true
     }
     
+    // MARK: IBActions's
+    @IBAction func continueButtonPressed(_ sender: Any) {
+       if isFormValid() {
+            
+        } else {
+            return
+        }
+    }
 }
 
 extension RegistrationCollaboratorViewController: UITextFieldDelegate {
@@ -107,5 +138,12 @@ extension RegistrationCollaboratorViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
 }
