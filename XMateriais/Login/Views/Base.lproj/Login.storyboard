@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="53.523238380809602"/>
+            <point key="canvasLocation" x="73" y="54"/>
         </scene>
         <!--Fazer Login-->
         <scene sceneID="WZZ-x7-naa">
@@ -228,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1K-Q2-Eph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="-495"/>
+            <point key="canvasLocation" x="886" y="-278"/>
         </scene>
         <!--Recuperar Senha-->
         <scene sceneID="OSA-3W-nnq">
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUc-yX-04r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="-1185"/>
+            <point key="canvasLocation" x="886" y="-988"/>
         </scene>
         <!--Efetuar cadastro-->
         <scene sceneID="ERc-1Q-YJl">
@@ -536,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYK-v7-vpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="1394"/>
+            <point key="canvasLocation" x="1586" y="553"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f6W-X2-arv">
@@ -553,7 +553,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="793-Jk-bdw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-341" y="54"/>
+            <point key="canvasLocation" x="-815" y="54"/>
         </scene>
         <!--Fazer cadastro-->
         <scene sceneID="T5h-wJ-1JO">
@@ -571,13 +571,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oba! Você chegou ao X-mat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-Oq-d0h">
-                                <rect key="frame" x="16" y="387.5" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="395" width="343" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha a seguir qual tipo de usuário você deseja cadastrar." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKW-cI-JGb">
-                                <rect key="frame" x="16" y="428" width="343" height="33"/>
+                                <rect key="frame" x="16" y="433" width="343" height="28"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -696,7 +696,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQr-Ah-bIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1285.5999999999999" y="512.29385307346331"/>
+            <point key="canvasLocation" x="887" y="511"/>
         </scene>
         <!--Confirmação de Cadastro-->
         <scene sceneID="X0Z-vY-Tuj">
@@ -789,7 +789,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUn-75-doj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2090" y="512"/>
+            <point key="canvasLocation" x="2388" y="1404"/>
         </scene>
         <!--Confirmação de cadastro-->
         <scene sceneID="w1q-ul-RHI">
@@ -853,7 +853,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETu-vj-0vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2831" y="511"/>
+            <point key="canvasLocation" x="3127" y="1403"/>
         </scene>
         <!--First Presentation View Controller-->
         <scene sceneID="JPJ-fG-ssr">
@@ -908,7 +908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2c-80-UU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3575" y="512"/>
+            <point key="canvasLocation" x="3871" y="1404"/>
         </scene>
         <!--Second Presentation View Controller-->
         <scene sceneID="Abu-z9-8Z4">
@@ -966,7 +966,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Wb-iwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4324" y="512"/>
+            <point key="canvasLocation" x="4623" y="1404"/>
         </scene>
         <!--LoggedResearcher-->
         <scene sceneID="XR7-2l-JlJ">
@@ -976,7 +976,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-EM-7h6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5070" y="470"/>
+            <point key="canvasLocation" x="5347" y="1403"/>
         </scene>
         <!--Efetuar cadastro-->
         <scene sceneID="8k4-zg-e5D">
@@ -1215,7 +1215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mg7-51-jZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089" y="1411"/>
+            <point key="canvasLocation" x="2388" y="570"/>
         </scene>
     </scenes>
     <resources>
