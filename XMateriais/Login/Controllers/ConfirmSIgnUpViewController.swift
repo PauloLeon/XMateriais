@@ -21,7 +21,6 @@ class ConfirmSIgnUpViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setTextFieldDelegate()
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,6 +32,7 @@ class ConfirmSIgnUpViewController: UIViewController {
     
     private func setupUI() {
         errorCodeLabel.isHidden = true
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func setTextFieldDelegate() {

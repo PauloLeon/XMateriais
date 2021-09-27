@@ -55,6 +55,7 @@ class RegistrationCollaboratorViewController: UIViewController {
         setGenderType()
         setSchoolingType()
         setDateType()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func setupTextFieldDelegate() {
@@ -122,11 +123,14 @@ class RegistrationCollaboratorViewController: UIViewController {
     
     // MARK: IBActions's
     @IBAction func continueButtonPressed(_ sender: Any) {
-       if isFormValid() {
-            
-        } else {
-            return
-        }
+//      MOCK
+//       if isFormValid() {
+//            self.performSegue(withIdentifier: "validFormSegue", sender: self)
+//        } else {
+//            return
+//        }
+        self.performSegue(withIdentifier: "validFormSegue", sender: self)
+
     }
 }
 

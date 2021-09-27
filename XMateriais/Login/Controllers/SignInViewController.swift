@@ -41,13 +41,6 @@ class SignInViewController: UIViewController {
     private func setupUI() {
         errorEmailLabel.isHidden = true
         errorPasswordLabel.isHidden = true
-        
-        continueButton.isEnabled = false
-        continueButton.layer.cornerRadius = kTwo
-        continueButton.layer.borderWidth = kBorderWidth
-        continueButton.backgroundColor = UIColor.getDisableColor()
-        continueButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
-        continueButton.setTitleColor(UIColor.getDisableTextColor(), for: .disabled)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
@@ -79,5 +72,11 @@ extension SignInViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
 }

@@ -55,6 +55,7 @@ class RegistrationResearcherViewController: UIViewController {
         setGenderType()
         setSchoolingType()
         setDateType()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func setGenderType() {
@@ -123,11 +124,14 @@ class RegistrationResearcherViewController: UIViewController {
     
     // MARK: IBActions's
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
-        if isFormValid() {
-            
-        } else {
-            return
-        }
+//      MOCK
+//        if isFormValid() {
+//            self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
+//        } else {
+//            return
+//        }
+        self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
+
     }
 }
 
