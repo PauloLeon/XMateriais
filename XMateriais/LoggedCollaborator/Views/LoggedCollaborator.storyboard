@@ -24,7 +24,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xlX-9d-C6P">
             <objects>
-                <navigationController id="9lf-Tt-N7f" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="9lf-Tt-N7f" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WuH-qH-3Jr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-726" y="156"/>
         </scene>
-        <!--Identificação do Teste-->
+        <!--Logged Collaborator View Controller-->
         <scene sceneID="T7N-rr-Chr">
             <objects>
-                <viewController id="rx1-3O-sI2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoggedCollaboratorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rx1-3O-sI2" customClass="LoggedCollaboratorViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GYY-lL-4Pn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +135,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Lu-o9-bJc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Identificação do Teste" id="MVZ-8r-91a"/>
+                    <navigationItem key="navigationItem" id="MVZ-8r-91a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAy-nW-cAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +144,7 @@
         <!--Sobre-->
         <scene sceneID="qfH-03-Ln9">
             <objects>
-                <viewController id="pvE-MQ-aql" sceneMemberID="viewController">
+                <viewController id="pvE-MQ-aql" customClass="AboutViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZJ-y9-3EC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

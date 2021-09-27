@@ -28,6 +28,7 @@ class PasswordRecoverViewController: UIViewController {
     private func setupUI() {
         emailTextField.delegate = self
         errorEmailLabel.isHidden = true
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     // MARK: IBActions's

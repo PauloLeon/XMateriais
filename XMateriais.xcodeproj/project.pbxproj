@@ -39,6 +39,9 @@
 		0BFC665F270070450018E5D1 /* LoggedCollaboratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC665E270070450018E5D1 /* LoggedCollaboratorViewController.swift */; };
 		0BFC6661270070560018E5D1 /* LoggedResearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC6660270070560018E5D1 /* LoggedResearcherViewController.swift */; };
 		0BFC66632700706E0018E5D1 /* InstagramWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC66622700706E0018E5D1 /* InstagramWebViewController.swift */; };
+		0BFC66692701FF050018E5D1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC66682701FF050018E5D1 /* AboutViewController.swift */; };
+		0BFC666B270200230018E5D1 /* FirstPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC666A270200230018E5D1 /* FirstPresentationViewController.swift */; };
+		0BFC666D2702002F0018E5D1 /* SecondPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC666C2702002F0018E5D1 /* SecondPresentationViewController.swift */; };
 		D95449A5B3235626E8595649 /* Pods_XMateriais.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,9 @@
 		0BFC665E270070450018E5D1 /* LoggedCollaboratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedCollaboratorViewController.swift; sourceTree = "<group>"; };
 		0BFC6660270070560018E5D1 /* LoggedResearcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedResearcherViewController.swift; sourceTree = "<group>"; };
 		0BFC66622700706E0018E5D1 /* InstagramWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramWebViewController.swift; sourceTree = "<group>"; };
+		0BFC66682701FF050018E5D1 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		0BFC666A270200230018E5D1 /* FirstPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresentationViewController.swift; sourceTree = "<group>"; };
+		0BFC666C2702002F0018E5D1 /* SecondPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresentationViewController.swift; sourceTree = "<group>"; };
 		23EE1804C22D12AC01C5E0EF /* Pods_XMateriais.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMateriais.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A72365F8456804CE9CF7AEC /* Pods-XMateriais.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.debug.xcconfig"; sourceTree = "<group>"; };
 		CF7FB2B438B297F6F33B95F6 /* Pods-XMateriais.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMateriais.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 				0BFC6653270064490018E5D1 /* LoggedCollaborator */,
 				0BFC66522700643C0018E5D1 /* LoggedResearcher */,
 				0BFC6664270073030018E5D1 /* WebView */,
+				0BFC66662701FEEA0018E5D1 /* About */,
 				0B78A5482700402D00DF6A0A /* Utils */,
 				0B63D53326FAAC44005599FA /* Resources */,
 			);
@@ -243,6 +250,8 @@
 				0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */,
 				0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */,
 				0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */,
+				0BFC666A270200230018E5D1 /* FirstPresentationViewController.swift */,
+				0BFC666C2702002F0018E5D1 /* SecondPresentationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -365,6 +374,22 @@
 				0BFC66622700706E0018E5D1 /* InstagramWebViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0BFC66662701FEEA0018E5D1 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC66672701FEF70018E5D1 /* ViewController */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0BFC66672701FEF70018E5D1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC66682701FF050018E5D1 /* AboutViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		A511DFD2D8F15B2DB3654764 /* Frameworks */ = {
@@ -585,13 +610,16 @@
 				0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */,
 				0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */,
 				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
+				0BFC666B270200230018E5D1 /* FirstPresentationViewController.swift in Sources */,
 				0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */,
 				0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */,
+				0BFC666D2702002F0018E5D1 /* SecondPresentationViewController.swift in Sources */,
 				0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */,
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
 				0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */,
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
 				0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */,
+				0BFC66692701FF050018E5D1 /* AboutViewController.swift in Sources */,
 				0BFC665127005F2F0018E5D1 /* ConfirmSuccessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,6 +797,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DP3A43FSN8;
 				INFOPLIST_FILE = XMateriais/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -788,6 +817,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DP3A43FSN8;
 				INFOPLIST_FILE = XMateriais/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

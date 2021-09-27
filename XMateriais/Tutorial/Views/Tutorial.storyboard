@@ -30,7 +30,7 @@
         <!--First Tutorial View Controller-->
         <scene sceneID="sZD-54-O1d">
             <objects>
-                <viewController storyboardIdentifier="FirstTutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="64m-sk-FQP" customClass="FirstTutorialViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstTutorialViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="64m-sk-FQP" customClass="FirstTutorialViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yZy-Kq-0HR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYU-CX-sdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="143"/>
+            <point key="canvasLocation" x="206" y="143"/>
         </scene>
     </scenes>
     <resources>

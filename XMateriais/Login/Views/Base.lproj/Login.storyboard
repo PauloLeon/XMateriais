@@ -21,10 +21,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Teste-->
+        <!--Fazer Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Teste" id="AFH-hm-dxt"/>
+                    <navigationItem key="navigationItem" title="Fazer Login" id="AFH-hm-dxt"/>
                     <connections>
                         <outlet property="signInButton" destination="UF3-H4-kqr" id="E8J-R4-j0e"/>
                         <outlet property="signUpButton" destination="tNu-BJ-SMq" id="ZDU-0g-10E"/>
@@ -319,7 +319,7 @@
         <!--Navigation Controller-->
         <scene sceneID="f6W-X2-arv">
             <objects>
-                <navigationController id="RNi-av-oW8" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="RNi-av-oW8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bMJ-0h-dTv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -632,10 +632,10 @@
             </objects>
             <point key="canvasLocation" x="2831" y="511"/>
         </scene>
-        <!--View Controller-->
+        <!--First Presentation View Controller-->
         <scene sceneID="JPJ-fG-ssr">
             <objects>
-                <viewController id="QoG-i9-aX8" sceneMemberID="viewController">
+                <viewController id="QoG-i9-aX8" customClass="FirstPresentationViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bgp-yc-vfx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -687,10 +687,10 @@
             </objects>
             <point key="canvasLocation" x="3575" y="512"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Presentation View Controller-->
         <scene sceneID="Abu-z9-8Z4">
             <objects>
-                <viewController id="i1N-3G-e8t" sceneMemberID="viewController">
+                <viewController id="i1N-3G-e8t" customClass="SecondPresentationViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVB-yR-Ef7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -762,6 +762,6 @@
         <image name="xmat_logo" width="106" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0tk-WE-Gka"/>
+        <segue reference="wKE-pH-QdA"/>
     </inferredMetricsTieBreakers>
 </document>

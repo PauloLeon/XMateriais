@@ -24,7 +24,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xkU-GM-22F">
             <objects>
-                <navigationController id="ZF3-rS-5Ek" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="ZF3-rS-5Ek" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V5m-rE-6Qy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-422" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Logged Researcher View Controller-->
         <scene sceneID="Yz2-Ux-92L">
             <objects>
-                <viewController id="cpB-2v-gGD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoggedResearcherViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cpB-2v-gGD" customClass="LoggedResearcherViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g0X-z2-Pxt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Sobre-->
         <scene sceneID="4y5-ob-Qb4">
             <objects>
-                <viewController id="c7j-dT-GTM" sceneMemberID="viewController">
+                <viewController id="c7j-dT-GTM" customClass="AboutViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKm-UR-tvP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

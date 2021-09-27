@@ -1,14 +1,14 @@
 //
-//  LoggedCollaboratorViewController.swift
+//  FirstPresentationViewController.swift
 //  XMateriais
 //
-//  Created by Paulo Rosa on 26/09/21.
+//  Created by Paulo Rosa on 27/09/21.
 //  Copyright © 2021 Paulo Rosa. All rights reserved.
 //
 
 import UIKit
 
-class LoggedCollaboratorViewController: UIViewController {
+class FirstPresentationViewController: UIViewController {
 
     // MARK: Override Functions
 
@@ -26,7 +26,7 @@ class LoggedCollaboratorViewController: UIViewController {
         super.viewWillDisappear(animated)
         addNavigationBorder()
     }
-
+    
     // MARK: Private Functions
     
     private func renameNavigationBackButton() {

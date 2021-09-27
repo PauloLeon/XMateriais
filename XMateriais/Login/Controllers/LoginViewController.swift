@@ -34,6 +34,8 @@ class LoginViewController: UIViewController {
         signUpButton.layer.cornerRadius = kTwo
         signUpButton.layer.borderWidth = kBorderWidth
         signUpButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
+        self.navigationController?.navigationBar.tintColor = UIColor.getPrimaryColor()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     // MARK: IBActions's

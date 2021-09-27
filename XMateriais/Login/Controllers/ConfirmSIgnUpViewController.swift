@@ -21,6 +21,7 @@ class ConfirmSIgnUpViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setTextFieldDelegate()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     // MARK: Private Functions

@@ -43,6 +43,7 @@ class SignInViewController: UIViewController {
         continueButton.backgroundColor = UIColor.getDisableColor()
         continueButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         continueButton.setTitleColor(UIColor.getDisableTextColor(), for: .disabled)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func setTextFieldDelegate() {

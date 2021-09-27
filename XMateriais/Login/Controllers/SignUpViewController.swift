@@ -37,6 +37,7 @@ class SignUpViewController: UIViewController {
         collaboratorButtonNormalState()
         researcherButtonNormalState()
         continueButtonState(isDisable: true)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func collaboratorButtonNormalState() {
