@@ -61,18 +61,24 @@ class VisualAnalysisViewController: UIViewController {
         setupUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        removeNavigationBorder()
-    }
-    
     // MARK: Private Functions
     
     private func setupUI() {
         continueButton.layer.cornerRadius = kTwo
         renameNavigationBackButton()
+        removeNavigationBorder()
         roundedButtons()
-        
+        roundedView()
+    }
+    
+    private func renameNavigationBackButton() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+
+    private func removeNavigationBorder() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
     private func roundedView() {
@@ -115,56 +121,197 @@ class VisualAnalysisViewController: UIViewController {
         RoundedHelper.roundButtons(button: ssensationFourMinusTwoButton)
         RoundedHelper.roundButtons(button: sensationFourMinusThreeButton)
     }
-    
-    private func renameNavigationBackButton() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-    }
-
-    private func removeNavigationBorder() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.layoutIfNeeded()
-    }
+    private func selectButton(button: UIButton) {
+           button.backgroundColor = UIColor.getPrimaryColor()
+       }
+       
+       private func deselectButton(button: UIButton) {
+           button.backgroundColor = UIColor.getDeselectRadioButtonColor()
+       }
+       
+       private func deselectGroup(type: RadioGroup) {
+           switch type {
+           case .RadioOne:
+               deselectButton(button: sensationOneZeroButton)
+               deselectButton(button: sensationOneOneButton)
+               deselectButton(button: sensationOneTwoButton)
+               deselectButton(button: sensationOneThreeButton)
+               deselectButton(button: sensationOneMinusOneButton)
+               deselectButton(button: sensationOneMinusTwoButton)
+               deselectButton(button: sensationOneMinusThreeButton)
+           case .RadioTwo:
+               deselectButton(button: sensationTwoZeroButton)
+               deselectButton(button: sensationTwoOneButton)
+               deselectButton(button: sensationTwoTwoButton)
+               deselectButton(button: sensationTwoThreeButton)
+               deselectButton(button: sensationTwoMinusOneButton)
+               deselectButton(button: sensationTwoMinusTwoButton)
+               deselectButton(button: sensationTwoMinusThreeButton)
+           case .RadioThree:
+               deselectButton(button: sensationThreeZeroButton)
+               deselectButton(button: sensationThreeOneButton)
+               deselectButton(button: sensationThreeTwoButton)
+               deselectButton(button: sensationThreeThreeButton)
+               deselectButton(button: sensationThreeMinusOneButton)
+               deselectButton(button: sensationThreeMinusTwoButton)
+               deselectButton(button: sensationThreeMinusThreeButton)
+           case .RadioFour:
+               deselectButton(button: sensationFourZeroButton)
+               deselectButton(button: sensationFourOneButton)
+               deselectButton(button: sensationFourTwoButton)
+               deselectButton(button: sensationFourThreeButton)
+               deselectButton(button: sensationFourMinusOneButton)
+               deselectButton(button: ssensationFourMinusTwoButton)
+               deselectButton(button: sensationFourMinusThreeButton)
+           case .RadioFive:
+                return
+        }
+       }
     
     // MARK: IBAction's
-
-    @IBAction func sensationOneZeroDidPressed(_ sender: Any) {}
-    @IBAction func sensationOneOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationOneTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationOneThreeDidPressed(_ sender: Any) {}
-    @IBAction func sensationOneMinusOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationOneMinusTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationOneMinusThreeDidPressed(_ sender: Any) {}
     
-    @IBAction func sensationTwoZeroDidPressed(_ sender: Any) {}
-    @IBAction func sensationTwoOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationTwoTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationTwoThreeDidPressed(_ sender: Any) {}
-    @IBAction func sensationTwoMinusOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationTwoMinusTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationTwoMinusThreeDidPressed(_ sender: Any) {}
+    @IBAction func sensationOneZeroDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneZeroButton)
+    }
+    
+    @IBAction func sensationOneOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneOneButton)
+    }
 
-    @IBAction func sensationThreeZeroDidPressed(_ sender: Any) {}
-    @IBAction func sensationThreeOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationThreeTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationThreeThreeDidPressed(_ sender: Any) {}
-    @IBAction func sensationThreeMinusOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationThreeMinusTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationThreeMinusThreeDidPressed(_ sender: Any) {}
+    @IBAction func sensationOneTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneTwoButton)
+    }
+    
+    @IBAction func sensationOneThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneThreeButton)
+    }
+    
+    @IBAction func sensationOneMinusOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneMinusOneButton)
+    }
+    
+    @IBAction func sensationOneMinusTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneMinusTwoButton)
+    }
+    
+    @IBAction func sensationOneMinusThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioOne)
+        selectButton(button: sensationOneMinusThreeButton)
+    }
+    
+    @IBAction func sensationTwoZeroDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoZeroButton)
+    }
+    
+    @IBAction func sensationTwoOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoOneButton)
+    }
+    
+    @IBAction func sensationTwoTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoTwoButton)
+    }
+    
+    @IBAction func sensationTwoThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoThreeButton)
+    }
+    
+    @IBAction func sensationTwoMinusOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoMinusOneButton)
+    }
+    
+    @IBAction func sensationTwoMinusTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoMinusTwoButton)
+    }
+    
+    @IBAction func sensationTwoMinusThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioTwo)
+        selectButton(button: sensationTwoMinusThreeButton)
+    }
+    
 
-    @IBAction func sensationFourZeroDidPressed(_ sender: Any) {}
-    @IBAction func sensationFourOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationFourTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationFourThreeDidPressed(_ sender: Any) {}
-    @IBAction func sensationFourMinusOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationFourMinusTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationFourMinusThreeDidPressed(_ sender: Any) {}
+    @IBAction func sensationThreeZeroDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeZeroButton)
+    }
+    
+    @IBAction func sensationThreeOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeOneButton)
+    }
+    
+    @IBAction func sensationThreeTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeTwoButton)
+    }
+    
+    @IBAction func sensationThreeThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeThreeButton)
+    }
+    
+    @IBAction func sensationThreeMinusOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeMinusOneButton)
+    }
+    
+    @IBAction func sensationThreeMinusTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeMinusTwoButton)
+    }
+    
+    @IBAction func sensationThreeMinusThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioThree)
+        selectButton(button: sensationThreeMinusThreeButton)
+    }
+    
+    @IBAction func sensationFourZeroDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationFourZeroButton)
+    }
+    
+    @IBAction func sensationFourOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationFourOneButton)
+    }
+    
+    @IBAction func sensationFourTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationFourTwoButton)
+    }
+    
+    @IBAction func sensationFourThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationFourThreeButton)
+    }
+    
+    @IBAction func sensationFourMinusOneDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationFourMinusOneButton)
+    }
+    
+    
+    @IBAction func sensationFourMinusTwoDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: ssensationFourMinusTwoButton)
+    }
+    
+    @IBAction func sensationFourMinusThreeDidPressed(_ sender: Any) {
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationFourMinusThreeButton)
+    }
 
-    @IBAction func sensationFiveZeroDidPressed(_ sender: Any) {}
-    @IBAction func ssensationFiveOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationFiveTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationFiveThreeDidPressed(_ sender: Any) {}
-    @IBAction func sensationFiveMinusOneDidPressed(_ sender: Any) {}
-    @IBAction func sensationFiveMinusTwoDidPressed(_ sender: Any) {}
-    @IBAction func sensationFiveMinusThreeDidPressed(_ sender: Any) {}
+
+    @IBAction func continueButtonDidPressed(_ sender: Any) {}
 }
