@@ -32,6 +32,9 @@
 		0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */; };
 		0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */; };
 		0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */; };
+		0BA466D727039D7600885E00 /* SensationAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA466D627039D7600885E00 /* SensationAnalysisViewController.swift */; };
+		0BA466D927039DA000885E00 /* VisualAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA466D827039DA000885E00 /* VisualAnalysisViewController.swift */; };
+		0BA466DB2703A28F00885E00 /* RoundedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA466DA2703A28F00885E00 /* RoundedHelper.swift */; };
 		0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148DF2703515C004570A3 /* SampleResultViewController.swift */; };
 		0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */; };
 		0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E327035268004570A3 /* RegisterSampleViewController.swift */; };
@@ -102,6 +105,9 @@
 		0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
 		0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		0BA466D627039D7600885E00 /* SensationAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensationAnalysisViewController.swift; sourceTree = "<group>"; };
+		0BA466D827039DA000885E00 /* VisualAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualAnalysisViewController.swift; sourceTree = "<group>"; };
+		0BA466DA2703A28F00885E00 /* RoundedHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHelper.swift; sourceTree = "<group>"; };
 		0BD148DF2703515C004570A3 /* SampleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleResultViewController.swift; sourceTree = "<group>"; };
 		0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSuccessViewController.swift; sourceTree = "<group>"; };
 		0BD148E327035268004570A3 /* RegisterSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +316,7 @@
 			children = (
 				0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */,
 				0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */,
+				0BA466DA2703A28F00885E00 /* RoundedHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -338,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				0BFC665E270070450018E5D1 /* LoggedCollaboratorViewController.swift */,
+				0BA466D627039D7600885E00 /* SensationAnalysisViewController.swift */,
+				0BA466D827039DA000885E00 /* VisualAnalysisViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -627,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA466D927039DA000885E00 /* VisualAnalysisViewController.swift in Sources */,
 				0BFC6661270070560018E5D1 /* LoggedResearcherViewController.swift in Sources */,
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
 				0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */,
@@ -634,6 +644,7 @@
 				0BFC665F270070450018E5D1 /* LoggedCollaboratorViewController.swift in Sources */,
 				0BFC66632700706E0018E5D1 /* InstagramWebViewController.swift in Sources */,
 				0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */,
+				0BA466DB2703A28F00885E00 /* RoundedHelper.swift in Sources */,
 				0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */,
 				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
 				0BFC666B270200230018E5D1 /* FirstPresentationViewController.swift in Sources */,
@@ -648,6 +659,7 @@
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
 				0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */,
 				0BFC667127021CC50018E5D1 /* RegistrationResearcherViewController.swift in Sources */,
+				0BA466D727039D7600885E00 /* SensationAnalysisViewController.swift in Sources */,
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
 				0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */,
 				0BFC66752702453B0018E5D1 /* RegistrationResearcherViewController+UIPickerViewDelegate.swift in Sources */,

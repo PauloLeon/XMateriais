@@ -37,4 +37,8 @@ extension UIColor {
     class func getDisableTextColor() -> UIColor {
         return UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.00)
     }
+    
+    class func getDeselectRadioButtonColor() -> UIColor {
+        return UIColor(red:1.00, green:0.85, blue:0.76, alpha:1.00)
+    }
 }

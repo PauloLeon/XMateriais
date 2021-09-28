@@ -157,7 +157,7 @@
         <!--Análise de sensações-->
         <scene sceneID="Wus-Nx-N8Z">
             <objects>
-                <viewController id="M8s-zf-SAG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SensationAnalysisViewController" id="M8s-zf-SAG" customClass="SensationAnalysisViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj2-3k-Uhp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="840"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,38 +197,19 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24h-J8-Nh7">
-                                                        <rect key="frame" x="160" y="48" width="40" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGp-wf-x6k">
+                                                        <rect key="frame" x="8" y="48" width="40" height="40"/>
                                                         <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="IA7-uz-v9u"/>
-                                                            <constraint firstAttribute="height" constant="40" id="Icf-k1-Rgq"/>
-                                                        </constraints>
-                                                        <state key="normal" title="0">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-vr-QK8">
-                                                        <rect key="frame" x="312" y="48" width="40" height="40"/>
-                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="6i3-Qe-a6j"/>
-                                                            <constraint firstAttribute="height" constant="40" id="D9K-VA-iiS"/>
+                                                            <constraint firstAttribute="height" constant="40" id="Eah-gg-4yP"/>
+                                                            <constraint firstAttribute="width" constant="40" id="jd4-EC-eCa"/>
                                                         </constraints>
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-iP-FGJ">
-                                                        <rect key="frame" x="108" y="48" width="40" height="40"/>
-                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="Z5I-dc-kCs"/>
-                                                            <constraint firstAttribute="height" constant="40" id="Zsa-HS-aPW"/>
-                                                        </constraints>
-                                                        <state key="normal" title="1">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
+                                                        <connections>
+                                                            <action selector="sensationOneMinusThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="7XR-aH-DUo"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-kq-53C">
                                                         <rect key="frame" x="58" y="48" width="40" height="40"/>
@@ -240,17 +221,37 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationOneMinusTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="bQK-bq-fXS"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGp-wf-x6k">
-                                                        <rect key="frame" x="8" y="48" width="40" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-iP-FGJ">
+                                                        <rect key="frame" x="108" y="48" width="40" height="40"/>
                                                         <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="Eah-gg-4yP"/>
-                                                            <constraint firstAttribute="width" constant="40" id="jd4-EC-eCa"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Z5I-dc-kCs"/>
+                                                            <constraint firstAttribute="height" constant="40" id="Zsa-HS-aPW"/>
                                                         </constraints>
-                                                        <state key="normal" title="3">
+                                                        <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationOneMinusOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="Jin-U4-ekJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24h-J8-Nh7">
+                                                        <rect key="frame" x="160" y="48" width="40" height="40"/>
+                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="IA7-uz-v9u"/>
+                                                            <constraint firstAttribute="height" constant="40" id="Icf-k1-Rgq"/>
+                                                        </constraints>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sensationOneZeroDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="wki-Ze-ML5"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8N-SO-FvM">
                                                         <rect key="frame" x="212" y="48" width="40" height="40"/>
@@ -262,6 +263,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationOneOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="NcV-Ge-xft"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfk-W1-awu">
                                                         <rect key="frame" x="262" y="48" width="40" height="40"/>
@@ -273,6 +277,23 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationOneTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="VGN-TR-h6u"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-vr-QK8">
+                                                        <rect key="frame" x="312" y="48" width="40" height="40"/>
+                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="6i3-Qe-a6j"/>
+                                                            <constraint firstAttribute="height" constant="40" id="D9K-VA-iiS"/>
+                                                        </constraints>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sensationOneThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="9tj-5L-leE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
@@ -305,50 +326,31 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAw-zF-fQf">
                                                 <rect key="frame" x="7.5" y="200" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGE-G3-ZqW">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rígido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGE-G3-ZqW">
+                                                        <rect key="frame" x="8" y="8" width="48.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adu-a8-rtH">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maleável" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adu-a8-rtH">
+                                                        <rect key="frame" x="284" y="8" width="68" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drr-9s-uEz">
-                                                        <rect key="frame" x="160" y="48" width="40" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-p7-sH0">
+                                                        <rect key="frame" x="8" y="48" width="40" height="40"/>
                                                         <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="5QI-77-Un7"/>
-                                                            <constraint firstAttribute="width" constant="40" id="Uys-xo-T0z"/>
-                                                        </constraints>
-                                                        <state key="normal" title="0">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-Y9-WnR">
-                                                        <rect key="frame" x="312" y="48" width="40" height="40"/>
-                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="HH6-qr-vav"/>
-                                                            <constraint firstAttribute="width" constant="40" id="Zvv-Mi-d9g"/>
+                                                            <constraint firstAttribute="height" constant="40" id="1Gf-Qg-x9y"/>
+                                                            <constraint firstAttribute="width" constant="40" id="kQ0-gn-nc8"/>
                                                         </constraints>
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D93-IP-p4C">
-                                                        <rect key="frame" x="108" y="48" width="40" height="40"/>
-                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="JFN-a5-x25"/>
-                                                            <constraint firstAttribute="height" constant="40" id="tby-AQ-Fhe"/>
-                                                        </constraints>
-                                                        <state key="normal" title="1">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoMinusThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="iaQ-ZY-Oat"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="698-jx-nsV">
                                                         <rect key="frame" x="58" y="48" width="40" height="40"/>
@@ -360,17 +362,37 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoMinusTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="l9G-vD-yhh"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-p7-sH0">
-                                                        <rect key="frame" x="8" y="48" width="40" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D93-IP-p4C">
+                                                        <rect key="frame" x="108" y="48" width="40" height="40"/>
                                                         <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="1Gf-Qg-x9y"/>
-                                                            <constraint firstAttribute="width" constant="40" id="kQ0-gn-nc8"/>
+                                                            <constraint firstAttribute="width" constant="40" id="JFN-a5-x25"/>
+                                                            <constraint firstAttribute="height" constant="40" id="tby-AQ-Fhe"/>
                                                         </constraints>
-                                                        <state key="normal" title="3">
+                                                        <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoMinusOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="JJC-g9-lNM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drr-9s-uEz">
+                                                        <rect key="frame" x="160" y="48" width="40" height="40"/>
+                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5QI-77-Un7"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Uys-xo-T0z"/>
+                                                        </constraints>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoZeroDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="Vvr-Jt-6r6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-6S-VON">
                                                         <rect key="frame" x="212" y="48" width="40" height="40"/>
@@ -382,6 +404,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="lsz-yS-45N"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JK-r3-fyY">
                                                         <rect key="frame" x="262" y="48" width="40" height="40"/>
@@ -393,6 +418,23 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="Axe-95-vZ6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-Y9-WnR">
+                                                        <rect key="frame" x="312" y="48" width="40" height="40"/>
+                                                        <color key="backgroundColor" red="0.99607843139999996" green="0.84705882349999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="HH6-qr-vav"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Zvv-Mi-d9g"/>
+                                                        </constraints>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sensationTwoThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="OsT-Yd-QgP"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -425,14 +467,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hww-a5-2tY">
                                                 <rect key="frame" x="7.5" y="320" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snX-tz-Ywk">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snX-tz-Ywk">
+                                                        <rect key="frame" x="8" y="8" width="77" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-UU-cGM">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frágil" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-UU-cGM">
+                                                        <rect key="frame" x="308.5" y="8" width="43.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -447,6 +489,9 @@
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeZeroDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="QuM-3n-Zhs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9J-Iw-rmj">
                                                         <rect key="frame" x="312" y="48" width="40" height="40"/>
@@ -458,6 +503,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="R8N-g8-Uu6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyt-oX-w5h">
                                                         <rect key="frame" x="108" y="48" width="40" height="40"/>
@@ -469,6 +517,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeMinusOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="yhL-qC-BZY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLg-HC-ipp">
                                                         <rect key="frame" x="58" y="48" width="40" height="40"/>
@@ -480,6 +531,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeMinusTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="UO2-Cf-rhe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-sg-gv6">
                                                         <rect key="frame" x="8" y="48" width="40" height="40"/>
@@ -491,6 +545,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeMinusThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="a1X-pe-vva"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kje-nI-7Co">
                                                         <rect key="frame" x="212" y="48" width="40" height="40"/>
@@ -502,6 +559,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="21Y-gG-fLQ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCZ-lc-taB">
                                                         <rect key="frame" x="262" y="48" width="40" height="40"/>
@@ -513,6 +573,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationThreeTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="NaM-pH-Z99"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -545,14 +608,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcz-At-hV7">
                                                 <rect key="frame" x="7.5" y="440" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Za-A5-VHG">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rugoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Za-A5-VHG">
+                                                        <rect key="frame" x="8" y="8" width="57" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7F-Mu-uHi">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uniforme" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7F-Mu-uHi">
+                                                        <rect key="frame" x="283" y="8" width="69" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -567,6 +630,9 @@
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourZeroDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="UVk-fQ-pI7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTF-lf-lJS">
                                                         <rect key="frame" x="312" y="48" width="40" height="40"/>
@@ -578,6 +644,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="cmB-u9-vvB"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8L-d3-A9O">
                                                         <rect key="frame" x="108" y="48" width="40" height="40"/>
@@ -589,6 +658,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourMinusOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="Eyq-Yp-oDV"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCz-TW-YTR">
                                                         <rect key="frame" x="58" y="48" width="40" height="40"/>
@@ -600,6 +672,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourMinusTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="V2B-Hi-TAZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gV-c0-jqz">
                                                         <rect key="frame" x="8" y="48" width="40" height="40"/>
@@ -611,6 +686,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourMinusThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="YEY-CH-Blf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Id-No-suJ">
                                                         <rect key="frame" x="212" y="48" width="40" height="40"/>
@@ -622,6 +700,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="6Yh-18-zM6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlI-Tg-6Sk">
                                                         <rect key="frame" x="262" y="48" width="40" height="40"/>
@@ -633,6 +714,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFourTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="4vh-pk-7nH"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -665,14 +749,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-wA-lt8">
                                                 <rect key="frame" x="7.5" y="560" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hi-jv-6Z1">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hi-jv-6Z1">
+                                                        <rect key="frame" x="8" y="8" width="32.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbq-p8-RCk">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pesado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbq-p8-RCk">
+                                                        <rect key="frame" x="296" y="8" width="56" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -687,6 +771,9 @@
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFiveZeroDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="UYC-tw-XIk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dif-sC-AWx">
                                                         <rect key="frame" x="312" y="48" width="40" height="40"/>
@@ -698,6 +785,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFiveThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="P2d-nA-adT"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-0V-Jlp">
                                                         <rect key="frame" x="108" y="48" width="40" height="40"/>
@@ -709,6 +799,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFiveMinusOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="abg-HP-R7X"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGA-T0-hF4">
                                                         <rect key="frame" x="58" y="48" width="40" height="40"/>
@@ -720,6 +813,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFiveMinusTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="OOn-sn-6OZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-Oy-mfW">
                                                         <rect key="frame" x="8" y="48" width="40" height="40"/>
@@ -731,6 +827,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFiveMinusThreeDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="hL0-7c-9xJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-ta-rHb">
                                                         <rect key="frame" x="212" y="48" width="40" height="40"/>
@@ -742,6 +841,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="ssensationFiveOneDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="sqz-2o-PT4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-0k-K2W">
                                                         <rect key="frame" x="262" y="48" width="40" height="40"/>
@@ -753,6 +855,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sensationFiveTwoDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="02S-TH-yGc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -789,11 +894,12 @@
                                                     <constraint firstAttribute="height" constant="36" id="OOg-Xc-Rlp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
-                                                <state key="normal" title="Validar">
+                                                <state key="normal" title="Continuar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="continueButtonDidPressed:" destination="rx1-3O-sI2" eventType="touchUpInside" id="QAM-xt-VuA"/>
+                                                    <action selector="continueButtonDidPressed:" destination="M8s-zf-SAG" eventType="touchUpInside" id="hKn-rh-SeP"/>
                                                     <segue destination="YXQ-Uc-Ggg" kind="show" id="7Ac-gc-hzS"/>
                                                 </connections>
                                             </button>
@@ -842,10 +948,53 @@
                     </view>
                     <navigationItem key="navigationItem" title="Análise de sensações" id="7hS-6h-vHl"/>
                     <size key="freeformSize" width="375" height="840"/>
+                    <connections>
+                        <outlet property="continueButton" destination="RN3-av-Moc" id="9he-kR-LNk"/>
+                        <outlet property="sensationFiveMinusOneButton" destination="FgQ-0V-Jlp" id="Lyq-KM-9EG"/>
+                        <outlet property="sensationFiveMinusThreeButton" destination="6cg-Oy-mfW" id="SmU-Xv-rrI"/>
+                        <outlet property="sensationFiveMinusTwoButton" destination="xGA-T0-hF4" id="I5Z-Bv-bow"/>
+                        <outlet property="sensationFiveOneButton" destination="K6D-ta-rHb" id="L3T-W4-eII"/>
+                        <outlet property="sensationFiveThreeButton" destination="dif-sC-AWx" id="oay-r7-y2u"/>
+                        <outlet property="sensationFiveTwoButton" destination="jTD-0k-K2W" id="g0B-VR-mez"/>
+                        <outlet property="sensationFiveView" destination="vKU-wA-lt8" id="xNA-il-yr5"/>
+                        <outlet property="sensationFiveZeroButton" destination="y1T-R3-o4O" id="Nkc-aH-m7v"/>
+                        <outlet property="sensationFourMinusOneButton" destination="c8L-d3-A9O" id="aMY-gi-AmX"/>
+                        <outlet property="sensationFourMinusThreeButton" destination="1gV-c0-jqz" id="v3y-KZ-ye3"/>
+                        <outlet property="sensationFourOneButton" destination="0Id-No-suJ" id="ViA-Wm-zJx"/>
+                        <outlet property="sensationFourThreeButton" destination="vTF-lf-lJS" id="2Bz-Mx-RPI"/>
+                        <outlet property="sensationFourTwoButton" destination="jlI-Tg-6Sk" id="7sm-UP-9dh"/>
+                        <outlet property="sensationFourView" destination="Hcz-At-hV7" id="u2O-RO-FET"/>
+                        <outlet property="sensationFourZeroButton" destination="gXD-6K-uCc" id="hzf-X8-PQa"/>
+                        <outlet property="sensationOneMinusOneButton" destination="Aku-iP-FGJ" id="y5v-vc-gVS"/>
+                        <outlet property="sensationOneMinusThreeButton" destination="cGp-wf-x6k" id="vUs-M1-dC6"/>
+                        <outlet property="sensationOneMinusTwoButton" destination="dMc-kq-53C" id="bCh-t9-4CM"/>
+                        <outlet property="sensationOneOneButton" destination="j8N-SO-FvM" id="bjj-xH-Xeb"/>
+                        <outlet property="sensationOneThreeButton" destination="Aho-vr-QK8" id="L5q-wE-GB8"/>
+                        <outlet property="sensationOneTwoButton" destination="Jfk-W1-awu" id="M0h-0H-nAK"/>
+                        <outlet property="sensationOneView" destination="RsZ-oC-0wR" id="Bet-AP-Cyr"/>
+                        <outlet property="sensationOneZeroButton" destination="24h-J8-Nh7" id="kAY-Rd-Swn"/>
+                        <outlet property="sensationThreeMinusOneButton" destination="lyt-oX-w5h" id="1Xy-wm-POL"/>
+                        <outlet property="sensationThreeMinusThreeButton" destination="6wK-sg-gv6" id="tpe-Zh-Y5G"/>
+                        <outlet property="sensationThreeMinusTwoButton" destination="mLg-HC-ipp" id="PzA-Eh-gDm"/>
+                        <outlet property="sensationThreeOneButton" destination="kje-nI-7Co" id="bvp-HE-2Yg"/>
+                        <outlet property="sensationThreeThreeButton" destination="a9J-Iw-rmj" id="c2f-qz-Rj7"/>
+                        <outlet property="sensationThreeTwoButton" destination="YCZ-lc-taB" id="CYE-Zc-D8w"/>
+                        <outlet property="sensationThreeView" destination="Hww-a5-2tY" id="2eJ-Pb-sIf"/>
+                        <outlet property="sensationThreeZeroButton" destination="PGQ-gd-SSX" id="fpi-Km-lzh"/>
+                        <outlet property="sensationTwoMinusOneButton" destination="D93-IP-p4C" id="DVU-wC-qP2"/>
+                        <outlet property="sensationTwoMinusThreeButton" destination="Gfl-p7-sH0" id="YG6-r9-LiM"/>
+                        <outlet property="sensationTwoMinusTwoButton" destination="698-jx-nsV" id="9QH-32-OUp"/>
+                        <outlet property="sensationTwoOneButton" destination="UNK-6S-VON" id="lOp-RB-9LM"/>
+                        <outlet property="sensationTwoThreeButton" destination="VHB-Y9-WnR" id="uKD-uh-xqH"/>
+                        <outlet property="sensationTwoTwoButton" destination="4JK-r3-fyY" id="w42-0a-IOd"/>
+                        <outlet property="sensationTwoView" destination="mAw-zF-fQf" id="qBs-1u-upx"/>
+                        <outlet property="sensationTwoZeroButton" destination="drr-9s-uEz" id="dw0-ae-uJa"/>
+                        <outlet property="ssensationFourMinusTwoButton" destination="zCz-TW-YTR" id="Dym-10-2EL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NN1-B3-zJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="77"/>
+            <point key="canvasLocation" x="806" y="77"/>
         </scene>
         <!--Sobre-->
         <scene sceneID="qfH-03-Ln9">
@@ -1035,10 +1184,10 @@
             </objects>
             <point key="canvasLocation" x="740" y="914"/>
         </scene>
-        <!--Análise de sensações-->
+        <!--Análise visual-->
         <scene sceneID="NAS-I5-5XY">
             <objects>
-                <viewController id="YXQ-Uc-Ggg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VisualAnalysisViewController" id="YXQ-Uc-Ggg" customClass="VisualAnalysisViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vj-r9-iPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1066,14 +1215,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ew-or-agf">
                                                 <rect key="frame" x="7.5" y="80" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M97-9p-Ywo">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brilhoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M97-9p-Ywo">
+                                                        <rect key="frame" x="8" y="8" width="61" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-BF-zLK">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opaco" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-BF-zLK">
+                                                        <rect key="frame" x="299.5" y="8" width="52.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1186,14 +1335,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N0-4B-tXS">
                                                 <rect key="frame" x="7.5" y="200" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7t-II-54k">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uniforme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7t-II-54k">
+                                                        <rect key="frame" x="8" y="8" width="69" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ec-Bt-utj">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não Uniforme" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ec-Bt-utj">
+                                                        <rect key="frame" x="247.5" y="8" width="104.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1306,14 +1455,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiG-FJ-qEp">
                                                 <rect key="frame" x="7.5" y="320" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkP-pa-xmn">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pegajoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkP-pa-xmn">
+                                                        <rect key="frame" x="8" y="8" width="70" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Dl-WIR">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não Pegajoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Dl-WIR">
+                                                        <rect key="frame" x="247" y="8" width="105" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1426,14 +1575,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mf7-H3-NSv">
                                                 <rect key="frame" x="7.5" y="440" width="360" height="96"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMR-YH-h5g">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fibroso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMR-YH-h5g">
+                                                        <rect key="frame" x="8" y="8" width="56" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-EE-tQu">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não Fibroso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-EE-tQu">
+                                                        <rect key="frame" x="260.5" y="8" width="91.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1550,7 +1699,7 @@
                                                     <constraint firstAttribute="height" constant="36" id="bmo-iD-btA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
-                                                <state key="normal" title="Validar">
+                                                <state key="normal" title="Continuar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1598,12 +1747,47 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DYb-Cc-Tfq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Análise de sensações" id="htm-cO-Gfh"/>
+                    <navigationItem key="navigationItem" title="Análise visual" id="htm-cO-Gfh"/>
                     <size key="freeformSize" width="375" height="680"/>
+                    <connections>
+                        <outlet property="continueButton" destination="Y8S-C8-g75" id="utg-A6-tE8"/>
+                        <outlet property="sensationFourMinusOneButton" destination="wR7-Dt-q99" id="unF-Fb-AAK"/>
+                        <outlet property="sensationFourMinusThreeButton" destination="sIN-Hz-oc9" id="U10-yI-XtY"/>
+                        <outlet property="sensationFourOneButton" destination="uS2-s3-vzD" id="lb6-eP-qGD"/>
+                        <outlet property="sensationFourThreeButton" destination="BRO-ZH-Eb6" id="vgR-Po-8UM"/>
+                        <outlet property="sensationFourTwoButton" destination="w6d-RJ-nws" id="uwY-EA-urk"/>
+                        <outlet property="sensationFourView" destination="mf7-H3-NSv" id="RP3-px-Lb6"/>
+                        <outlet property="sensationFourZeroButton" destination="AEl-xL-BIU" id="3ca-FG-gfo"/>
+                        <outlet property="sensationOneMinusOneButton" destination="m0y-n6-7r5" id="y9O-1k-JBo"/>
+                        <outlet property="sensationOneMinusThreeButton" destination="haA-JZ-WoV" id="yaE-gE-2M6"/>
+                        <outlet property="sensationOneMinusTwoButton" destination="qCa-HN-tHZ" id="vln-RP-wNT"/>
+                        <outlet property="sensationOneOneButton" destination="Rz8-1e-2yZ" id="0EB-AI-VBz"/>
+                        <outlet property="sensationOneThreeButton" destination="bhb-gd-g6C" id="bb9-V8-UXH"/>
+                        <outlet property="sensationOneTwoButton" destination="jeG-eR-UYO" id="xJb-ZX-1uF"/>
+                        <outlet property="sensationOneView" destination="7Ew-or-agf" id="MSs-B1-LXr"/>
+                        <outlet property="sensationOneZeroButton" destination="tVS-2D-Vbw" id="9To-ZZ-yL7"/>
+                        <outlet property="sensationThreeMinusOneButton" destination="ald-Zo-4F2" id="sIU-2S-xtI"/>
+                        <outlet property="sensationThreeMinusThreeButton" destination="oca-qO-b2w" id="5NO-PA-oN7"/>
+                        <outlet property="sensationThreeMinusTwoButton" destination="dw3-lA-V9I" id="Qel-A2-Nrr"/>
+                        <outlet property="sensationThreeOneButton" destination="HSi-K4-wcM" id="1sY-hC-wo7"/>
+                        <outlet property="sensationThreeThreeButton" destination="J60-Hn-xCH" id="D0k-na-vbz"/>
+                        <outlet property="sensationThreeTwoButton" destination="Atw-FX-aem" id="4bu-B2-B5q"/>
+                        <outlet property="sensationThreeView" destination="XiG-FJ-qEp" id="6Ra-mr-u83"/>
+                        <outlet property="sensationThreeZeroButton" destination="XQx-V8-Rfx" id="oVY-EA-LVv"/>
+                        <outlet property="sensationTwoMinusOneButton" destination="xFa-Sa-DCp" id="FrF-6k-25D"/>
+                        <outlet property="sensationTwoMinusThreeButton" destination="pSh-tq-8xI" id="Tye-wa-EFj"/>
+                        <outlet property="sensationTwoMinusTwoButton" destination="Wjv-EK-VWd" id="FYK-KM-AdY"/>
+                        <outlet property="sensationTwoOneButton" destination="JI6-QO-zrZ" id="6RP-Bj-jLd"/>
+                        <outlet property="sensationTwoThreeButton" destination="OS8-xL-s4B" id="nNH-EX-VYL"/>
+                        <outlet property="sensationTwoTwoButton" destination="qgf-zK-rby" id="nT2-Ei-c3u"/>
+                        <outlet property="sensationTwoView" destination="4N0-4B-tXS" id="xSd-x6-Ai8"/>
+                        <outlet property="sensationTwoZeroButton" destination="ah6-rs-7EH" id="0yf-DB-7po"/>
+                        <outlet property="ssensationFourMinusTwoButton" destination="S05-4J-SOh" id="v9y-k5-YWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u75-rA-q7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543" y="148"/>
+            <point key="canvasLocation" x="1518" y="148"/>
         </scene>
     </scenes>
     <resources>
