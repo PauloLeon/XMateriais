@@ -9,15 +9,32 @@
 import UIKit
 
 class ConfirmSuccessViewController: UIViewController {
+   
+    // MARK: IBOutlet's
+
+    @IBOutlet weak var continueButton: UIButton!
+    
+    // MARK: Variable's
+    
+    let kTwo: CGFloat = 2.0
+    
+    // MARK: Override Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+    }
+    
+    // MARK: Private Functions
+    
+    private func setupUI() {
+        continueButton.layer.cornerRadius = kTwo
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func removeNavigationBorder() {

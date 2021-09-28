@@ -10,11 +10,19 @@ import UIKit
 
 class SecondPresentationViewController: UIViewController {
 
+    // MARK: IBOutlet's
+
+    @IBOutlet weak var continueButton: UIButton!
+    
+    // MARK: Variable's
+    
+    let kTwo: CGFloat = 2.0
+    
     // MARK: Override Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        renameNavigationBackButton()
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -23,6 +31,11 @@ class SecondPresentationViewController: UIViewController {
     }
     
     // MARK: Private Functions
+    
+    private func setupUI() {
+        continueButton.layer.cornerRadius = kTwo
+        renameNavigationBackButton()
+    }
     
     private func renameNavigationBackButton() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)

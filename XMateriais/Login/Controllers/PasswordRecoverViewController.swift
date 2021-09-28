@@ -16,6 +16,11 @@ class PasswordRecoverViewController: UIViewController {
     @IBOutlet weak var errorEmailLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     
+    // MARK: Variable's
+    
+    let kTwo: CGFloat = 2.0
+    let kBorderWidth: CGFloat = 1.0
+    
     // MARK: Override Functions
 
     override func viewDidLoad() {
@@ -33,6 +38,7 @@ class PasswordRecoverViewController: UIViewController {
     private func setupUI() {
         emailTextField.delegate = self
         errorEmailLabel.isHidden = true
+        continueButton.layer.cornerRadius = kTwo
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

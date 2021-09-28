@@ -32,6 +32,10 @@
 		0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */; };
 		0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */; };
 		0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */; };
+		0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148DF2703515C004570A3 /* SampleResultViewController.swift */; };
+		0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */; };
+		0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E327035268004570A3 /* RegisterSampleViewController.swift */; };
+		0BD148E627035274004570A3 /* RegisterSampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */; };
 		0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */; };
 		0BFC665127005F2F0018E5D1 /* ConfirmSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */; };
 		0BFC665B2700655A0018E5D1 /* LoggedCollaborator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */; };
@@ -98,6 +102,10 @@
 		0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0B78A54D2700515500DF6A0A /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
 		0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		0BD148DF2703515C004570A3 /* SampleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleResultViewController.swift; sourceTree = "<group>"; };
+		0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSuccessViewController.swift; sourceTree = "<group>"; };
+		0BD148E327035268004570A3 /* RegisterSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewController.swift; sourceTree = "<group>"; };
+		0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleSuccessViewController.swift; sourceTree = "<group>"; };
 		0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSIgnUpViewController.swift; sourceTree = "<group>"; };
 		0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSuccessViewController.swift; sourceTree = "<group>"; };
 		0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedCollaborator.storyboard; sourceTree = "<group>"; };
@@ -353,6 +361,10 @@
 			isa = PBXGroup;
 			children = (
 				0BFC6660270070560018E5D1 /* LoggedResearcherViewController.swift */,
+				0BD148DF2703515C004570A3 /* SampleResultViewController.swift */,
+				0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */,
+				0BD148E327035268004570A3 /* RegisterSampleViewController.swift */,
+				0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -617,6 +629,8 @@
 			files = (
 				0BFC6661270070560018E5D1 /* LoggedResearcherViewController.swift in Sources */,
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
+				0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */,
+				0BD148E627035274004570A3 /* RegisterSampleSuccessViewController.swift in Sources */,
 				0BFC665F270070450018E5D1 /* LoggedCollaboratorViewController.swift in Sources */,
 				0BFC66632700706E0018E5D1 /* InstagramWebViewController.swift in Sources */,
 				0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */,
@@ -625,6 +639,8 @@
 				0BFC666B270200230018E5D1 /* FirstPresentationViewController.swift in Sources */,
 				0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */,
 				0BFC6673270241110018E5D1 /* RegistrationCollaboratorViewController+UIPickerViewDelegate.swift in Sources */,
+				0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */,
+				0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */,
 				0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */,
 				0BFC666D2702002F0018E5D1 /* SecondPresentationViewController.swift in Sources */,
 				0BFC666F27021CB20018E5D1 /* RegistrationCollaboratorViewController.swift in Sources */,

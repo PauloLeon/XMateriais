@@ -63,7 +63,8 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="c7j-dT-GTM" kind="show" id="jDB-TL-OIP"/>
+                                    <action selector="aboutButtonDidPressed:" destination="cpB-2v-gGD" eventType="touchUpInside" id="7aC-Kc-EMf"/>
+                                    <segue destination="c7j-dT-GTM" kind="show" identifier="aboutSegue" id="jDB-TL-OIP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-Sg-fHR">
@@ -76,15 +77,18 @@
                                 <state key="normal" title="Solicitar resultado">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="sampleResultButtonDidPressed:" destination="cpB-2v-gGD" eventType="touchUpInside" id="Gpr-zc-Z6t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMh-cV-yX6">
-                                <rect key="frame" x="16" y="390" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="390" width="343" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que você deseja fazer hoje?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZZ-le-Lo0">
-                                <rect key="frame" x="16" y="422.5" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="420" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -99,6 +103,9 @@
                                 <state key="normal" title="Cadastrar amostra">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerSampleButtonDidPressed:" destination="cpB-2v-gGD" eventType="touchUpInside" id="XZN-iJ-2F2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -125,6 +132,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="bS5-ID-hWq"/>
                     <connections>
+                        <outlet property="helloLabel" destination="zMh-cV-yX6" id="E0m-87-fkb"/>
+                        <outlet property="registerSampleButton" destination="A0k-tJ-t9j" id="3zc-Ve-58l"/>
+                        <outlet property="sampleResultButton" destination="h7V-Sg-fHR" id="EN1-qt-NEZ"/>
                         <segue destination="fvr-iN-vm2" kind="show" identifier="resultSegue" id="Fc3-pb-nLM"/>
                         <segue destination="UjC-60-fMq" kind="show" identifier="sampleSegue" id="Wdp-3K-Dn4"/>
                     </connections>
@@ -133,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="342" y="121"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro de amostra-->
         <scene sceneID="P7h-Gg-Rzw">
             <objects>
-                <viewController id="UjC-60-fMq" sceneMemberID="viewController">
+                <viewController id="UjC-60-fMq" customClass="RegisterSampleViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHv-Yc-vZI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +161,9 @@
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueDidPressed:" destination="UjC-60-fMq" eventType="touchUpInside" id="wZy-uZ-czc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyL-Et-mch">
                                 <rect key="frame" x="16" y="76" width="343" height="14"/>
@@ -218,8 +231,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="79q-2G-Ndl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cRU-4o-Dht"/>
+                    <navigationItem key="navigationItem" title="Cadastro de amostra" id="cRU-4o-Dht"/>
                     <connections>
+                        <outlet property="continueButton" destination="gDc-2C-4lU" id="zkg-N3-TXz"/>
+                        <outlet property="descriptionMaterialTextView" destination="JJ1-l4-mKR" id="dHa-VX-VlF"/>
+                        <outlet property="nameTextField" destination="50x-um-lUO" id="wsp-DI-aYt"/>
+                        <outlet property="photoTextField" destination="gDY-7r-scb" id="Pli-za-Yio"/>
                         <segue destination="994-O9-qfk" kind="show" identifier="sampleSucessSegue" id="8GA-sH-AVP"/>
                     </connections>
                 </viewController>
@@ -230,7 +247,7 @@
         <!--Resultado de amostra-->
         <scene sceneID="i25-IX-CA4">
             <objects>
-                <viewController id="fvr-iN-vm2" sceneMemberID="viewController">
+                <viewController id="fvr-iN-vm2" customClass="SampleResultViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhk-J3-XT8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,6 +262,9 @@
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueButtonDidPressed:" destination="fvr-iN-vm2" eventType="touchUpInside" id="Sxk-7E-yse"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por favor, informe o código da amostra." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-Ds-O6i">
                                 <rect key="frame" x="16" y="108" width="343" height="19"/>
@@ -292,6 +312,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Resultado de amostra" id="ZpN-0d-dGd"/>
                     <connections>
+                        <outlet property="codeTextField" destination="9gv-Tk-gPF" id="Qrd-2I-1d4"/>
+                        <outlet property="continueButton" destination="FVr-Yy-c34" id="xuy-24-HIO"/>
+                        <outlet property="errorCodeLabel" destination="rfT-gR-gZz" id="moF-fd-GLk"/>
                         <segue destination="uB4-pw-6zf" kind="show" identifier="resultSucessSegue" id="uPQ-IL-NGa"/>
                     </connections>
                 </viewController>
@@ -302,7 +325,7 @@
         <!--Resultado de amostra-->
         <scene sceneID="Bms-wd-Fns">
             <objects>
-                <viewController id="uB4-pw-6zf" sceneMemberID="viewController">
+                <viewController id="uB4-pw-6zf" customClass="SampleSuccessViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QAv-Gv-hkl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,6 +347,9 @@
                                 <state key="normal" title="Ok">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueButtonDidPressed:" destination="uB4-pw-6zf" eventType="touchUpInside" id="2gy-tc-W8e"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado enviado!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-9y-YG0">
                                 <rect key="frame" x="16" y="341" width="343" height="24"/>
@@ -355,6 +381,9 @@
                         <viewLayoutGuide key="safeArea" id="hr3-1i-T7A"/>
                     </view>
                     <navigationItem key="navigationItem" title="Resultado de amostra" id="gbP-LO-cSZ"/>
+                    <connections>
+                        <outlet property="continueButton" destination="dCY-tw-WSh" id="RBy-XN-0nT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz0-Kl-N3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,38 +398,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redes Sociais" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrK-W9-KzZ">
-                                <rect key="frame" x="16" y="60" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="60" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-qo-bsi">
-                                <rect key="frame" x="16" y="149.5" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="152" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versão do App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR5-AO-yoM">
-                                <rect key="frame" x="16" y="174" width="79.5" height="14"/>
+                                <rect key="frame" x="16" y="179" width="77.5" height="12"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="12"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQB-iP-ggT">
-                                <rect key="frame" x="332" y="174" width="27" height="14"/>
+                                <rect key="frame" x="337.5" y="179" width="21.5" height="12"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimUltraLight" family="GT Walsheim" pointSize="12"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="BvZ-gn-cwu">
-                                <rect key="frame" x="16" y="84.5" width="32" height="32"/>
+                                <rect key="frame" x="16" y="87" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="5pH-5D-NZb"/>
                                     <constraint firstAttribute="height" constant="32" id="Cmr-47-LKD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sku-ov-aRf">
-                                <rect key="frame" x="56" y="84.5" width="303" height="32"/>
+                                <rect key="frame" x="56" y="88.5" width="303" height="29"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimUltraLight" family="GT Walsheim" pointSize="17"/>
                                 <state key="normal" title="@xmat.eriais">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -410,69 +439,69 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-eb-1yO">
-                                <rect key="frame" x="16" y="132.5" width="343" height="1"/>
+                                <rect key="frame" x="16" y="135" width="343" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="FeV-75-F0a"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EZ-hz-SQz">
-                                <rect key="frame" x="16" y="204" width="343" height="1"/>
+                                <rect key="frame" x="16" y="207" width="343" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="pxs-bq-3Mj"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apoio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMA-cK-6XU">
-                                <rect key="frame" x="16" y="221" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="224" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aldir_blanc" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-h0-Zcb">
-                                <rect key="frame" x="16" y="245.5" width="120" height="66"/>
+                                <rect key="frame" x="16" y="251" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="7QS-ch-RWq"/>
                                     <constraint firstAttribute="width" constant="120" id="SmO-bb-wzI"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gov_pa" translatesAutoresizingMaskIntoConstraints="NO" id="O8n-ft-emB">
-                                <rect key="frame" x="16" y="335.5" width="120" height="66"/>
+                                <rect key="frame" x="16" y="341" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="37y-JM-B7G"/>
                                     <constraint firstAttribute="height" constant="66" id="Ewc-lP-eY9"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inst_agata" translatesAutoresizingMaskIntoConstraints="NO" id="Pkt-o9-gUT">
-                                <rect key="frame" x="16" y="425.5" width="120" height="66"/>
+                                <rect key="frame" x="16" y="431" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="USb-ho-zj1"/>
                                     <constraint firstAttribute="width" constant="120" id="zM1-hc-dTB"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sec_cult" translatesAutoresizingMaskIntoConstraints="NO" id="P6g-0f-g45">
-                                <rect key="frame" x="239" y="425.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="431" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="WqI-8X-Tdp"/>
                                     <constraint firstAttribute="width" constant="120" id="uiB-WG-3x5"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gov_fed" translatesAutoresizingMaskIntoConstraints="NO" id="CXa-tS-DXD">
-                                <rect key="frame" x="239" y="335.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="341" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Sd0-ce-x0E"/>
                                     <constraint firstAttribute="height" constant="66" id="tlc-mB-Ua8"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sec_pa" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-hC-z3U">
-                                <rect key="frame" x="239" y="245.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="251" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="bZ3-vL-XrR"/>
                                     <constraint firstAttribute="height" constant="66" id="mzD-Ec-WgP"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="min_tur" translatesAutoresizingMaskIntoConstraints="NO" id="d5c-zs-1WK">
-                                <rect key="frame" x="239" y="499.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="505" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="4U0-qQ-bfn"/>
                                     <constraint firstAttribute="width" constant="120" id="m4h-M6-awV"/>
@@ -548,10 +577,10 @@
             </objects>
             <point key="canvasLocation" x="1097" y="906"/>
         </scene>
-        <!--Resultado de amostra-->
+        <!--Cadastro de amostra-->
         <scene sceneID="G6o-KD-sgi">
             <objects>
-                <viewController id="994-O9-qfk" sceneMemberID="viewController">
+                <viewController id="994-O9-qfk" customClass="RegisterSampleSuccessViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EUJ-0P-04o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,6 +602,9 @@
                                 <state key="normal" title="Ok">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueButtonDidPressed:" destination="994-O9-qfk" eventType="touchUpInside" id="Mma-g3-zca"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amostra cadastrada!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U91-HK-5Yn">
                                 <rect key="frame" x="16" y="341" width="343" height="24"/>
@@ -608,7 +640,10 @@ YWRvcyBwYXJhIG8gc2V1IGUtbWFpbC4
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rF1-Zj-J12"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Resultado de amostra" id="RTh-lh-nAV"/>
+                    <navigationItem key="navigationItem" title="Cadastro de amostra" id="RTh-lh-nAV"/>
+                    <connections>
+                        <outlet property="continueButton" destination="fEH-VM-5Sk" id="AIr-28-OK4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvq-bA-CaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

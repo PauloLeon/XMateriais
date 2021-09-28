@@ -51,6 +51,7 @@ class RegistrationCollaboratorViewController: UIViewController {
     private func setupView() {
         errorEmailLabel.isHidden = true
         warningPasswordLabel.isHidden = true
+        continueButton.layer.cornerRadius = kTwo
         setupTextFieldDelegate()
         setGenderType()
         setSchoolingType()

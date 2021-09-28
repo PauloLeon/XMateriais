@@ -22,6 +22,7 @@ class RegistrationResearcherViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var errorPasswordLabel: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variable's
     
@@ -51,6 +52,7 @@ class RegistrationResearcherViewController: UIViewController {
     private func setupView() {
         errorEmailLabel.isHidden = true
         errorPasswordLabel.isHidden = true
+        continueButton.layer.cornerRadius = kTwo
         setupTextFieldDelegate()
         setGenderType()
         setSchoolingType()

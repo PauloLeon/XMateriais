@@ -41,6 +41,7 @@ class SignInViewController: UIViewController {
     private func setupUI() {
         errorEmailLabel.isHidden = true
         errorPasswordLabel.isHidden = true
+        continueButton.layer.cornerRadius = kTwo
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

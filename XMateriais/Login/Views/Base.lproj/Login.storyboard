@@ -253,19 +253,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2U-76-rIL">
-                                <rect key="frame" x="16" y="460" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="465" width="343" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido, verifique o endereço digitado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRg-hx-14W">
-                                <rect key="frame" x="15" y="526.5" width="344" height="16.5"/>
+                                <rect key="frame" x="15" y="529" width="344" height="14"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail cadastrado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-Za-QL2">
-                                <rect key="frame" x="16" y="484.5" width="343" height="34"/>
+                                <rect key="frame" x="16" y="487" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -277,7 +277,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha? Não tem problema. Por favor, informe abaixo o seu e-mail cadastrado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-8k-FAg">
-                                <rect key="frame" x="16" y="390.5" width="343" height="37.5"/>
+                                <rect key="frame" x="16" y="401" width="343" height="32"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -784,6 +784,7 @@
                     <navigationItem key="navigationItem" title="Confirmação de Cadastro" id="ZwY-cl-Szl"/>
                     <connections>
                         <outlet property="codeTextField" destination="Yqv-1p-yqC" id="k0D-ej-d0l"/>
+                        <outlet property="continueButton" destination="Lt5-ln-3cp" id="fhF-Nu-TaK"/>
                         <outlet property="errorCodeLabel" destination="TG2-cR-mRr" id="Ny6-hq-YXh"/>
                     </connections>
                 </viewController>
@@ -850,6 +851,9 @@
                         <viewLayoutGuide key="safeArea" id="v7s-Rd-sGd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Confirmação de cadastro" id="3el-zt-9t4"/>
+                    <connections>
+                        <outlet property="continueButton" destination="4JQ-ji-pTq" id="a3I-K3-YHB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETu-vj-0vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -905,6 +909,9 @@
                         <viewLayoutGuide key="safeArea" id="16K-OL-SBa"/>
                     </view>
                     <navigationItem key="navigationItem" id="2ju-BR-CAC"/>
+                    <connections>
+                        <outlet property="continueButton" destination="Rnm-DX-J84" id="qC1-GZ-egc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2c-80-UU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -963,6 +970,9 @@
                         <viewLayoutGuide key="safeArea" id="9dH-hp-9SL"/>
                     </view>
                     <navigationItem key="navigationItem" id="ykm-1z-FIh"/>
+                    <connections>
+                        <outlet property="continueButton" destination="KpI-hi-vjE" id="8pN-ZG-hyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Wb-iwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1201,6 +1211,7 @@
                     <connections>
                         <outlet property="birthdayTextField" destination="B4a-jJ-T03" id="nnN-B0-jrL"/>
                         <outlet property="confirmPasswordTextField" destination="qPT-F6-a07" id="akY-kr-xk6"/>
+                        <outlet property="continueButton" destination="6eq-iU-Dvn" id="Zts-yf-Tas"/>
                         <outlet property="emailTextField" destination="cYa-yb-pUU" id="jke-ng-B6Y"/>
                         <outlet property="errorEmailLabel" destination="zwH-V8-rVt" id="hf2-hj-UBe"/>
                         <outlet property="errorPasswordLabel" destination="CLD-L1-L4Q" id="yeW-hv-31K"/>
@@ -1224,7 +1235,7 @@
         <image name="xmat_logo" width="106" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1mj-GM-CSX"/>
+        <segue reference="itc-P8-chY"/>
         <segue reference="0tk-WE-Gka"/>
     </inferredMetricsTieBreakers>
 </document>
