@@ -978,10 +978,10 @@
             </objects>
             <point key="canvasLocation" x="4623" y="1404"/>
         </scene>
-        <!--LoggedResearcher-->
+        <!--LoggedCollaborator-->
         <scene sceneID="XR7-2l-JlJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoggedResearcher" id="7QV-3A-huQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LoggedCollaborator" id="7QV-3A-huQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="k6V-mN-fHv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-EM-7h6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

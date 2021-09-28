@@ -28,11 +28,6 @@ class LoggedResearcherViewController: UIViewController {
         setupView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        removeNavigationBorder()
-    }
-
     // MARK: Private Functions
     
     private func setupView() {
@@ -41,6 +36,7 @@ class LoggedResearcherViewController: UIViewController {
         sampleResultButton.layer.borderWidth = kBorderWidth
         sampleResultButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         renameNavigationBackButton()
+        removeNavigationBorder()
     }
     
     private func renameNavigationBackButton() {
@@ -63,7 +59,5 @@ class LoggedResearcherViewController: UIViewController {
         self.performSegue(withIdentifier: "resultSegue", sender: self)
     }
     
-    @IBAction func aboutButtonDidPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "aboutSegue", sender: self)
-    }
+    @IBAction func aboutButtonDidPressed(_ sender: Any) {}
 }
