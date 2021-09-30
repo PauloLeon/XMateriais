@@ -296,7 +296,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="1" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.99607843137254903" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="24h-J8-Nh7" firstAttribute="centerX" secondItem="RsZ-oC-0wR" secondAttribute="centerX" id="9Yq-gQ-1Bi"/>
                                                     <constraint firstAttribute="trailing" secondItem="bgE-eg-fnc" secondAttribute="trailing" constant="8" id="AR5-Ns-kbj"/>
@@ -327,7 +327,7 @@
                                                 <rect key="frame" x="7.5" y="200" width="360" height="96"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rígido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGE-G3-ZqW">
-                                                        <rect key="frame" x="8" y="8" width="48.5" height="17"/>
+                                                        <rect key="frame" x="8" y="8" width="49" height="17"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1005,38 +1005,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redes Sociais" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbY-3D-rE8">
-                                <rect key="frame" x="16" y="60" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="60" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMO-ut-vAS">
-                                <rect key="frame" x="16" y="149.5" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="152" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versão do App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urj-0o-xdl">
-                                <rect key="frame" x="16" y="174" width="79.5" height="14"/>
+                                <rect key="frame" x="16" y="179" width="77.5" height="12"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="12"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6j-Ka-VqN">
-                                <rect key="frame" x="332" y="174" width="27" height="14"/>
+                                <rect key="frame" x="337.5" y="179" width="21.5" height="12"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimUltraLight" family="GT Walsheim" pointSize="12"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="56u-sy-3fH">
-                                <rect key="frame" x="16" y="84.5" width="32" height="32"/>
+                                <rect key="frame" x="16" y="87" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="Hwl-v4-5uZ"/>
                                     <constraint firstAttribute="height" constant="32" id="KYK-7r-SAu"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1G-Oa-68J">
-                                <rect key="frame" x="56" y="84.5" width="303" height="32"/>
+                                <rect key="frame" x="56" y="88.5" width="303" height="29"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimUltraLight" family="GT Walsheim" pointSize="17"/>
                                 <state key="normal" title="@xmat.eriais">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1046,69 +1046,69 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njn-8o-E9E">
-                                <rect key="frame" x="16" y="132.5" width="343" height="1"/>
+                                <rect key="frame" x="16" y="135" width="343" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="IBC-J9-cZG"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unb-Hg-ioC">
-                                <rect key="frame" x="16" y="204" width="343" height="1"/>
+                                <rect key="frame" x="16" y="207" width="343" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="4bv-3C-krb"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apoio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7np-Pz-y49">
-                                <rect key="frame" x="16" y="221" width="343" height="16.5"/>
+                                <rect key="frame" x="16" y="224" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aldir_blanc" translatesAutoresizingMaskIntoConstraints="NO" id="zEs-Ho-B4q">
-                                <rect key="frame" x="16" y="245.5" width="120" height="66"/>
+                                <rect key="frame" x="16" y="251" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="ABo-7g-TYN"/>
                                     <constraint firstAttribute="height" constant="66" id="hU5-Yj-fUA"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gov_pa" translatesAutoresizingMaskIntoConstraints="NO" id="urg-U4-urj">
-                                <rect key="frame" x="16" y="335.5" width="120" height="66"/>
+                                <rect key="frame" x="16" y="341" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="cHr-CT-aFP"/>
                                     <constraint firstAttribute="width" constant="120" id="mAj-yb-IgK"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inst_agata" translatesAutoresizingMaskIntoConstraints="NO" id="1P1-IL-yLf">
-                                <rect key="frame" x="16" y="425.5" width="120" height="66"/>
+                                <rect key="frame" x="16" y="431" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="J4y-LL-jl4"/>
                                     <constraint firstAttribute="height" constant="66" id="x03-cc-hgy"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sec_cult" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-on-HBk">
-                                <rect key="frame" x="239" y="425.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="431" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="R3m-zO-wvL"/>
                                     <constraint firstAttribute="height" constant="66" id="tUH-Wr-LQn"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gov_fed" translatesAutoresizingMaskIntoConstraints="NO" id="1U1-fn-vY8">
-                                <rect key="frame" x="239" y="335.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="341" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="RmL-Hz-DuP"/>
                                     <constraint firstAttribute="width" constant="120" id="okm-hS-aB9"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sec_pa" translatesAutoresizingMaskIntoConstraints="NO" id="Dmy-No-dcY">
-                                <rect key="frame" x="239" y="245.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="251" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="kzD-fF-8zS"/>
                                     <constraint firstAttribute="height" constant="66" id="mhj-4l-xIB"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="min_tur" translatesAutoresizingMaskIntoConstraints="NO" id="0Tw-5e-ihK">
-                                <rect key="frame" x="239" y="499.5" width="120" height="66"/>
+                                <rect key="frame" x="239" y="505" width="120" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="WZa-jW-ivW"/>
                                     <constraint firstAttribute="height" constant="66" id="taB-gp-5d5"/>
@@ -1206,7 +1206,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="xll-pR-zZM"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao tocar o material, você o considera mais: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-fE-jQo">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E ao observar o material, você o considera mais: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-fE-jQo">
                                                 <rect key="frame" x="28" y="16" width="331" height="45"/>
                                                 <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1788,6 +1788,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="continueButtonDidPressed:" destination="rx1-3O-sI2" eventType="touchUpInside" id="CQO-tH-bpi"/>
+                                                    <segue destination="jdv-Nu-cqs" kind="show" id="Caj-eJ-yWv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1872,6 +1873,302 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u75-rA-q7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1518" y="148"/>
+        </scene>
+        <!--Intensidade-->
+        <scene sceneID="FCr-6V-qbM">
+            <objects>
+                <viewController storyboardIdentifier="IntensityAnalysisViewController" id="jdv-Nu-cqs" customClass="IntensityAnalysisViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4c-W3-dm1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="840"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6J-GQ-Wss">
+                                <rect key="frame" x="0.0" y="44" width="375" height="796"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k64-WU-eh2" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCa-yA-W7E">
+                                                <rect key="frame" x="16" y="16" width="4" height="72"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="ETp-DS-ZmL"/>
+                                                    <constraint firstAttribute="width" constant="4" id="i6N-B3-suK"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E qual a intensidade dos seus sentimentos em relação à palavra escolhida?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xv-zf-9ja">
+                                                <rect key="frame" x="28" y="16" width="331" height="45"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sM2-cU-biS">
+                                                <rect key="frame" x="7.5" y="153" width="360" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desagradável" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-Bq-86V">
+                                                        <rect key="frame" x="8" y="8" width="106.5" height="17"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agradável" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U13-vl-yQk">
+                                                        <rect key="frame" x="275" y="8" width="77" height="17"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5.5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-d1-thi">
+                                                        <rect key="frame" x="6" y="60" width="348" height="31"/>
+                                                        <color key="tintColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="firstSliderDidChange:" destination="jdv-Nu-cqs" eventType="valueChanged" id="apd-LX-QY3"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldk-59-eBD">
+                                                        <rect key="frame" x="8" y="98" width="5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rW-Av-KgS">
+                                                        <rect key="frame" x="339" y="98" width="13" height="14"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ldk-59-eBD" firstAttribute="leading" secondItem="sM2-cU-biS" secondAttribute="leading" constant="8" id="4kc-Bz-yMD"/>
+                                                    <constraint firstItem="Dg6-Bq-86V" firstAttribute="leading" secondItem="sM2-cU-biS" secondAttribute="leading" constant="8" id="92f-fS-C4w"/>
+                                                    <constraint firstItem="8rW-Av-KgS" firstAttribute="top" secondItem="Mjk-d1-thi" secondAttribute="bottom" constant="8" id="9VM-kh-1hJ"/>
+                                                    <constraint firstItem="Dg6-Bq-86V" firstAttribute="centerY" secondItem="U13-vl-yQk" secondAttribute="centerY" id="AKZ-fq-Cj1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8rW-Av-KgS" secondAttribute="trailing" constant="8" id="FFA-NM-SFi"/>
+                                                    <constraint firstItem="Dg6-Bq-86V" firstAttribute="top" secondItem="sM2-cU-biS" secondAttribute="top" constant="8" id="PMJ-bX-BQa"/>
+                                                    <constraint firstItem="Ldk-59-eBD" firstAttribute="top" secondItem="Mjk-d1-thi" secondAttribute="bottom" constant="8" id="Vyi-rL-oYD"/>
+                                                    <constraint firstAttribute="height" constant="120" id="Wqb-PR-oq9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="U13-vl-yQk" secondAttribute="trailing" constant="8" id="gZz-YQ-BsN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ldk-59-eBD" secondAttribute="bottom" constant="8" id="l1O-Nb-1o7"/>
+                                                    <constraint firstItem="Ldk-59-eBD" firstAttribute="top" secondItem="Mjk-d1-thi" secondAttribute="bottom" constant="8" id="nv5-oa-wkP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8rW-Av-KgS" secondAttribute="bottom" constant="8" id="rJ1-Bw-vMU"/>
+                                                    <constraint firstItem="Mjk-d1-thi" firstAttribute="leading" secondItem="sM2-cU-biS" secondAttribute="leading" constant="8" id="tYd-Ed-knh"/>
+                                                    <constraint firstAttribute="width" constant="360" id="u79-BU-QX3"/>
+                                                    <constraint firstItem="U13-vl-yQk" firstAttribute="top" secondItem="sM2-cU-biS" secondAttribute="top" constant="8" id="wae-0d-OJW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mjk-d1-thi" secondAttribute="trailing" constant="8" id="zM2-FS-XVI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMZ-Zy-YFV">
+                                                <rect key="frame" x="7.5" y="338" width="360" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desagradável" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-WH-O4Q">
+                                                        <rect key="frame" x="8" y="8" width="106.5" height="17"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agradável" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBR-Lm-dcb">
+                                                        <rect key="frame" x="275" y="8" width="77" height="17"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FI-Sh-WBm">
+                                                        <rect key="frame" x="8" y="98" width="5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wme-LB-joc">
+                                                        <rect key="frame" x="339" y="98" width="13" height="14"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5.5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="qNy-gg-dM4">
+                                                        <rect key="frame" x="6" y="60" width="348" height="31"/>
+                                                        <color key="tintColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="secondSliderDidChange:" destination="jdv-Nu-cqs" eventType="valueChanged" id="ozO-w2-NCh"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="HR7-WH-O4Q" firstAttribute="top" secondItem="OMZ-Zy-YFV" secondAttribute="top" constant="8" id="1HH-W5-ZQd"/>
+                                                    <constraint firstItem="qNy-gg-dM4" firstAttribute="trailing" secondItem="wme-LB-joc" secondAttribute="trailing" id="358-7L-kTX"/>
+                                                    <constraint firstItem="qNy-gg-dM4" firstAttribute="leading" secondItem="OMZ-Zy-YFV" secondAttribute="leading" constant="8" id="7r4-5x-AQy"/>
+                                                    <constraint firstItem="HR7-WH-O4Q" firstAttribute="leading" secondItem="OMZ-Zy-YFV" secondAttribute="leading" constant="8" id="KgU-e4-vmI"/>
+                                                    <constraint firstAttribute="width" constant="360" id="Lm2-rz-Obz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qNy-gg-dM4" secondAttribute="trailing" constant="8" id="Qnp-dy-NoE"/>
+                                                    <constraint firstItem="HR7-WH-O4Q" firstAttribute="centerY" secondItem="cBR-Lm-dcb" secondAttribute="centerY" id="SPw-b2-4Jr"/>
+                                                    <constraint firstItem="7FI-Sh-WBm" firstAttribute="top" secondItem="qNy-gg-dM4" secondAttribute="bottom" constant="8" id="Uoh-Kg-a1h"/>
+                                                    <constraint firstItem="7FI-Sh-WBm" firstAttribute="bottom" secondItem="OMZ-Zy-YFV" secondAttribute="bottomMargin" id="Wdd-tH-ovE"/>
+                                                    <constraint firstAttribute="height" constant="120" id="avd-Oc-z6b"/>
+                                                    <constraint firstItem="cBR-Lm-dcb" firstAttribute="top" secondItem="OMZ-Zy-YFV" secondAttribute="top" constant="8" id="cqg-Ez-FUb"/>
+                                                    <constraint firstItem="7FI-Sh-WBm" firstAttribute="leading" secondItem="OMZ-Zy-YFV" secondAttribute="leading" constant="8" id="qEu-6H-JA1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cBR-Lm-dcb" secondAttribute="trailing" constant="8" id="rm1-pO-UDI"/>
+                                                    <constraint firstItem="7FI-Sh-WBm" firstAttribute="baseline" secondItem="wme-LB-joc" secondAttribute="baseline" id="ue4-UC-Lgr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xt-ks-258">
+                                                <rect key="frame" x="7.5" y="523" width="360" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desagradável" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Os-7G-N6n">
+                                                        <rect key="frame" x="8" y="8" width="106.5" height="17"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agradável" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uA-hR-xVM">
+                                                        <rect key="frame" x="275" y="8" width="77" height="17"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5.5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xl7-VJ-ZyC">
+                                                        <rect key="frame" x="6" y="60" width="348" height="31"/>
+                                                        <color key="tintColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="thirdSliderDidChange:" destination="jdv-Nu-cqs" eventType="valueChanged" id="P9i-IF-AkM"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D8-xj-a0m">
+                                                        <rect key="frame" x="339" y="98" width="13" height="14"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abu-ZE-2SV">
+                                                        <rect key="frame" x="8" y="98" width="5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="7D8-xj-a0m" secondAttribute="bottom" constant="8" id="3JZ-Of-khe"/>
+                                                    <constraint firstItem="1uA-hR-xVM" firstAttribute="top" secondItem="4xt-ks-258" secondAttribute="top" constant="8" id="6CE-Ac-1gw"/>
+                                                    <constraint firstItem="1Os-7G-N6n" firstAttribute="leading" secondItem="4xt-ks-258" secondAttribute="leading" constant="8" id="B9L-Im-SdT"/>
+                                                    <constraint firstItem="1Os-7G-N6n" firstAttribute="top" secondItem="4xt-ks-258" secondAttribute="top" constant="8" id="EXu-kz-GOk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7D8-xj-a0m" secondAttribute="trailing" constant="8" id="Ef3-N0-UvL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1uA-hR-xVM" secondAttribute="trailing" constant="8" id="TFR-Wm-OJp"/>
+                                                    <constraint firstItem="1Os-7G-N6n" firstAttribute="centerY" secondItem="1uA-hR-xVM" secondAttribute="centerY" id="fev-o5-xgl"/>
+                                                    <constraint firstItem="abu-ZE-2SV" firstAttribute="leading" secondItem="4xt-ks-258" secondAttribute="leading" constant="8" id="gSN-j9-HOR"/>
+                                                    <constraint firstAttribute="height" constant="120" id="h2J-fL-WCN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="abu-ZE-2SV" secondAttribute="bottom" constant="8" id="hKK-4t-cf7"/>
+                                                    <constraint firstItem="7D8-xj-a0m" firstAttribute="top" secondItem="Xl7-VJ-ZyC" secondAttribute="bottom" constant="8" id="ncB-Tq-iuS"/>
+                                                    <constraint firstItem="Xl7-VJ-ZyC" firstAttribute="leading" secondItem="4xt-ks-258" secondAttribute="leading" constant="8" id="r8E-T7-i8C"/>
+                                                    <constraint firstAttribute="width" constant="360" id="trd-41-kD5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xl7-VJ-ZyC" secondAttribute="trailing" constant="8" id="uBL-Cp-Udc"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavra escolhida [1]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeL-o5-z2d">
+                                                <rect key="frame" x="16" y="112" width="351" height="17"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavra escolhida [2]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LC-hw-xCI">
+                                                <rect key="frame" x="16" y="297" width="351" height="17"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavra escolhida [3]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ED-y5-Kir">
+                                                <rect key="frame" x="16" y="482" width="351" height="17"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poh-kp-ZUj">
+                                                <rect key="frame" x="16" y="675" width="343" height="36"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="zUW-je-xZH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                                <state key="normal" title="Continuar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="continueButtonDidPressed:" destination="jdv-Nu-cqs" eventType="touchUpInside" id="1iG-O9-Rq2"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deslize a barra para demonstrar o sentimento" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHk-k7-5sP">
+                                                <rect key="frame" x="28" y="69" width="339" height="14"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="PHk-k7-5sP" firstAttribute="leading" secondItem="uCa-yA-W7E" secondAttribute="trailing" constant="8" id="041-fX-g07"/>
+                                            <constraint firstAttribute="trailing" secondItem="5ED-y5-Kir" secondAttribute="trailing" constant="8" id="1Me-GE-3Fi"/>
+                                            <constraint firstItem="poh-kp-ZUj" firstAttribute="top" secondItem="4xt-ks-258" secondAttribute="bottom" constant="32" id="4cD-nt-cTT"/>
+                                            <constraint firstItem="JeL-o5-z2d" firstAttribute="top" secondItem="uCa-yA-W7E" secondAttribute="bottom" constant="24" id="8XK-YS-qHU"/>
+                                            <constraint firstItem="6LC-hw-xCI" firstAttribute="top" secondItem="sM2-cU-biS" secondAttribute="bottom" constant="24" id="B6N-dQ-z8k"/>
+                                            <constraint firstItem="4xt-ks-258" firstAttribute="centerX" secondItem="k64-WU-eh2" secondAttribute="centerX" id="GU0-mF-XL9"/>
+                                            <constraint firstItem="4xt-ks-258" firstAttribute="top" secondItem="5ED-y5-Kir" secondAttribute="bottom" constant="24" id="HKG-Yo-qeB"/>
+                                            <constraint firstItem="uCa-yA-W7E" firstAttribute="leading" secondItem="k64-WU-eh2" secondAttribute="leading" constant="16" id="Shp-qZ-2a2"/>
+                                            <constraint firstItem="poh-kp-ZUj" firstAttribute="leading" secondItem="k64-WU-eh2" secondAttribute="leading" constant="16" id="Tt2-6w-uoq"/>
+                                            <constraint firstAttribute="trailing" secondItem="JeL-o5-z2d" secondAttribute="trailing" constant="8" id="VjF-XE-arf"/>
+                                            <constraint firstAttribute="trailing" secondItem="6xv-zf-9ja" secondAttribute="trailing" constant="16" id="X9y-Dy-aSW"/>
+                                            <constraint firstItem="sM2-cU-biS" firstAttribute="centerX" secondItem="k64-WU-eh2" secondAttribute="centerX" id="b2h-hk-Uoe"/>
+                                            <constraint firstItem="sM2-cU-biS" firstAttribute="top" secondItem="JeL-o5-z2d" secondAttribute="bottom" constant="24" id="deO-2h-XWD"/>
+                                            <constraint firstItem="OMZ-Zy-YFV" firstAttribute="top" secondItem="6LC-hw-xCI" secondAttribute="bottom" constant="24" id="eAe-ar-3jl"/>
+                                            <constraint firstItem="JeL-o5-z2d" firstAttribute="leading" secondItem="k64-WU-eh2" secondAttribute="leading" constant="16" id="eRj-C2-BUO"/>
+                                            <constraint firstItem="PHk-k7-5sP" firstAttribute="top" secondItem="6xv-zf-9ja" secondAttribute="bottom" constant="8" id="f1E-w5-xiP"/>
+                                            <constraint firstItem="uCa-yA-W7E" firstAttribute="top" secondItem="k64-WU-eh2" secondAttribute="top" constant="16" id="hMu-g1-77y"/>
+                                            <constraint firstItem="6xv-zf-9ja" firstAttribute="leading" secondItem="uCa-yA-W7E" secondAttribute="trailing" constant="8" id="hbL-IW-89q"/>
+                                            <constraint firstItem="5ED-y5-Kir" firstAttribute="leading" secondItem="k64-WU-eh2" secondAttribute="leading" constant="16" id="jKz-lX-FYr"/>
+                                            <constraint firstItem="OMZ-Zy-YFV" firstAttribute="centerX" secondItem="k64-WU-eh2" secondAttribute="centerX" id="oC6-Xp-J2g"/>
+                                            <constraint firstItem="6xv-zf-9ja" firstAttribute="top" secondItem="k64-WU-eh2" secondAttribute="top" constant="16" id="sMz-cm-gDG"/>
+                                            <constraint firstItem="6LC-hw-xCI" firstAttribute="leading" secondItem="k64-WU-eh2" secondAttribute="leading" constant="16" id="sS9-er-GK9"/>
+                                            <constraint firstAttribute="trailing" secondItem="PHk-k7-5sP" secondAttribute="trailing" constant="8" id="tOY-NS-ITP"/>
+                                            <constraint firstAttribute="trailing" secondItem="poh-kp-ZUj" secondAttribute="trailing" constant="16" id="wFM-qM-o41"/>
+                                            <constraint firstAttribute="height" constant="800" id="xzG-b1-GjB"/>
+                                            <constraint firstItem="5ED-y5-Kir" firstAttribute="top" secondItem="OMZ-Zy-YFV" secondAttribute="bottom" constant="24" id="yLo-I8-o41"/>
+                                            <constraint firstAttribute="trailing" secondItem="6LC-hw-xCI" secondAttribute="trailing" constant="8" id="yWx-Lt-HKO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="k64-WU-eh2" firstAttribute="top" secondItem="p6J-GQ-Wss" secondAttribute="top" id="3Fg-Oj-FeB"/>
+                                    <constraint firstItem="k64-WU-eh2" firstAttribute="leading" secondItem="p6J-GQ-Wss" secondAttribute="leading" id="7WA-st-kGN"/>
+                                    <constraint firstItem="k64-WU-eh2" firstAttribute="bottom" secondItem="p6J-GQ-Wss" secondAttribute="bottom" id="KZ0-TW-ckm"/>
+                                    <constraint firstItem="k64-WU-eh2" firstAttribute="trailing" secondItem="p6J-GQ-Wss" secondAttribute="trailing" id="wSf-fB-fen"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="p6J-GQ-Wss" firstAttribute="leading" secondItem="GBZ-sp-H8N" secondAttribute="leading" id="Bms-lP-EAd"/>
+                            <constraint firstItem="p6J-GQ-Wss" firstAttribute="trailing" secondItem="GBZ-sp-H8N" secondAttribute="trailing" id="F1M-e8-tFZ"/>
+                            <constraint firstItem="k64-WU-eh2" firstAttribute="width" secondItem="GBZ-sp-H8N" secondAttribute="width" id="lhO-4t-ZIB"/>
+                            <constraint firstItem="p6J-GQ-Wss" firstAttribute="bottom" secondItem="GBZ-sp-H8N" secondAttribute="bottom" id="vgx-3e-6QM"/>
+                            <constraint firstItem="p6J-GQ-Wss" firstAttribute="top" secondItem="GBZ-sp-H8N" secondAttribute="top" id="vrY-ab-3Qc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GBZ-sp-H8N"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Intensidade" id="f2T-WO-DSh"/>
+                    <size key="freeformSize" width="375" height="840"/>
+                    <connections>
+                        <outlet property="firstChosenWordLabel" destination="JeL-o5-z2d" id="Z0Z-rh-4UZ"/>
+                        <outlet property="firstSlider" destination="Mjk-d1-thi" id="wZC-9L-Hw0"/>
+                        <outlet property="firstView" destination="sM2-cU-biS" id="wiz-dM-rVR"/>
+                        <outlet property="secondChosenWordLabel" destination="6LC-hw-xCI" id="e8t-ra-9aq"/>
+                        <outlet property="secondSlider" destination="qNy-gg-dM4" id="OAX-G3-KFQ"/>
+                        <outlet property="secondView" destination="OMZ-Zy-YFV" id="uE1-74-Z0A"/>
+                        <outlet property="thirdChosenWordLabel" destination="5ED-y5-Kir" id="E2V-f9-d50"/>
+                        <outlet property="thirdSlider" destination="Xl7-VJ-ZyC" id="GgC-Kz-czJ"/>
+                        <outlet property="thirdView" destination="4xt-ks-258" id="ttN-wS-UOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQE-yH-9GC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="77"/>
         </scene>
     </scenes>
     <resources>

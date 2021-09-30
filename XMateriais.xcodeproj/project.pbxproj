@@ -39,6 +39,9 @@
 		0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */; };
 		0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E327035268004570A3 /* RegisterSampleViewController.swift */; };
 		0BD148E627035274004570A3 /* RegisterSampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */; };
+		0BF071FB2705FFD8009EA47B /* IntensityAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */; };
+		0BF071FD27060A92009EA47B /* IntensityAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */; };
+		0BF071FF27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */; };
 		0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */; };
 		0BFC665127005F2F0018E5D1 /* ConfirmSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */; };
 		0BFC665B2700655A0018E5D1 /* LoggedCollaborator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */; };
@@ -112,6 +115,9 @@
 		0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSuccessViewController.swift; sourceTree = "<group>"; };
 		0BD148E327035268004570A3 /* RegisterSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewController.swift; sourceTree = "<group>"; };
 		0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleSuccessViewController.swift; sourceTree = "<group>"; };
+		0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewController.swift; sourceTree = "<group>"; };
+		0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewModel.swift; sourceTree = "<group>"; };
+		0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewModelProtocol.swift; sourceTree = "<group>"; };
 		0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSIgnUpViewController.swift; sourceTree = "<group>"; };
 		0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSuccessViewController.swift; sourceTree = "<group>"; };
 		0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedCollaborator.storyboard; sourceTree = "<group>"; };
@@ -248,6 +254,7 @@
 		0B63D52D26FAABB5005599FA /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0BF0720127060BAA009EA47B /* Protocols */,
 				0B63D52F26FAABCE005599FA /* Controllers */,
 				0B63D53026FAAC11005599FA /* ViewModels */,
 				0B63D52E26FAABC3005599FA /* Views */,
@@ -321,6 +328,21 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		0BF0720027060B15009EA47B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0BF0720127060BAA009EA47B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		0BFC66522700643C0018E5D1 /* LoggedResearcher */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +356,7 @@
 		0BFC6653270064490018E5D1 /* LoggedCollaborator */ = {
 			isa = PBXGroup;
 			children = (
+				0BF0720027060B15009EA47B /* Protocols */,
 				0BFC6654270064730018E5D1 /* Controllers */,
 				0BFC6655270064790018E5D1 /* ViewModels */,
 				0BFC6656270064820018E5D1 /* Views */,
@@ -347,6 +370,7 @@
 				0BFC665E270070450018E5D1 /* LoggedCollaboratorViewController.swift */,
 				0BA466D627039D7600885E00 /* SensationAnalysisViewController.swift */,
 				0BA466D827039DA000885E00 /* VisualAnalysisViewController.swift */,
+				0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +378,7 @@
 		0BFC6655270064790018E5D1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -647,6 +672,8 @@
 				0BA466DB2703A28F00885E00 /* RoundedHelper.swift in Sources */,
 				0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */,
 				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
+				0BF071FD27060A92009EA47B /* IntensityAnalysisViewModel.swift in Sources */,
+				0BF071FF27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift in Sources */,
 				0BFC666B270200230018E5D1 /* FirstPresentationViewController.swift in Sources */,
 				0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */,
 				0BFC6673270241110018E5D1 /* RegistrationCollaboratorViewController+UIPickerViewDelegate.swift in Sources */,
@@ -656,6 +683,7 @@
 				0BFC666D2702002F0018E5D1 /* SecondPresentationViewController.swift in Sources */,
 				0BFC666F27021CB20018E5D1 /* RegistrationCollaboratorViewController.swift in Sources */,
 				0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */,
+				0BF071FB2705FFD8009EA47B /* IntensityAnalysisViewController.swift in Sources */,
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
 				0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */,
 				0BFC667127021CC50018E5D1 /* RegistrationResearcherViewController.swift in Sources */,

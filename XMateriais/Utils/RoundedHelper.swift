@@ -26,6 +26,8 @@ class RoundedHelper: NSObject {
 
     static func roundView(view: UIView) {
         view.layer.cornerRadius = 2.0
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         view.layer.masksToBounds = true
     }
 
