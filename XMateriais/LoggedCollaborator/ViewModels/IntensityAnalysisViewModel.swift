@@ -10,6 +10,8 @@ import Foundation
 
 class IntensityAnalysisViewModel {
     
+    // MARK: Variable's
+
     let kChosenWordText = "Palavra escolhida"
     
     var firstChosenWord: String?
@@ -20,18 +22,20 @@ class IntensityAnalysisViewModel {
     var sliderValueThree: Float?
     
     
+    // MARK: Public Functions
+        
     func setFirstChosenWord() -> String {
         let word = "\(kChosenWordText) \(firstChosenWord ?? "[1]")"
         return word
     }
     
     func setSecondChosenWord() -> String {
-        let word = "\(kChosenWordText) \(secondChosenWord ?? "[1]")"
+        let word = "\(kChosenWordText) \(secondChosenWord ?? "[2]")"
         return word
     }
     
     func setThirdChosenWord() ->  String {
-        let word = "\(kChosenWordText) \(thirdChosenWord ?? "[1]")"
+        let word = "\(kChosenWordText) \(thirdChosenWord ?? "[3]")"
         return word
     }
     
