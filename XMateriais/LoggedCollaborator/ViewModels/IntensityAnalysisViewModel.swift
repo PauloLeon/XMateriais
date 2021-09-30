@@ -21,7 +21,6 @@ class IntensityAnalysisViewModel {
     var sliderValueTwo: Float?
     var sliderValueThree: Float?
     
-    
     // MARK: Public Functions
         
     func setFirstChosenWord() -> String {
