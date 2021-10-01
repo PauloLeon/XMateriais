@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Lottie
 
 class ConfirmSIgnUpViewController: UIViewController {
     
     // MARK: IBOutlet's
 
+    @IBOutlet weak var animationLottie: AnimationView!
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var errorCodeLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
@@ -32,6 +34,7 @@ class ConfirmSIgnUpViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+        setupLottie()
     }
     
     // MARK: Private Functions
@@ -40,6 +43,13 @@ class ConfirmSIgnUpViewController: UIViewController {
         errorCodeLabel.isHidden = true
         continueButton.layer.cornerRadius = kTwo
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    private func setupLottie() {
+        animationLottie.contentMode = .scaleAspectFit
+        animationLottie.loopMode = .loop
+        animationLottie.animationSpeed = 0.5
+        animationLottie.play()
     }
     
     private func setTextFieldDelegate() {

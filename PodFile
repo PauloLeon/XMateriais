@@ -3,4 +3,5 @@ target 'XMateriais' do
   pod 'SwiftLint'
   pod 'IQKeyboardManagerSwift'
   pod 'InputMask'
+  pod 'lottie-ios'
 end

@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Lottie
 
 class ConfirmSuccessViewController: UIViewController {
    
     // MARK: IBOutlet's
 
+    @IBOutlet weak var animationLottie: AnimationView!
     @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variable's
@@ -28,6 +30,7 @@ class ConfirmSuccessViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+        setupLottie()
     }
     
     // MARK: Private Functions
@@ -35,6 +38,13 @@ class ConfirmSuccessViewController: UIViewController {
     private func setupUI() {
         continueButton.layer.cornerRadius = kTwo
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    private func setupLottie() {
+        animationLottie.contentMode = .scaleAspectFit
+        animationLottie.loopMode = .loop
+        animationLottie.animationSpeed = 0.5
+        animationLottie.play()
     }
     
     private func removeNavigationBorder() {

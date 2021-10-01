@@ -269,19 +269,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVD-dI-mhs">
-                                <rect key="frame" x="67.5" y="68" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="P3M-lr-NYM"/>
-                                    <constraint firstAttribute="height" constant="128" id="zaj-Rz-jRo"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha? Não tem problema. Por favor, informe abaixo o seu e-mail cadastrado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-8k-FAg">
                                 <rect key="frame" x="16" y="401" width="343" height="32"/>
                                 <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-f0-9yK" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="95.5" y="68" width="184" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="APw-UQ-qyf"/>
+                                    <constraint firstAttribute="height" constant="184" id="e3r-a4-NIh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="locker"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -289,8 +293,8 @@
                             <constraint firstItem="TR2-uD-mbd" firstAttribute="trailing" secondItem="iPc-Za-QL2" secondAttribute="trailing" constant="16" id="8m8-rV-i3i"/>
                             <constraint firstItem="FRg-hx-14W" firstAttribute="leading" secondItem="TR2-uD-mbd" secondAttribute="leading" constant="15" id="9pV-fK-xil"/>
                             <constraint firstItem="FRg-hx-14W" firstAttribute="top" secondItem="iPc-Za-QL2" secondAttribute="bottom" constant="8" id="EFj-8K-Gqj"/>
-                            <constraint firstItem="tVD-dI-mhs" firstAttribute="centerX" secondItem="gp7-fU-os3" secondAttribute="centerX" id="PsQ-Xj-gc6"/>
                             <constraint firstItem="F2U-76-rIL" firstAttribute="top" secondItem="h6A-8k-FAg" secondAttribute="bottom" constant="32" id="UZ6-Ln-SAD"/>
+                            <constraint firstItem="8ae-f0-9yK" firstAttribute="centerX" secondItem="gp7-fU-os3" secondAttribute="centerX" id="VIz-Sa-IP2"/>
                             <constraint firstItem="xDt-tt-hSU" firstAttribute="leading" secondItem="TR2-uD-mbd" secondAttribute="leading" constant="16" id="YUW-F8-VMU"/>
                             <constraint firstAttribute="trailing" secondItem="h6A-8k-FAg" secondAttribute="trailing" constant="16" id="alc-Ab-oh8"/>
                             <constraint firstItem="xDt-tt-hSU" firstAttribute="top" secondItem="FRg-hx-14W" secondAttribute="bottom" constant="64" id="b1u-5C-gCk"/>
@@ -298,7 +302,7 @@
                             <constraint firstItem="TR2-uD-mbd" firstAttribute="bottom" secondItem="xDt-tt-hSU" secondAttribute="bottom" constant="24" id="gpU-76-34A"/>
                             <constraint firstItem="iPc-Za-QL2" firstAttribute="leading" secondItem="TR2-uD-mbd" secondAttribute="leading" constant="16" id="hEe-bQ-0jn"/>
                             <constraint firstItem="TR2-uD-mbd" firstAttribute="trailing" secondItem="F2U-76-rIL" secondAttribute="trailing" constant="16" id="l6x-4m-6OT"/>
-                            <constraint firstItem="tVD-dI-mhs" firstAttribute="top" secondItem="TR2-uD-mbd" secondAttribute="top" constant="24" id="q19-sX-cL2"/>
+                            <constraint firstItem="8ae-f0-9yK" firstAttribute="top" secondItem="TR2-uD-mbd" secondAttribute="top" constant="24" id="ol6-ZK-KML"/>
                             <constraint firstItem="TR2-uD-mbd" firstAttribute="trailing" secondItem="xDt-tt-hSU" secondAttribute="trailing" constant="16" id="qev-Xg-p8r"/>
                             <constraint firstItem="TR2-uD-mbd" firstAttribute="trailing" secondItem="FRg-hx-14W" secondAttribute="trailing" constant="16" id="t9M-Tj-reS"/>
                             <constraint firstItem="F2U-76-rIL" firstAttribute="leading" secondItem="TR2-uD-mbd" secondAttribute="leading" constant="16" id="y4i-eg-VzD"/>
@@ -310,6 +314,7 @@
                         <outlet property="continueButton" destination="xDt-tt-hSU" id="GhF-E2-n8q"/>
                         <outlet property="emailTextField" destination="iPc-Za-QL2" id="ZXv-b9-ACz"/>
                         <outlet property="errorEmailLabel" destination="FRg-hx-14W" id="nET-Lv-TGY"/>
+                        <outlet property="lottieAnimation" destination="8ae-f0-9yK" id="68w-On-zZf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUc-yX-04r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -706,13 +711,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-7T-2kV">
-                                <rect key="frame" x="67.5" y="68" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="0gj-DI-eCB"/>
-                                    <constraint firstAttribute="width" constant="240" id="5Pn-Ww-0I1"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inserir o código enviado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-1p-yqC">
                                 <rect key="frame" x="16" y="448" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -758,14 +756,24 @@
                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEK-6E-RTv" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="95.5" y="68" width="184" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="41a-l5-Wvj"/>
+                                    <constraint firstAttribute="width" constant="184" id="QQV-gT-UJh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="email"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Yqv-1p-yqC" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="0Jz-iX-6ZJ"/>
+                            <constraint firstItem="gEK-6E-RTv" firstAttribute="centerX" secondItem="OC1-0J-Wa8" secondAttribute="centerX" id="5x6-WY-YdG"/>
                             <constraint firstItem="a0k-mK-3bK" firstAttribute="top" secondItem="TG2-cR-mRr" secondAttribute="bottom" constant="32" id="6PR-ko-JZY"/>
-                            <constraint firstItem="yIW-7T-2kV" firstAttribute="top" secondItem="Qmw-xX-iSs" secondAttribute="top" constant="24" id="7We-5A-NGW"/>
                             <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="Lt5-ln-3cp" secondAttribute="trailing" constant="16" id="7ch-oq-2zI"/>
-                            <constraint firstItem="yIW-7T-2kV" firstAttribute="centerX" secondItem="OC1-0J-Wa8" secondAttribute="centerX" id="DvJ-mj-9aA"/>
                             <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="TG2-cR-mRr" secondAttribute="trailing" constant="16" id="E1C-u3-TJx"/>
                             <constraint firstItem="Qmw-xX-iSs" firstAttribute="trailing" secondItem="Yqv-1p-yqC" secondAttribute="trailing" constant="16" id="Eoh-6X-vhq"/>
                             <constraint firstItem="Lt5-ln-3cp" firstAttribute="top" secondItem="a0k-mK-3bK" secondAttribute="bottom" constant="42" id="Lm2-81-4t0"/>
@@ -778,11 +786,13 @@
                             <constraint firstItem="Lt5-ln-3cp" firstAttribute="leading" secondItem="Qmw-xX-iSs" secondAttribute="leading" constant="16" id="ofs-BP-OhC"/>
                             <constraint firstItem="Qmw-xX-iSs" firstAttribute="bottom" secondItem="Lt5-ln-3cp" secondAttribute="bottom" constant="24" id="rS2-wQ-1es"/>
                             <constraint firstItem="Yqv-1p-yqC" firstAttribute="top" secondItem="7Ta-Eq-XwO" secondAttribute="bottom" constant="32" id="raq-UP-2EB"/>
+                            <constraint firstItem="gEK-6E-RTv" firstAttribute="top" secondItem="Qmw-xX-iSs" secondAttribute="top" constant="24" id="sfa-Ey-1f7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qmw-xX-iSs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Confirmação de Cadastro" id="ZwY-cl-Szl"/>
                     <connections>
+                        <outlet property="animationLottie" destination="gEK-6E-RTv" id="NCm-CP-Gjv"/>
                         <outlet property="codeTextField" destination="Yqv-1p-yqC" id="k0D-ej-d0l"/>
                         <outlet property="continueButton" destination="Lt5-ln-3cp" id="fhF-Nu-TaK"/>
                         <outlet property="errorCodeLabel" destination="TG2-cR-mRr" id="Ny6-hq-YXh"/>
@@ -800,13 +810,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2vZ-Nr-Dvn">
-                                <rect key="frame" x="67.5" y="68" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="T1h-MR-ydk"/>
-                                    <constraint firstAttribute="width" constant="240" id="ijk-g8-TZf"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JQ-ji-pTq">
                                 <rect key="frame" x="16" y="607" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -833,17 +836,28 @@
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-kA-1Lj" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="95.5" y="68" width="184" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="BHT-qt-iZo"/>
+                                    <constraint firstAttribute="width" constant="184" id="UDG-K1-wff"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="check"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dJb-m5-Ciz" firstAttribute="leading" secondItem="v7s-Rd-sGd" secondAttribute="leading" constant="16" id="5RZ-ql-ctV"/>
                             <constraint firstItem="v7s-Rd-sGd" firstAttribute="trailing" secondItem="4pK-12-Ddv" secondAttribute="trailing" constant="16" id="B6G-CL-46r"/>
                             <constraint firstItem="4pK-12-Ddv" firstAttribute="leading" secondItem="v7s-Rd-sGd" secondAttribute="leading" constant="16" id="G3M-cQ-eyt"/>
+                            <constraint firstItem="GfP-kA-1Lj" firstAttribute="centerX" secondItem="hhu-y4-0Up" secondAttribute="centerX" id="HJW-0J-g7t"/>
                             <constraint firstItem="v7s-Rd-sGd" firstAttribute="trailing" secondItem="dJb-m5-Ciz" secondAttribute="trailing" constant="16" id="XMv-QI-tCW"/>
-                            <constraint firstItem="2vZ-Nr-Dvn" firstAttribute="top" secondItem="v7s-Rd-sGd" secondAttribute="top" constant="24" id="cWM-Z8-k15"/>
                             <constraint firstItem="dJb-m5-Ciz" firstAttribute="top" secondItem="4pK-12-Ddv" secondAttribute="bottom" constant="32" id="gY2-id-FAa"/>
                             <constraint firstItem="v7s-Rd-sGd" firstAttribute="trailing" secondItem="4JQ-ji-pTq" secondAttribute="trailing" constant="16" id="k9y-ff-plR"/>
-                            <constraint firstItem="2vZ-Nr-Dvn" firstAttribute="centerX" secondItem="hhu-y4-0Up" secondAttribute="centerX" id="o1M-RT-cOt"/>
+                            <constraint firstItem="GfP-kA-1Lj" firstAttribute="top" secondItem="v7s-Rd-sGd" secondAttribute="top" constant="24" id="qHg-WI-Jew"/>
                             <constraint firstItem="4JQ-ji-pTq" firstAttribute="leading" secondItem="v7s-Rd-sGd" secondAttribute="leading" constant="16" id="rlE-WQ-gVd"/>
                             <constraint firstItem="v7s-Rd-sGd" firstAttribute="bottom" secondItem="4JQ-ji-pTq" secondAttribute="bottom" constant="24" id="yna-ih-8jc"/>
                             <constraint firstItem="4pK-12-Ddv" firstAttribute="centerY" secondItem="hhu-y4-0Up" secondAttribute="centerY" id="yx0-oV-3ZY"/>
@@ -852,6 +866,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Confirmação de cadastro" id="3el-zt-9t4"/>
                     <connections>
+                        <outlet property="animationLottie" destination="GfP-kA-1Lj" id="5ij-V1-Me0"/>
                         <outlet property="continueButton" destination="4JQ-ji-pTq" id="a3I-K3-YHB"/>
                     </connections>
                 </viewController>

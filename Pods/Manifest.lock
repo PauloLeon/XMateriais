@@ -1,24 +1,28 @@
 PODS:
   - InputMask (5.0.0)
   - IQKeyboardManagerSwift (6.5.4)
+  - lottie-ios (3.1.5)
   - SwiftLint (0.38.2)
 
 DEPENDENCIES:
   - InputMask
   - IQKeyboardManagerSwift
+  - lottie-ios
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - InputMask
     - IQKeyboardManagerSwift
+    - lottie-ios
     - SwiftLint
 
 SPEC CHECKSUMS:
   InputMask: 8a10dbc8ac3f94f0a5b4c380424bbe6795c69b16
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
 
-PODFILE CHECKSUM: b4cb54263909df6b5cc44b292dae7a73bbefa634
+PODFILE CHECKSUM: c24c679c299567a85d73fd18fb89ad5e5ba2ff70
 
 COCOAPODS: 1.5.3

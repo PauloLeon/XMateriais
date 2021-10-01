@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Lottie
 
 class PasswordRecoverViewController: UIViewController {
 
     // MARK: IBOutlet's
 
+    @IBOutlet weak var lottieAnimation: AnimationView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var errorEmailLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
@@ -31,6 +33,7 @@ class PasswordRecoverViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+        setupLottie()
     }
     
     // MARK: Private Functions
@@ -40,6 +43,13 @@ class PasswordRecoverViewController: UIViewController {
         errorEmailLabel.isHidden = true
         continueButton.layer.cornerRadius = kTwo
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    private func setupLottie() {
+        lottieAnimation.contentMode = .scaleAspectFit
+        lottieAnimation.loopMode = .loop
+        lottieAnimation.animationSpeed = 0.5
+        lottieAnimation.play()
     }
     
     private func removeNavigationBorder() {

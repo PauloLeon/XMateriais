@@ -15,6 +15,9 @@
 		0B39E24526EFBC170050A6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */; };
 		0B39E25026EFBC170050A6C4 /* XMateriaisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E24F26EFBC170050A6C4 /* XMateriaisTests.swift */; };
 		0B39E25B26EFBC170050A6C4 /* XMateriaisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E25A26EFBC170050A6C4 /* XMateriaisUITests.swift */; };
+		0B410DA927069266004EEE74 /* email.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B410DA827069266004EEE74 /* email.json */; };
+		0B410DAB27069565004EEE74 /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B410DAA27069565004EEE74 /* check.json */; };
+		0B410DAD27069D44004EEE74 /* locker.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B410DAC27069D44004EEE74 /* locker.json */; };
 		0B5906C226FAB1B10021B47E /* GT-Walsheim-Light-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */; };
 		0B5906C326FAB1B10021B47E /* GT-Walsheim-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */; };
 		0B5906C426FAB1B10021B47E /* GT-Walsheim-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */; };
@@ -95,6 +98,9 @@
 		0B39E25626EFBC170050A6C4 /* XMateriaisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMateriaisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39E25A26EFBC170050A6C4 /* XMateriaisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMateriaisUITests.swift; sourceTree = "<group>"; };
 		0B39E25C26EFBC170050A6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B410DA827069266004EEE74 /* email.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = email.json; sourceTree = "<group>"; };
+		0B410DAA27069565004EEE74 /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
+		0B410DAC27069D44004EEE74 /* locker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locker.json; sourceTree = "<group>"; };
 		0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light-Oblique.otf"; sourceTree = "<group>"; };
 		0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
@@ -226,6 +232,16 @@
 			path = XMateriaisUITests;
 			sourceTree = "<group>";
 		};
+		0B410DA727069253004EEE74 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				0B410DAC27069D44004EEE74 /* locker.json */,
+				0B410DA827069266004EEE74 /* email.json */,
+				0B410DAA27069565004EEE74 /* check.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
 		0B5906B826FAB17F0021B47E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +331,7 @@
 		0B63D53326FAAC44005599FA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B410DA727069253004EEE74 /* LottieAnimations */,
 				0B5906B826FAB17F0021B47E /* Fonts */,
 				0B39E23926EFBC150050A6C4 /* ViewController.swift */,
 				0B39E23E26EFBC150050A6C4 /* XMateriais.xcdatamodeld */,
@@ -586,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B5906CA26FAB1B10021B47E /* GT-Walsheim-Light.otf in Resources */,
+				0B410DAB27069565004EEE74 /* check.json in Resources */,
 				0B5906C726FAB1B10021B47E /* GT-Walsheim-Ultra-Light.otf in Resources */,
 				0B5906C926FAB1B10021B47E /* GT-Walsheim-Bold-Oblique.otf in Resources */,
 				0B39E24526EFBC170050A6C4 /* LaunchScreen.storyboard in Resources */,
@@ -597,8 +615,10 @@
 				0B5906C526FAB1B10021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf in Resources */,
 				0B63D52B26FAAB81005599FA /* Tutorial.storyboard in Resources */,
 				0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */,
+				0B410DA927069266004EEE74 /* email.json in Resources */,
 				0BFC665B2700655A0018E5D1 /* LoggedCollaborator.storyboard in Resources */,
 				0BFC665D2700656A0018E5D1 /* LoggedResearcher.storyboard in Resources */,
+				0B410DAD27069D44004EEE74 /* locker.json in Resources */,
 				0B5906C426FAB1B10021B47E /* GT-Walsheim-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,6 +673,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-XMateriais/Pods-XMateriais-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -660,6 +681,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
