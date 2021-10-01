@@ -46,19 +46,11 @@ class SignUpViewController: UIViewController {
     }
     
     private func collaboratorButtonNormalState() {
-        collaboratorButton.layer.cornerRadius = kThree
-        collaboratorButton.layer.borderWidth = kBorderWidth
-        collaboratorButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
-        collaboratorButton.setTitleColor(UIColor.getGrayColor(), for: .normal)
-        collaboratorButton.backgroundColor = UIColor.white
+        RoundedHelper.roundDisableContinueButton(button: collaboratorButton)
     }
     
     private func researcherButtonNormalState() {
-        researcherButton.layer.cornerRadius = kThree
-        researcherButton.layer.borderWidth = kBorderWidth
-        researcherButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
-        researcherButton.setTitleColor(UIColor.getGrayColor(), for: .normal)
-        researcherButton.backgroundColor = UIColor.white
+        RoundedHelper.roundDisableContinueButton(button: researcherButton)
     }
     
     private func collaboratorButtonChosenState() {
