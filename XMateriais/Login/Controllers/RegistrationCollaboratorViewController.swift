@@ -26,7 +26,7 @@ class RegistrationCollaboratorViewController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variable's
-    
+    let kSegue: String = "validFormSegue"
     let pickerGenderType = ["Masculino", "Feminino", "Homem transgênero", "Mulher transgênero", "Homem transexual", "Mulher transexual", "Cisgênero", "Prefiro não responder", "Outros"]
     let pickerSchoolingType = ["Ensino Fundamental", "Ensino médio", "Ensino Superior (Graduação)", "Superior (Pós-graduação)", "Mestrado", "Doutorado", "Pós-Doutorado"]
     
@@ -160,7 +160,7 @@ class RegistrationCollaboratorViewController: UIViewController {
                 else{
                     self.ref!.child("users").child(user!.user.uid).setValue(self.setUserData())
                     print("Sign Up Successfully.")
-                    self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
+                    self.performSegue(withIdentifier: self.kSegue, sender: self)
                 }
             }
         } else {
