@@ -16,10 +16,6 @@ class ConfirmSuccessViewController: UIViewController {
     @IBOutlet weak var animationLottie: AnimationView!
     @IBOutlet weak var continueButton: UIButton!
     
-    // MARK: Variable's
-    
-    let kTwo: CGFloat = 2.0
-    
     // MARK: Override Functions
 
     override func viewDidLoad() {
@@ -36,7 +32,7 @@ class ConfirmSuccessViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupUI() {
-        continueButton.layer.cornerRadius = kTwo
+        RoundedHelper.roundContinueButton(button: continueButton)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

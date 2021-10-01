@@ -14,10 +14,6 @@ class FirstPresentationViewController: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
     
-    // MARK: Variable's
-    
-    let kTwo: CGFloat = 2.0
-    
     // MARK: Override Functions
 
     override func viewDidLoad() {
@@ -33,7 +29,7 @@ class FirstPresentationViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupUI() {
-        continueButton.layer.cornerRadius = kTwo
+        RoundedHelper.roundContinueButton(button: continueButton)
         renameNavigationBackButton()
     }
     

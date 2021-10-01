@@ -18,10 +18,6 @@ class ConfirmSIgnUpViewController: UIViewController {
     @IBOutlet weak var errorCodeLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     
-    // MARK: Variable's
-    
-    let kTwo: CGFloat = 2.0
-    let kBorderWidth: CGFloat = 1.0
     
     // MARK: Override Functions
 
@@ -41,7 +37,7 @@ class ConfirmSIgnUpViewController: UIViewController {
 
     private func setupUI() {
         errorCodeLabel.isHidden = true
-        continueButton.layer.cornerRadius = kTwo
+        RoundedHelper.roundContinueButton(button: continueButton)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kTwo: CGFloat = 2.0
+    let kThree: CGFloat = 3.0
     let kBorderWidth: CGFloat = 1.0
     
     // MARK: Override Functions
@@ -35,8 +35,8 @@ class LoginViewController: UIViewController {
     // MARK: Private Functions
 
     private func setupView() {
-        signInButton.layer.cornerRadius = kTwo
-        signUpButton.layer.cornerRadius = kTwo
+        signInButton.layer.cornerRadius = kThree
+        signUpButton.layer.cornerRadius = kThree
         signUpButton.layer.borderWidth = kBorderWidth
         signUpButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         self.navigationController?.navigationBar.tintColor = UIColor.getPrimaryColor()

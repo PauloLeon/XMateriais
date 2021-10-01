@@ -18,11 +18,6 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var errorPasswordLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     
-    // MARK: Variable's
-    
-    let kTwo: CGFloat = 2.0
-    let kBorderWidth: CGFloat = 1.0
-
     // MARK: Override Functions
     
     override func viewDidLoad() {
@@ -41,7 +36,7 @@ class SignInViewController: UIViewController {
     private func setupUI() {
         errorEmailLabel.isHidden = true
         errorPasswordLabel.isHidden = true
-        continueButton.layer.cornerRadius = kTwo
+        RoundedHelper.roundContinueButton(button: continueButton)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

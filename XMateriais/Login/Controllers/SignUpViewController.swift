@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kTwo: CGFloat = 2.0
+    let kThree: CGFloat = 3.0
     let kBorderWidth: CGFloat = 1.0
     var signUpType: Int?
     let kCollaboratorType: Int = 0
@@ -46,7 +46,7 @@ class SignUpViewController: UIViewController {
     }
     
     private func collaboratorButtonNormalState() {
-        collaboratorButton.layer.cornerRadius = kTwo
+        collaboratorButton.layer.cornerRadius = kThree
         collaboratorButton.layer.borderWidth = kBorderWidth
         collaboratorButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         collaboratorButton.setTitleColor(UIColor.getGrayColor(), for: .normal)
@@ -54,7 +54,7 @@ class SignUpViewController: UIViewController {
     }
     
     private func researcherButtonNormalState() {
-        researcherButton.layer.cornerRadius = kTwo
+        researcherButton.layer.cornerRadius = kThree
         researcherButton.layer.borderWidth = kBorderWidth
         researcherButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         researcherButton.setTitleColor(UIColor.getGrayColor(), for: .normal)
@@ -74,14 +74,14 @@ class SignUpViewController: UIViewController {
     private func continueButtonState(isDisable: Bool) {
         if isDisable {
             continueButton.isEnabled = false
-            continueButton.layer.cornerRadius = kTwo
+            continueButton.layer.cornerRadius = kThree
             continueButton.layer.borderWidth = kBorderWidth
             continueButton.backgroundColor = UIColor.getDisableColor()
             continueButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
             continueButton.setTitleColor(UIColor.getDisableTextColor(), for: .disabled)
         } else {
             continueButton.isEnabled = true
-            continueButton.layer.cornerRadius = kTwo
+            continueButton.layer.cornerRadius = kThree
             continueButton.layer.borderWidth = kBorderWidth
             continueButton.backgroundColor = UIColor.getPrimaryColor()
             continueButton.layer.borderColor = UIColor.getPrimaryColor().cgColor

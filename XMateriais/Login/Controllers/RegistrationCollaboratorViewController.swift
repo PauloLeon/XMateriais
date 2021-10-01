@@ -25,8 +25,6 @@ class RegistrationCollaboratorViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kTwo: CGFloat = 2.0
-    let kBorderWidth: CGFloat = 1.0
     let pickerGenderType = ["Masculino", "Feminino", "Homem transgênero", "Mulher transgênero", "Homem transexual", "Mulher transexual", "Cisgênero", "Prefiro não responder", "Outros"]
     let pickerSchoolingType = ["Ensino Fundamental", "Ensino médio", "Ensino Superior (Graduação)", "Superior (Pós-graduação)", "Mestrado", "Doutorado", "Pós-Doutorado"]
     
@@ -51,7 +49,7 @@ class RegistrationCollaboratorViewController: UIViewController {
     private func setupView() {
         errorEmailLabel.isHidden = true
         warningPasswordLabel.isHidden = true
-        continueButton.layer.cornerRadius = kTwo
+        RoundedHelper.roundContinueButton(button: continueButton)
         setupTextFieldDelegate()
         setGenderType()
         setSchoolingType()
