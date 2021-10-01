@@ -30,6 +30,12 @@ class RoundedHelper: NSObject {
         view.layer.borderColor = UIColor.getDisableBorderColor().cgColor
         view.layer.masksToBounds = true
     }
+    
+    static func roundContinueButton(button: UIButton) {
+        button.layer.cornerRadius = 2.0
+        button.layer.borderColor = UIColor.clear.cgColor
+        button.layer.masksToBounds = true
+    }
 
     static func roundButtons(button: UIButton) {
         button.layer.cornerRadius = button.layer.bounds.size.width/2

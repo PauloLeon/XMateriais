@@ -20,6 +20,7 @@ class IntensityAnalysisViewController: UIViewController {
     @IBOutlet weak var firstSlider: UISlider!
     @IBOutlet weak var secondSlider: UISlider!
     @IBOutlet weak var thirdSlider: UISlider!
+    @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variable's
     
@@ -43,6 +44,7 @@ class IntensityAnalysisViewController: UIViewController {
         setupChosenWord()
         renameNavigationBackButton()
         roundedView()
+        RoundedHelper.roundContinueButton(button: continueButton)
     }
     
     private func roundedView() {
@@ -81,5 +83,6 @@ class IntensityAnalysisViewController: UIViewController {
     
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
         print("Escolhas Debug: slider1 = \(viewModel.sliderValueOne?.rounded() ?? 0.0) slider2 = \(viewModel.sliderValueTwo?.rounded() ?? 0.0) slider3 = \(viewModel.sliderValueThree?.rounded() ?? 0.0)")
+        performSegue(withIdentifier: viewModel.kSegue, sender: nil)
     }
 }

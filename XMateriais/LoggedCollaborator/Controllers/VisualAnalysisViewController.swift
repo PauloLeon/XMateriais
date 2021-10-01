@@ -69,6 +69,7 @@ class VisualAnalysisViewController: UIViewController {
         removeNavigationBorder()
         roundedButtons()
         roundedView()
+        RoundedHelper.roundContinueButton(button: continueButton)
     }
     
     private func renameNavigationBackButton() {

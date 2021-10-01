@@ -186,13 +186,13 @@
                                                 <rect key="frame" x="7.5" y="80" width="360" height="96"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9T-0d-P1c">
-                                                        <rect key="frame" x="8" y="8" width="29" height="17"/>
-                                                        <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                                        <rect key="frame" x="8" y="8" width="30.5" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgE-eg-fnc">
-                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="17"/>
+                                                        <rect key="frame" x="295.5" y="8" width="56.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2155,6 +2155,7 @@
                     <navigationItem key="navigationItem" title="Intensidade" id="f2T-WO-DSh"/>
                     <size key="freeformSize" width="375" height="840"/>
                     <connections>
+                        <outlet property="continueButton" destination="poh-kp-ZUj" id="wnh-O8-TFi"/>
                         <outlet property="firstChosenWordLabel" destination="JeL-o5-z2d" id="Z0Z-rh-4UZ"/>
                         <outlet property="firstSlider" destination="Mjk-d1-thi" id="wZC-9L-Hw0"/>
                         <outlet property="firstView" destination="sM2-cU-biS" id="wiz-dM-rVR"/>
@@ -2164,11 +2165,298 @@
                         <outlet property="thirdChosenWordLabel" destination="5ED-y5-Kir" id="E2V-f9-d50"/>
                         <outlet property="thirdSlider" destination="Xl7-VJ-ZyC" id="GgC-Kz-czJ"/>
                         <outlet property="thirdView" destination="4xt-ks-258" id="ttN-wS-UOe"/>
+                        <segue destination="jEa-Ls-Mys" kind="show" identifier="segueInterpretative" id="YxP-N4-RRk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQE-yH-9GC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2330" y="77"/>
+        </scene>
+        <!--Análise Interpretativa-->
+        <scene sceneID="dGj-KG-bne">
+            <objects>
+                <viewController storyboardIdentifier="InterpretativeAnalysisViewController" id="jEa-Ls-Mys" customClass="InterpretativeAnalysisViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iv8-xJ-ytE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwF-OP-D4c">
+                                <rect key="frame" x="16" y="60" width="4" height="48"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="0ax-Jg-gI1"/>
+                                    <constraint firstAttribute="width" constant="4" id="W0K-Bh-tAT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por você escolheu a palavra Palavra Selecionada[1]?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XS1-VW-QJu">
+                                <rect key="frame" x="28" y="60" width="331" height="45"/>
+                                <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Digite a sua explicação" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-HH-r5W">
+                                <rect key="frame" x="16" y="124" width="343" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Et1-eE-4DH"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVD-6a-eud">
+                                <rect key="frame" x="16" y="268" width="4" height="48"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="EER-N1-kG2"/>
+                                    <constraint firstAttribute="height" constant="48" id="feX-EK-VgE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por você escolheu a palavra Palavra Selecionada[1]?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-I6-YCB">
+                                <rect key="frame" x="28" y="268" width="331" height="45"/>
+                                <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Digite a sua explicação" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="90V-6W-Jye">
+                                <rect key="frame" x="16" y="332" width="343" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="LFV-vU-cUY"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p23-OW-0I9">
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Nk9-FN-81e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonDidPressed:" destination="jEa-Ls-Mys" eventType="touchUpInside" id="L3v-LW-NB5"/>
+                                    <action selector="continueButtonDidPressed:" destination="jdv-Nu-cqs" eventType="touchUpInside" id="X9q-1n-IgY"/>
+                                    <segue destination="3i4-SX-j0j" kind="show" id="aa7-iJ-4ts"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="90V-6W-Jye" firstAttribute="top" secondItem="HVD-6a-eud" secondAttribute="bottom" constant="16" id="BAM-vM-dne"/>
+                            <constraint firstItem="IdG-I6-YCB" firstAttribute="leading" secondItem="HVD-6a-eud" secondAttribute="trailing" constant="8" id="Ggw-ar-vex"/>
+                            <constraint firstItem="suZ-xk-AYS" firstAttribute="trailing" secondItem="p23-OW-0I9" secondAttribute="trailing" constant="16" id="H0a-lp-tAW"/>
+                            <constraint firstItem="HVD-6a-eud" firstAttribute="leading" secondItem="suZ-xk-AYS" secondAttribute="leading" constant="16" id="N1z-as-QM7"/>
+                            <constraint firstItem="Qef-HH-r5W" firstAttribute="leading" secondItem="suZ-xk-AYS" secondAttribute="leading" constant="16" id="OEV-d3-R94"/>
+                            <constraint firstItem="90V-6W-Jye" firstAttribute="top" secondItem="HVD-6a-eud" secondAttribute="bottom" constant="16" id="VYK-4a-EpK"/>
+                            <constraint firstAttribute="trailing" secondItem="IdG-I6-YCB" secondAttribute="trailing" constant="16" id="YSH-Ib-hXe"/>
+                            <constraint firstItem="XS1-VW-QJu" firstAttribute="top" secondItem="suZ-xk-AYS" secondAttribute="top" constant="16" id="Ybh-fJ-NeR"/>
+                            <constraint firstItem="XS1-VW-QJu" firstAttribute="leading" secondItem="qwF-OP-D4c" secondAttribute="trailing" constant="8" id="Zwr-mC-12F"/>
+                            <constraint firstItem="qwF-OP-D4c" firstAttribute="leading" secondItem="suZ-xk-AYS" secondAttribute="leading" constant="16" id="aFg-lo-ex9"/>
+                            <constraint firstItem="suZ-xk-AYS" firstAttribute="trailing" secondItem="Qef-HH-r5W" secondAttribute="trailing" constant="16" id="fGW-pA-Mew"/>
+                            <constraint firstItem="HVD-6a-eud" firstAttribute="top" secondItem="Qef-HH-r5W" secondAttribute="bottom" constant="24" id="fxH-XV-wQh"/>
+                            <constraint firstAttribute="trailing" secondItem="XS1-VW-QJu" secondAttribute="trailing" constant="16" id="gB4-tF-Vn3"/>
+                            <constraint firstItem="suZ-xk-AYS" firstAttribute="bottom" secondItem="p23-OW-0I9" secondAttribute="bottom" constant="24" id="pAU-gO-fZb"/>
+                            <constraint firstItem="suZ-xk-AYS" firstAttribute="trailing" secondItem="90V-6W-Jye" secondAttribute="trailing" constant="16" id="rJz-ox-7ij"/>
+                            <constraint firstItem="qwF-OP-D4c" firstAttribute="top" secondItem="suZ-xk-AYS" secondAttribute="top" constant="16" id="sqz-fl-zDV"/>
+                            <constraint firstItem="IdG-I6-YCB" firstAttribute="top" secondItem="Qef-HH-r5W" secondAttribute="bottom" constant="24" id="tsx-Ag-G5D"/>
+                            <constraint firstItem="Qef-HH-r5W" firstAttribute="top" secondItem="qwF-OP-D4c" secondAttribute="bottom" constant="16" id="xTR-Cn-RSN"/>
+                            <constraint firstItem="p23-OW-0I9" firstAttribute="leading" secondItem="suZ-xk-AYS" secondAttribute="leading" constant="16" id="xn1-hm-fYg"/>
+                            <constraint firstItem="90V-6W-Jye" firstAttribute="leading" secondItem="suZ-xk-AYS" secondAttribute="leading" constant="16" id="y4N-m2-tKC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="suZ-xk-AYS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Análise Interpretativa" id="iO1-2U-9Ih"/>
+                    <connections>
+                        <outlet property="FirstWordTextView" destination="Qef-HH-r5W" id="jCc-Nk-qCa"/>
+                        <outlet property="continueButton" destination="p23-OW-0I9" id="L84-8o-CdV"/>
+                        <outlet property="firstWordTextLabel" destination="XS1-VW-QJu" id="V1Y-pz-lG4"/>
+                        <outlet property="secondWordTextLabel" destination="IdG-I6-YCB" id="BDP-K3-4zP"/>
+                        <outlet property="secondWordTextView" destination="90V-6W-Jye" id="HJh-Fp-JfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gua-WZ-az2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3037.5999999999999" y="156.97151424287858"/>
+        </scene>
+        <!--Reflexão Final-->
+        <scene sceneID="saF-OI-jAU">
+            <objects>
+                <viewController storyboardIdentifier="FinalViewController" id="3i4-SX-j0j" customClass="FinalViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SOQ-wR-729">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-KB-oU4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="756"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-SP-hv2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="760"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbJ-zJ-bTL">
+                                                <rect key="frame" x="16" y="16" width="4" height="48"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="1Bb-2A-Nhv"/>
+                                                    <constraint firstAttribute="width" constant="4" id="ubM-Lb-Gv3"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por você escolheu a palavra Palavra Selecionada[1]?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIZ-JJ-XvK">
+                                                <rect key="frame" x="28" y="16" width="331" height="45"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qyN-i7-O7K">
+                                                <rect key="frame" x="16" y="80" width="343" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="bI2-rg-JJi"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybH-aL-bFQ">
+                                                <rect key="frame" x="16" y="224" width="4" height="48"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="4" id="JbV-C5-Xmd"/>
+                                                    <constraint firstAttribute="height" constant="48" id="iD8-7g-TOZ"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por você escolheu a palavra Palavra Selecionada[1]?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMN-Th-dGs">
+                                                <rect key="frame" x="28" y="224" width="331" height="45"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="inl-kj-n5S">
+                                                <rect key="frame" x="16" y="288" width="343" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="fFo-MJ-2V6"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDG-us-wN4">
+                                                <rect key="frame" x="16" y="432" width="4" height="48"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Oye-Gu-4iz"/>
+                                                    <constraint firstAttribute="width" constant="4" id="ivP-eZ-MQK"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por você escolheu a palavra Palavra Selecionada[1]?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaJ-28-Yj3">
+                                                <rect key="frame" x="28" y="432" width="331" height="45"/>
+                                                <fontDescription key="fontDescription" name="GTWalsheim-Medium" family="GT Walsheim" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tpu-fh-Ylh">
+                                                <rect key="frame" x="16" y="496" width="343" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="49Z-9v-bXV"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VF-k6-vDb">
+                                                <rect key="frame" x="16" y="700" width="343" height="36"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="5am-jT-PSE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                                <state key="normal" title="Continuar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="continueButtonDidPressed:" destination="jdv-Nu-cqs" eventType="touchUpInside" id="hUQ-ls-AEi"/>
+                                                    <action selector="continueButtonDidPressed:" destination="3i4-SX-j0j" eventType="touchUpInside" id="oKY-RB-kef"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="YbJ-zJ-bTL" firstAttribute="top" secondItem="Gas-SP-hv2" secondAttribute="top" constant="16" id="0T2-ye-bU1"/>
+                                            <constraint firstItem="YbJ-zJ-bTL" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="0ZC-Uj-Hka"/>
+                                            <constraint firstAttribute="trailing" secondItem="VaJ-28-Yj3" secondAttribute="trailing" constant="16" id="0x0-DJ-681"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tpu-fh-Ylh" secondAttribute="trailing" constant="16" id="46Q-s1-50x"/>
+                                            <constraint firstItem="VaJ-28-Yj3" firstAttribute="leading" secondItem="SDG-us-wN4" secondAttribute="trailing" constant="8" id="9p9-aH-sTF"/>
+                                            <constraint firstItem="Tpu-fh-Ylh" firstAttribute="top" secondItem="SDG-us-wN4" secondAttribute="bottom" constant="16" id="AQk-kl-DZy"/>
+                                            <constraint firstItem="inl-kj-n5S" firstAttribute="top" secondItem="ybH-aL-bFQ" secondAttribute="bottom" constant="16" id="BZL-Qg-InZ"/>
+                                            <constraint firstItem="ybH-aL-bFQ" firstAttribute="top" secondItem="qyN-i7-O7K" secondAttribute="bottom" constant="24" id="Bc1-0C-X7u"/>
+                                            <constraint firstItem="qyN-i7-O7K" firstAttribute="top" secondItem="YbJ-zJ-bTL" secondAttribute="bottom" constant="16" id="FG6-Bx-tPm"/>
+                                            <constraint firstItem="ybH-aL-bFQ" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="HUu-oz-at4"/>
+                                            <constraint firstItem="inl-kj-n5S" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="IcK-gr-jMt"/>
+                                            <constraint firstAttribute="trailing" secondItem="UIZ-JJ-XvK" secondAttribute="trailing" constant="16" id="IdI-GU-jrV"/>
+                                            <constraint firstItem="inl-kj-n5S" firstAttribute="top" secondItem="ybH-aL-bFQ" secondAttribute="bottom" constant="16" id="Im8-Nj-Nuv"/>
+                                            <constraint firstItem="Tpu-fh-Ylh" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="Kzw-0P-Ug6"/>
+                                            <constraint firstItem="VaJ-28-Yj3" firstAttribute="top" secondItem="inl-kj-n5S" secondAttribute="bottom" constant="24" id="L1V-Ce-OAY"/>
+                                            <constraint firstItem="SDG-us-wN4" firstAttribute="top" secondItem="inl-kj-n5S" secondAttribute="bottom" constant="24" id="L4h-oq-hCw"/>
+                                            <constraint firstItem="UIZ-JJ-XvK" firstAttribute="leading" secondItem="YbJ-zJ-bTL" secondAttribute="trailing" constant="8" id="NBr-Mm-j3n"/>
+                                            <constraint firstItem="UIZ-JJ-XvK" firstAttribute="top" secondItem="Gas-SP-hv2" secondAttribute="top" constant="16" id="NfE-Th-aEg"/>
+                                            <constraint firstItem="JMN-Th-dGs" firstAttribute="leading" secondItem="ybH-aL-bFQ" secondAttribute="trailing" constant="8" id="OIJ-yJ-XAJ"/>
+                                            <constraint firstItem="qyN-i7-O7K" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="PA2-Eb-EZs"/>
+                                            <constraint firstAttribute="trailing" secondItem="qyN-i7-O7K" secondAttribute="trailing" constant="16" id="SdS-p2-xAu"/>
+                                            <constraint firstItem="SDG-us-wN4" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="Se3-uQ-SiY"/>
+                                            <constraint firstAttribute="trailing" secondItem="inl-kj-n5S" secondAttribute="trailing" constant="16" id="XKj-VG-VTD"/>
+                                            <constraint firstAttribute="trailing" secondItem="JMN-Th-dGs" secondAttribute="trailing" constant="16" id="a3h-ca-d65"/>
+                                            <constraint firstAttribute="trailing" secondItem="2VF-k6-vDb" secondAttribute="trailing" constant="16" id="dJx-Ji-u7B"/>
+                                            <constraint firstAttribute="height" constant="760" id="e8l-II-lQe"/>
+                                            <constraint firstItem="Tpu-fh-Ylh" firstAttribute="top" secondItem="SDG-us-wN4" secondAttribute="bottom" constant="16" id="gKW-kn-18g"/>
+                                            <constraint firstItem="2VF-k6-vDb" firstAttribute="leading" secondItem="Gas-SP-hv2" secondAttribute="leading" constant="16" id="rxJ-pR-9Uh"/>
+                                            <constraint firstItem="qyN-i7-O7K" firstAttribute="top" secondItem="YbJ-zJ-bTL" secondAttribute="bottom" constant="16" id="vDe-Ig-JT1"/>
+                                            <constraint firstItem="JMN-Th-dGs" firstAttribute="top" secondItem="qyN-i7-O7K" secondAttribute="bottom" constant="24" id="x4Q-47-fW8"/>
+                                            <constraint firstAttribute="bottom" secondItem="2VF-k6-vDb" secondAttribute="bottom" constant="24" id="yhE-nU-E9c"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Gas-SP-hv2" secondAttribute="bottom" id="3Uj-QJ-1r1"/>
+                                    <constraint firstItem="Gas-SP-hv2" firstAttribute="top" secondItem="r3a-KB-oU4" secondAttribute="top" id="M4P-Sg-Vtq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gas-SP-hv2" secondAttribute="trailing" id="SXZ-Ug-WoJ"/>
+                                    <constraint firstItem="Gas-SP-hv2" firstAttribute="width" secondItem="r3a-KB-oU4" secondAttribute="width" id="aea-Es-AEV"/>
+                                    <constraint firstItem="Gas-SP-hv2" firstAttribute="leading" secondItem="r3a-KB-oU4" secondAttribute="leading" id="k7B-gU-w6I"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="r3a-KB-oU4" firstAttribute="bottom" secondItem="yAA-V4-hTi" secondAttribute="bottom" id="9MO-EM-Z2N"/>
+                            <constraint firstItem="r3a-KB-oU4" firstAttribute="leading" secondItem="yAA-V4-hTi" secondAttribute="leading" id="JRp-9F-ueV"/>
+                            <constraint firstItem="r3a-KB-oU4" firstAttribute="top" secondItem="yAA-V4-hTi" secondAttribute="top" id="Szq-eY-0xh"/>
+                            <constraint firstItem="r3a-KB-oU4" firstAttribute="trailing" secondItem="yAA-V4-hTi" secondAttribute="trailing" id="ewm-Jf-llt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yAA-V4-hTi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reflexão Final" id="Ieq-4Y-NlV"/>
+                    <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="FirstWordTextView" destination="qyN-i7-O7K" id="fgq-1g-hrd"/>
+                        <outlet property="continueButton" destination="2VF-k6-vDb" id="vpG-pH-maG"/>
+                        <outlet property="firstWordTextLabel" destination="UIZ-JJ-XvK" id="C9v-TC-d7m"/>
+                        <outlet property="secondWordTextLabel" destination="JMN-Th-dGs" id="LCF-if-jMt"/>
+                        <outlet property="secondWordTextView" destination="inl-kj-n5S" id="FUU-kf-rU7"/>
+                        <outlet property="thirdWordTextLabel" destination="VaJ-28-Yj3" id="lUq-AG-eBU"/>
+                        <outlet property="thirdWordTextView" destination="Tpu-fh-Ylh" id="qyY-Nx-ewB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBv-7p-Nyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3720.8000000000002" y="104.34782608695653"/>
         </scene>
     </scenes>
     <resources>

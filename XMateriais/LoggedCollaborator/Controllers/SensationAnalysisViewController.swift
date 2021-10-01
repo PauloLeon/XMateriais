@@ -86,6 +86,7 @@ class SensationAnalysisViewController: UIViewController {
         renameNavigationBackButton()
         roundedButtons()
         roundedView()
+        RoundedHelper.roundContinueButton(button: continueButton)
     }
     
     private func renameNavigationBackButton() {

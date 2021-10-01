@@ -1,25 +1,29 @@
 //
-//  LoggedCollaboratorViewController.swift
+//  FinalViewController.swift
 //  XMateriais
 //
-//  Created by Paulo Rosa on 26/09/21.
+//  Created by Paulo Rosa on 30/09/21.
 //  Copyright © 2021 Paulo Rosa. All rights reserved.
 //
 
 import UIKit
 
-class LoggedCollaboratorViewController: UIViewController {
-    
+class FinalViewController: UIViewController {
+
     // MARK: IBOutlet's
 
-    @IBOutlet weak var helloLabel: UILabel!
-    @IBOutlet weak var codeTextField: UITextField!
-    @IBOutlet weak var errorCodeLabel: UILabel!
+    @IBOutlet weak var firstWordTextLabel: UILabel!
+    @IBOutlet weak var secondWordTextLabel: UILabel!
+    @IBOutlet weak var thirdWordTextLabel: UILabel!
+    @IBOutlet weak var FirstWordTextView: UITextView!
+    @IBOutlet weak var secondWordTextView: UITextView!
+    @IBOutlet weak var thirdWordTextView: UITextView!
     @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variable's
     
-    let kSegue: String = "sensationSegue"
+    let kSegue: String = ""
+    let viewModel: FinalViewModel = FinalViewModel()
     
     // MARK: Override Functions
 
@@ -27,18 +31,22 @@ class LoggedCollaboratorViewController: UIViewController {
         super.viewDidLoad()
         setupView()
     }
-    
+       
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
     }
-    
+       
     // MARK: Private Functions
-    
+       
     private func setupView() {
-        codeTextField.delegate = self
-        errorCodeLabel.isHidden = true
         RoundedHelper.roundContinueButton(button: continueButton)
+        if let firstWord = viewModel.firstChosenWord, let secondWord = viewModel.secondChosenWord,
+            let thirdWord = viewModel.thirdChosenWord {
+            firstWordTextLabel.attributedText =  viewModel.setAttributedText(choseWord: firstWord)
+            secondWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: secondWord)
+            thirdWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: thirdWord)
+        }
         renameNavigationBackButton()
     }
     
@@ -51,19 +59,8 @@ class LoggedCollaboratorViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
-    
+       
     @IBAction func continueButtonDidPressed(_ sender: Any) {
         performSegue(withIdentifier: kSegue, sender: nil)
-    }
-}
-
-extension LoggedCollaboratorViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
     }
 }

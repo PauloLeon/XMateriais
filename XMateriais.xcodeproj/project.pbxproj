@@ -42,6 +42,10 @@
 		0BF071FB2705FFD8009EA47B /* IntensityAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */; };
 		0BF071FD27060A92009EA47B /* IntensityAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */; };
 		0BF071FF27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */; };
+		0BF072032706812B009EA47B /* InterpretativeAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF072022706812B009EA47B /* InterpretativeAnalysisViewController.swift */; };
+		0BF0720527068849009EA47B /* InterpretativeAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0720427068849009EA47B /* InterpretativeAnalysisViewModel.swift */; };
+		0BF0720827068D6A009EA47B /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0720727068D6A009EA47B /* FinalViewController.swift */; };
+		0BF0720A27068D81009EA47B /* FinalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0720927068D81009EA47B /* FinalViewModel.swift */; };
 		0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */; };
 		0BFC665127005F2F0018E5D1 /* ConfirmSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */; };
 		0BFC665B2700655A0018E5D1 /* LoggedCollaborator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */; };
@@ -118,6 +122,10 @@
 		0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewController.swift; sourceTree = "<group>"; };
 		0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewModel.swift; sourceTree = "<group>"; };
 		0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewModelProtocol.swift; sourceTree = "<group>"; };
+		0BF072022706812B009EA47B /* InterpretativeAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpretativeAnalysisViewController.swift; sourceTree = "<group>"; };
+		0BF0720427068849009EA47B /* InterpretativeAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpretativeAnalysisViewModel.swift; sourceTree = "<group>"; };
+		0BF0720727068D6A009EA47B /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		0BF0720927068D81009EA47B /* FinalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewModel.swift; sourceTree = "<group>"; };
 		0BFC664E27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSIgnUpViewController.swift; sourceTree = "<group>"; };
 		0BFC665027005F2F0018E5D1 /* ConfirmSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSuccessViewController.swift; sourceTree = "<group>"; };
 		0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedCollaborator.storyboard; sourceTree = "<group>"; };
@@ -371,6 +379,8 @@
 				0BA466D627039D7600885E00 /* SensationAnalysisViewController.swift */,
 				0BA466D827039DA000885E00 /* VisualAnalysisViewController.swift */,
 				0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */,
+				0BF072022706812B009EA47B /* InterpretativeAnalysisViewController.swift */,
+				0BF0720727068D6A009EA47B /* FinalViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -379,6 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */,
+				0BF0720427068849009EA47B /* InterpretativeAnalysisViewModel.swift */,
+				0BF0720927068D81009EA47B /* FinalViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -673,14 +685,17 @@
 				0B78A54E2700515500DF6A0A /* PasswordRecoverViewController.swift in Sources */,
 				0B5906CC26FAB9660021B47E /* FirstTutorialViewController.swift in Sources */,
 				0BF071FD27060A92009EA47B /* IntensityAnalysisViewModel.swift in Sources */,
+				0BF0720527068849009EA47B /* InterpretativeAnalysisViewModel.swift in Sources */,
 				0BF071FF27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift in Sources */,
 				0BFC666B270200230018E5D1 /* FirstPresentationViewController.swift in Sources */,
+				0BF0720827068D6A009EA47B /* FinalViewController.swift in Sources */,
 				0B78A54C270042A900DF6A0A /* UIColor+Extensions.swift in Sources */,
 				0BFC6673270241110018E5D1 /* RegistrationCollaboratorViewController+UIPickerViewDelegate.swift in Sources */,
 				0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */,
 				0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */,
 				0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */,
 				0BFC666D2702002F0018E5D1 /* SecondPresentationViewController.swift in Sources */,
+				0BF072032706812B009EA47B /* InterpretativeAnalysisViewController.swift in Sources */,
 				0BFC666F27021CB20018E5D1 /* RegistrationCollaboratorViewController.swift in Sources */,
 				0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */,
 				0BF071FB2705FFD8009EA47B /* IntensityAnalysisViewController.swift in Sources */,
@@ -691,6 +706,7 @@
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
 				0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */,
 				0BFC66752702453B0018E5D1 /* RegistrationResearcherViewController+UIPickerViewDelegate.swift in Sources */,
+				0BF0720A27068D81009EA47B /* FinalViewModel.swift in Sources */,
 				0BFC66692701FF050018E5D1 /* AboutViewController.swift in Sources */,
 				0BFC665127005F2F0018E5D1 /* ConfirmSuccessViewController.swift in Sources */,
 			);

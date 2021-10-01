@@ -13,6 +13,7 @@ class IntensityAnalysisViewModel {
     // MARK: Variable's
 
     let kChosenWordText = "Palavra escolhida"
+    let kSegue = "segueInterpretative"
     
     var firstChosenWord: String?
     var secondChosenWord: String?
