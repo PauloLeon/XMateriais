@@ -224,11 +224,33 @@
                         <outlet property="errorEmailLabel" destination="mZ7-Pj-3am" id="1jS-UK-PKV"/>
                         <outlet property="errorPasswordLabel" destination="eUT-rd-qRU" id="RH6-KW-CLa"/>
                         <outlet property="passwordTextField" destination="BRl-DO-qkc" id="nb6-6E-NXF"/>
+                        <segue destination="zRl-Uc-lfB" kind="show" identifier="segueCollaboratorLogin" id="52h-H6-bNf"/>
+                        <segue destination="uC3-6z-hOo" kind="show" identifier="segueResearcherLogin" id="yEU-Bg-juy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1K-Q2-Eph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="-278"/>
+        </scene>
+        <!--LoggedCollaborator-->
+        <scene sceneID="XTV-RK-EnV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoggedCollaborator" id="zRl-Uc-lfB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ErH-Ft-p5V"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEh-24-uNW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-375"/>
+        </scene>
+        <!--LoggedResearcher-->
+        <scene sceneID="rbZ-gk-q2p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoggedResearcher" id="uC3-6z-hOo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GAE-sq-nDc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsL-sJ-B4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="-234"/>
         </scene>
         <!--Recuperar Senha-->
         <scene sceneID="OSA-3W-nnq">

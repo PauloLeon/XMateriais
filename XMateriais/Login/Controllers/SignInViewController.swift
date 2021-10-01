@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class SignInViewController: UIViewController {
     
@@ -21,12 +22,16 @@ class SignInViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kSegue: String = ""
+    let kSegueCollaborator: String = "segueCollaboratorLogin"
+    let kSegueResearcher: String = "segueResearcherLogin"
+    
+    var ref: DatabaseReference?
     
     // MARK: Override Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initDataBase()
         setTextFieldDelegate()
         setupUI()
     }
@@ -37,6 +42,10 @@ class SignInViewController: UIViewController {
     }
     
     // MARK: Private Functions
+    
+    private func initDataBase() {
+        ref = Database.database().reference()
+    }
     
     private func setupUI() {
         errorEmailLabel.isHidden = true
@@ -86,32 +95,40 @@ class SignInViewController: UIViewController {
     
     private func signIn() {
         Auth.auth().signIn(withEmail: getEmailAddress(), password: getPassword()) { (authResult, error) in
-          if let error = error as? NSError {
-            switch AuthErrorCode(rawValue: error.code) {
-            case .operationNotAllowed:
-                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
-                print(error.localizedDescription)
-              // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
-            case .userDisabled:
-                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
-                print(error.localizedDescription)
-              // Error: The user account has been disabled by an administrator.
-            case .wrongPassword:
-                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
-                print(error.localizedDescription)
-              // Error: The password is invalid or the user does not have a password.
-            case .invalidEmail:
-                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
-                print(error.localizedDescription)
-              // Error: Indicates the email address is malformed.
-            default:
-                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
-                print("Error: \(error.localizedDescription)")
+            if let error = error as? NSError {
+                switch AuthErrorCode(rawValue: error.code) {
+                case .operationNotAllowed:
+                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    print(error.localizedDescription)
+                // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
+                case .userDisabled:
+                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    print(error.localizedDescription)
+                // Error: The user account has been disabled by an administrator.
+                case .wrongPassword:
+                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    print(error.localizedDescription)
+                // Error: The password is invalid or the user does not have a password.
+                case .invalidEmail:
+                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    print(error.localizedDescription)
+                // Error: Indicates the email address is malformed.
+                default:
+                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    print("Error: \(error.localizedDescription)")
+                }
+            } else {
+                let userID : String = (Auth.auth().currentUser?.uid)!
+                print("Current user ID is" + userID)
+                self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in
+                    let type = (snapshot.value as! NSDictionary)["type"] as! Int
+                    if type == 0 {
+                        self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
+                    } else {
+                        self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
+                    }
+                })
             }
-          } else {
-            self.performSegue(withIdentifier: self.kSegue, sender: self)
-            print("User signs in successfully")
-          }
         }
     }
     
