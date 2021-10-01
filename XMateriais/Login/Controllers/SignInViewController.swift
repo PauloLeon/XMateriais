@@ -19,6 +19,10 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var errorPasswordLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     
+    // MARK: Variable's
+    
+    let kSegue: String = ""
+    
     // MARK: Override Functions
     
     override func viewDidLoad() {
@@ -52,27 +56,61 @@ class SignInViewController: UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
+    private func getEmailAddress() -> String {
+        guard let email = emailTextField.text else {
+            return ""
+        }
+        return email
+    }
+    
+    private func getPassword() -> String {
+        guard let password = passwordTextField.text else {
+            return ""
+        }
+        return password
+    }
+    
+    private func isFormValid() -> Bool {
+        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+            createAlert(title: "Cadastro Incompleto", message: "Preencha todos os campos corretamente")
+            return false
+        }
+        
+        if !isValidEmail(testStr: emailTextField.text!) {
+            createAlert(title: "Por favor, insira um e-mail válido", message: "tente novamente")
+            errorEmailLabel.isHidden = false
+            return false
+        }
+        return true
+    }
+    
     private func signIn() {
-        let email = "teste@teste.com"
-        let password = "123qwe"
-        Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+        Auth.auth().signIn(withEmail: getEmailAddress(), password: getPassword()) { (authResult, error) in
           if let error = error as? NSError {
             switch AuthErrorCode(rawValue: error.code) {
-            case .operationNotAllowed: break
+            case .operationNotAllowed:
+                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                print(error.localizedDescription)
               // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
-            case .userDisabled: break
+            case .userDisabled:
+                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                print(error.localizedDescription)
               // Error: The user account has been disabled by an administrator.
-            case .wrongPassword: break
+            case .wrongPassword:
+                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                print(error.localizedDescription)
               // Error: The password is invalid or the user does not have a password.
-            case .invalidEmail: break
+            case .invalidEmail:
+                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                print(error.localizedDescription)
               // Error: Indicates the email address is malformed.
             default:
+                self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
                 print("Error: \(error.localizedDescription)")
             }
           } else {
+            self.performSegue(withIdentifier: self.kSegue, sender: self)
             print("User signs in successfully")
-            let userInfo = Auth.auth().currentUser
-            let email = userInfo?.email
           }
         }
     }
@@ -83,7 +121,11 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-        signIn()       
+        if isFormValid() {
+            signIn()
+        } else {
+            createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+        }
     }
 }
 

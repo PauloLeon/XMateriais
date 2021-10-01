@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class RegistrationResearcherViewController: UIViewController {
     
@@ -33,11 +34,13 @@ class RegistrationResearcherViewController: UIViewController {
     var pickerViewGender = UIPickerView()
     var pickerViewSchooling = UIPickerView()
     var datePickerView: UIDatePicker = UIDatePicker()
+    var ref: DatabaseReference?
     
     // MARK: Override Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         setupView()
     }
     
@@ -123,23 +126,50 @@ class RegistrationResearcherViewController: UIViewController {
         return true
     }
     
+    private func setUserData() -> [String : Any] {
+        guard let name = nameTextField.text,
+            let birthday = birthdayTextField.text,
+            let gender = genderTextField.text,
+            let institution = institutionTextField.text,
+            let schooling = schoolingTextField.text,
+            let job = jobTextField.text else {
+                return [:]
+        }
+        let userData = ["type": 1, "name": name , "birthday": birthday, "gender": gender, "institution": institution, "schooling": schooling, "job": job] as [String : Any]
+        return userData
+    }
+    
+    private func getEmail() -> String {
+        guard let email = emailTextField.text else {
+                return ""
+        }
+        return email
+    }
+    
+    private func getPassword() -> String {
+        guard let password = passwordTextField.text else {
+                return ""
+        }
+        return password
+    }
+    
     // MARK: IBActions's
+    
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
-        //      MOCK
-//        if isFormValid() {
-//            Auth.auth().createUser(withEmail: "teste@teste.com", password: "123qwe") { authResult, error in
-//                guard let user = authResult?.user, error == nil else {
-//                    self.createAlert(title: "error", message: error!.localizedDescription)
-//                    return
-//                }
-//                print("\(user.email!) created")
-//                self.performSegue(withIdentifier: "validFormSegue", sender: self)
-//            }
-//        } else {
-//            return
-//        }
-        self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
-        
+        if isFormValid() {
+            Auth.auth().createUser(withEmail: getEmail(), password: getPassword()) { (user, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                }
+                else{
+                    self.ref!.child("users").child(user!.user.uid).setValue(self.setUserData())
+                    print("Sign Up Successfully.")
+                    self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
+                }
+            }
+        } else {
+            createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+        }
     }
 }
 

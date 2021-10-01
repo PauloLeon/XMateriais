@@ -65,7 +65,7 @@ class PasswordRecoverViewController: UIViewController {
     private func resetPassword() {
         Auth.auth().languageCode = "pt_br"
         Auth.auth().sendPasswordReset(withEmail: getEmailAddress()) { (error) in
-          if let error = error as? NSError {
+            if let error = error as NSError? {
             switch AuthErrorCode(rawValue: error.code) {
             case .userNotFound: break
               // Error: The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section.
