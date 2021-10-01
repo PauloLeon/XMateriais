@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationResearcherViewController: UIViewController {
     
@@ -25,7 +26,7 @@ class RegistrationResearcherViewController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variable's
-
+    
     let pickerGenderType = ["Masculino", "Feminino", "Homem transgênero", "Mulher transgênero", "Homem transexual", "Mulher transexual", "Cisgênero", "Prefiro não responder", "Outros"]
     let pickerSchoolingType = ["Ensino Fundamental", "Ensino médio", "Ensino Superior (Graduação)", "Superior (Pós-graduação)", "Mestrado", "Doutorado", "Pós-Doutorado"]
     
@@ -34,7 +35,7 @@ class RegistrationResearcherViewController: UIViewController {
     var datePickerView: UIDatePicker = UIDatePicker()
     
     // MARK: Override Functions
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -98,7 +99,7 @@ class RegistrationResearcherViewController: UIViewController {
         errorPasswordLabel.isHidden = true
         errorEmailLabel.isHidden = true
         if nameTextField.text!.isEmpty || emailTextField.text!.isEmpty ||  birthdayTextField.text!.isEmpty ||
-        genderTextField.text!.isEmpty || schoolingTextField.text!.isEmpty || jobTextField.text!.isEmpty || institutionTextField.text!.isEmpty || passwordTextField.text!.isEmpty || confirmPasswordTextField.text!.isEmpty {
+            genderTextField.text!.isEmpty || schoolingTextField.text!.isEmpty || jobTextField.text!.isEmpty || institutionTextField.text!.isEmpty || passwordTextField.text!.isEmpty || confirmPasswordTextField.text!.isEmpty {
             createAlert(title: "Cadastro Incompleto", message: "Preencha todos os campos corretamente")
             return false
         }
@@ -124,14 +125,21 @@ class RegistrationResearcherViewController: UIViewController {
     
     // MARK: IBActions's
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
-//      MOCK
+        //      MOCK
 //        if isFormValid() {
-//            self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
+//            Auth.auth().createUser(withEmail: "teste@teste.com", password: "123qwe") { authResult, error in
+//                guard let user = authResult?.user, error == nil else {
+//                    self.createAlert(title: "error", message: error!.localizedDescription)
+//                    return
+//                }
+//                print("\(user.email!) created")
+//                self.performSegue(withIdentifier: "validFormSegue", sender: self)
+//            }
 //        } else {
 //            return
 //        }
         self.performSegue(withIdentifier: "validResearchFormSegue", sender: self)
-
+        
     }
 }
 

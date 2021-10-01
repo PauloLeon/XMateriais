@@ -4,4 +4,7 @@ target 'XMateriais' do
   pod 'IQKeyboardManagerSwift'
   pod 'InputMask'
   pod 'lottie-ios'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end

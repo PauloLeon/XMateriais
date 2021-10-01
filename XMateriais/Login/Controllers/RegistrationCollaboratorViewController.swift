@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationCollaboratorViewController: UIViewController {
     
@@ -123,8 +124,15 @@ class RegistrationCollaboratorViewController: UIViewController {
     // MARK: IBActions's
     @IBAction func continueButtonPressed(_ sender: Any) {
 //      MOCK
-//       if isFormValid() {
-//            self.performSegue(withIdentifier: "validFormSegue", sender: self)
+//        if isFormValid() {
+//            Auth.auth().createUser(withEmail: "teste@teste.com", password: "123qwe") { authResult, error in
+//                guard let user = authResult?.user, error == nil else {
+//                    self.createAlert(title: "error", message: error!.localizedDescription)
+//                    return
+//                }
+//                print("\(user.email!) created")
+//                self.performSegue(withIdentifier: "validFormSegue", sender: self)
+//            }
 //        } else {
 //            return
 //        }

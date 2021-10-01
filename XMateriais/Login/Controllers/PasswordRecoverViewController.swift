@@ -8,6 +8,8 @@
 
 import UIKit
 import Lottie
+import Firebase
+
 
 class PasswordRecoverViewController: UIViewController {
 
@@ -53,13 +55,45 @@ class PasswordRecoverViewController: UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
+    private func getEmailAddress() -> String {
+        guard let email = emailTextField.text else {
+            return ""
+        }
+        return email
+    }
+    
+    private func resetPassword() {
+        Auth.auth().languageCode = "pt_br"
+        Auth.auth().sendPasswordReset(withEmail: getEmailAddress()) { (error) in
+          if let error = error as? NSError {
+            switch AuthErrorCode(rawValue: error.code) {
+            case .userNotFound: break
+              // Error: The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section.
+            case .invalidEmail: break
+              // Error: The email address is badly formatted.
+            case .invalidRecipientEmail: break
+              // Error: Indicates an invalid recipient email was sent in the request.
+            case .invalidSender: break
+              // Error: Indicates an invalid sender email is set in the console for this action.
+            case .invalidMessagePayload: break
+              // Error: Indicates an invalid email template for sending update email.
+            default:
+              print("Error message: \(error.localizedDescription)")
+            }
+          } else {
+            self.createAlert(title: "E-mail enviado", message: "verifique sua caixa de mensagens do e-mail")
+            print("Reset password email has been successfully sent")
+          }
+        }
+    }
+    
     // MARK: IBActions's
 
     @IBAction func continueButtonPressed(_ sender: UIButton) {
         if emailTextField.text == "" || emailTextField.text == nil || !isValidEmail(testStr: emailTextField.text!) {
             createAlert(title: "Por favor, insira um e-mail válido", message: "tente novamente")
         } else {
-            createAlert(title: "Fluxo não habilitado", message: "tente mais tarde")
+            resetPassword()
         }
     }
 }
