@@ -10,34 +10,43 @@ import UIKit
 import CoreData
 import IQKeyboardManagerSwift
 import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    var ref: DatabaseReference?
+    var typeLogged: Int?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         setupNavigationBar()
+        initDataBase()
+        logOut()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = getLoginInformation()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
-
+    
     // MARK: - Core Data stack
-
+    
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
-        */
+         */
         let container = NSPersistentContainer(name: "XMateriais")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
+                
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.
@@ -51,9 +60,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
-
+    
     // MARK: - Core Data Saving support
-
+    
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -68,11 +77,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    // MARK: - Private Function
+    // MARK: - Private Functions
     
     private func setupNavigationBar() {
         UINavigationBar.appearance().barTintColor = UIColor.white
         UINavigationBar.appearance().tintColor = UIColor.getPrimaryColor()
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.getPrimaryColor()]
+    }
+    
+    private func initDataBase() {
+        ref = Database.database().reference()
+    }
+    
+    private func isUserLoggedIn() -> Bool {
+        return Auth.auth().currentUser != nil
+    }
+    
+    private func logOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("Sign out error")
+        }
+    }
+    
+    private func getUserType() {
+        let userID : String = (Auth.auth().currentUser?.uid)!
+        self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in
+            let type = (snapshot.value as! NSDictionary)["type"] as! Int
+            self.typeLogged = type
+        })
+    }
+    
+    private func getLoginInformation() -> UINavigationController? {
+        if isUserLoggedIn() {
+            if typeLogged == 0 {
+                let storyboard = UIStoryboard(name: "LoggedCollaborator", bundle: nil)
+                let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
+                let rootViewController = storyboard.instantiateViewController(withIdentifier: "LoggedCollaboratorViewController")
+                navigationController?.viewControllers = [rootViewController]
+                navigationController?.modalPresentationStyle = .fullScreen
+                return navigationController
+            } else {
+                let storyboard = UIStoryboard(name: "LoggedResearcher", bundle: nil)
+                let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
+                let rootViewController = storyboard.instantiateViewController(withIdentifier: "LoggedResearcherViewController")
+                navigationController?.viewControllers = [rootViewController]
+                navigationController?.modalPresentationStyle = .fullScreen
+                return navigationController
+            }
+        } else {
+            let storyboard = UIStoryboard(name: "Tutorial", bundle: nil)
+            let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "FirstTutorialViewController")
+            navigationController?.viewControllers = [rootViewController]
+            navigationController?.modalPresentationStyle = .fullScreen
+            return navigationController
+        }
     }
 }

@@ -27,7 +27,7 @@ class FirstTutorialViewController: UIViewController {
     let ktext02 = "Este é o X-Materiais"
     let ktext03 = "Teste agora"
     let ktext04 = "sua experiência com materiais"
-    
+        
     // MARK: Override Functions
     
     override func viewDidLoad() {
@@ -36,7 +36,7 @@ class FirstTutorialViewController: UIViewController {
     }
     
     // MARK: Private Functions
-    
+
     private func setupView() {
         roundedOneView.layer.cornerRadius = kTwo
         roundedTwoView.layer.cornerRadius = kTwo
@@ -58,7 +58,7 @@ class FirstTutorialViewController: UIViewController {
             textTwoLabel.text = ktext02
         }
     }
-    
+
     // MARK: IBActions's
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
