@@ -104,15 +104,15 @@ class SignInViewController: UIViewController, NVActivityIndicatorViewable {
                     print(error.localizedDescription)
                 // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
                 case .userDisabled:
-                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    self.createAlert(title: "Usuário desabilitado", message: "entre em contato conosco")
                     print(error.localizedDescription)
                 // Error: The user account has been disabled by an administrator.
                 case .wrongPassword:
-                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    self.createAlert(title: "Senha incorreta", message: "verifique sua senha")
                     print(error.localizedDescription)
                 // Error: The password is invalid or the user does not have a password.
                 case .invalidEmail:
-                    self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
+                    self.createAlert(title: "E-mail não encontrado", message: "verifique seu email")
                     print(error.localizedDescription)
                 // Error: Indicates the email address is malformed.
                 default:

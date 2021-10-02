@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         setupNavigationBar()
         initDataBase()
-        logOut()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = getLoginInformation()
         self.window?.makeKeyAndVisible()
@@ -92,15 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func isUserLoggedIn() -> Bool {
         return Auth.auth().currentUser != nil
     }
-    
-    private func logOut() {
-        do {
-            try Auth.auth().signOut()
-        } catch {
-            print("Sign out error")
-        }
-    }
-    
+
     private func getUserType() {
         let userID : String = (Auth.auth().currentUser?.uid)!
         self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in

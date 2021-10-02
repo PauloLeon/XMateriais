@@ -17,11 +17,16 @@ class LoggedResearcherViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var registerSampleButton: UIButton!
     @IBOutlet weak var sampleResultButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     // MARK: Variable's
     
     let kTwo: CGFloat = 2.0
     let kBorderWidth: CGFloat = 1.0
+    let kSegueSample = "sampleSegue"
+    let kSegueResult = "resultSegue"
+    let kSegueTutorial = "tutorialSegue"
+
     var ref: DatabaseReference?
 
     // MARK: Override Functions
@@ -46,9 +51,8 @@ class LoggedResearcherViewController: UIViewController {
     
     private func setupView() {
         RoundedHelper.roundContinueButton(button: registerSampleButton)
-        sampleResultButton.layer.cornerRadius = kTwo
-        sampleResultButton.layer.borderWidth = kBorderWidth
-        sampleResultButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
+        RoundedHelper.roundDisableContinueButton(button: sampleResultButton, titleColor: UIColor.black)
+        RoundedHelper.roundDisableContinueButton(button: logoutButton, titleColor: UIColor.red)
         renameNavigationBackButton()
         removeNavigationBorder()
     }
@@ -72,15 +76,28 @@ class LoggedResearcherViewController: UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
+    private func logOut() {
+        do {
+            try Auth.auth().signOut()
+            self.performSegue(withIdentifier: kSegueTutorial, sender: self)
+        } catch {
+            createAlert(title: "Não conseguimos deslogar", message: "Tente novamente mais tarde")
+        }
+    }
+    
     // MARK: IBActions's
 
     @IBAction func registerSampleButtonDidPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "sampleSegue", sender: self)
+        self.performSegue(withIdentifier: kSegueSample, sender: self)
     }
     
     @IBAction func sampleResultButtonDidPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "resultSegue", sender: self)
+        self.performSegue(withIdentifier: kSegueResult, sender: self)
     }
     
     @IBAction func aboutButtonDidPressed(_ sender: Any) {}
+    
+    @IBAction func logoutButtonDidPressed(_ sender: Any) {
+        logOut()
+    }
 }

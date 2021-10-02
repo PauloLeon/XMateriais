@@ -39,11 +39,11 @@ class RoundedHelper: NSObject {
         button.layer.masksToBounds = true
     }
     
-    static func roundDisableContinueButton(button: UIButton) {
+    static func roundDisableContinueButton(button: UIButton, titleColor: UIColor = UIColor.getGrayColor()) {
         button.layer.cornerRadius = 3.0
         button.layer.borderWidth = 1.0
         button.layer.borderColor = UIColor.getDisableBorderColor().cgColor
-        button.setTitleColor(UIColor.getGrayColor(), for: .normal)
+        button.setTitleColor(titleColor, for: .normal)
         button.backgroundColor = UIColor.white
     }
 

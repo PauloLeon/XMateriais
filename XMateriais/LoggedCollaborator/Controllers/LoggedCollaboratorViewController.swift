@@ -18,10 +18,13 @@ class LoggedCollaboratorViewController: UIViewController {
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var errorCodeLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     // MARK: Variable's
     
     let kSegue: String = "sensationSegue"
+    let kSegueTutorial: String = "tutorialSegue"
+    
     var ref: DatabaseReference?
     
     // MARK: Override Functions
@@ -48,6 +51,7 @@ class LoggedCollaboratorViewController: UIViewController {
         codeTextField.delegate = self
         errorCodeLabel.isHidden = true
         RoundedHelper.roundContinueButton(button: continueButton)
+        RoundedHelper.roundDisableContinueButton(button: logoutButton, titleColor: UIColor.red)
         renameNavigationBackButton()
     }
     
@@ -70,8 +74,23 @@ class LoggedCollaboratorViewController: UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
+    private func logout() {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: kSegueTutorial, sender: nil)
+        } catch {
+            createAlert(title: "Não conseguimos deslogar", message: "Tente novamente mais tarde")
+        }
+    }
+    
+    // MARK: IBAction's
+    
     @IBAction func continueButtonDidPressed(_ sender: Any) {
         performSegue(withIdentifier: kSegue, sender: nil)
+    }
+    
+    @IBAction func logoutDidPressed(_ sender: Any) {
+        logout()
     }
 }
 
