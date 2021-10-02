@@ -103,6 +103,12 @@
 		0B410DA827069266004EEE74 /* email.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = email.json; sourceTree = "<group>"; };
 		0B410DAA27069565004EEE74 /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
 		0B410DAC27069D44004EEE74 /* locker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locker.json; sourceTree = "<group>"; };
+		0B437B062708E2A600075202 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		0B437B072708E2A600075202 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		0B437B082708E2A600075202 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		0B437B092708E2A600075202 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0B437B0A2708E2A600075202 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		0B437B0B2708E7B200075202 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light-Oblique.otf"; sourceTree = "<group>"; };
 		0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
 		0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.otf"; sourceTree = "<group>"; };
@@ -247,6 +253,7 @@
 		0B5906B826FAB17F0021B47E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				0B437B0B2708E7B200075202 /* Poppins-SemiBold.ttf */,
 				0B5906C026FAB1B00021B47E /* GT-Walsheim-Bold-Oblique.otf */,
 				0B5906BD26FAB1B00021B47E /* GT-Walsheim-Bold.otf */,
 				0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */,
@@ -256,6 +263,11 @@
 				0B5906BB26FAB1B00021B47E /* GT-Walsheim-Regular.otf */,
 				0B5906BC26FAB1B00021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf */,
 				0B5906BE26FAB1B00021B47E /* GT-Walsheim-Ultra-Light.otf */,
+				0B437B0A2708E2A600075202 /* Poppins-Black.ttf */,
+				0B437B072708E2A600075202 /* Poppins-Bold.ttf */,
+				0B437B092708E2A600075202 /* Poppins-ExtraLight.ttf */,
+				0B437B062708E2A600075202 /* Poppins-Light.ttf */,
+				0B437B082708E2A600075202 /* Poppins-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";

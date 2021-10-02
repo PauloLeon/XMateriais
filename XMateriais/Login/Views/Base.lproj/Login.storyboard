@@ -16,8 +16,17 @@
         <array key="GT-Walsheim-Regular.otf">
             <string>GTWalsheimRegular</string>
         </array>
-        <array key="GT-Walsheim-Ultra-Light.otf">
-            <string>GTWalsheimUltraLight</string>
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-ExtraLight.ttf">
+            <string>Poppins-ExtraLight</string>
+        </array>
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -49,7 +58,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="BGY-Ez-Hh9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <state key="normal" title="Já possuo uma conta">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -63,7 +72,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Kyb-5D-FmH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <state key="normal" title="Efetuar cadastro gratuito">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -114,35 +123,35 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-AB-oXy">
-                                <rect key="frame" x="16" y="220.5" width="343" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="211" width="343" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido, verifique o endereço digitado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ7-Pj-3am">
-                                <rect key="frame" x="16" y="284.5" width="344" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="279.5" width="344" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
                                 <color key="textColor" red="0.81960784313725488" green="0.16078431372549018" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail cadastrado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9GZ-Nr-c2p">
-                                <rect key="frame" x="16" y="242.5" width="343" height="34"/>
+                                <rect key="frame" x="16" y="237.5" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZF-mE-7Mx">
-                                <rect key="frame" x="16" y="326.5" width="343" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="324.5" width="343" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-n1-KLp">
-                                <rect key="frame" x="16" y="565" width="343" height="36"/>
+                                <rect key="frame" x="16" y="560" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="1XL-ew-B2M"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -151,8 +160,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Vl-dDg">
-                                <rect key="frame" x="16" y="617" width="343" height="26"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="612" width="343" height="31"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <state key="normal" title="Não tem conta? Faça o seu cadastro">
                                     <color key="titleColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -161,19 +170,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-rd-qRU">
-                                <rect key="frame" x="16" y="390.5" width="343" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="393" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRl-DO-qkc">
-                                <rect key="frame" x="16" y="348.5" width="343" height="34"/>
+                                <rect key="frame" x="16" y="351" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR6-lZ-36M">
-                                <rect key="frame" x="16" y="420.5" width="343" height="26"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="426" width="343" height="31"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <state key="normal" title="Esqueceu a sua senha?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -275,25 +284,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2U-76-rIL">
-                                <rect key="frame" x="16" y="465" width="343" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="457.5" width="343" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido, verifique o endereço digitado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRg-hx-14W">
-                                <rect key="frame" x="15" y="529" width="344" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="15" y="526" width="344" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail cadastrado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-Za-QL2">
-                                <rect key="frame" x="16" y="487" width="343" height="34"/>
+                                <rect key="frame" x="16" y="484" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha? Não tem problema. Por favor, informe abaixo o seu e-mail cadastrado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-8k-FAg">
-                                <rect key="frame" x="16" y="401" width="343" height="32"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="16"/>
+                                <rect key="frame" x="16" y="386" width="343" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -358,106 +367,106 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Is2-26-YqA">
-                                                <rect key="frame" x="16" y="8" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="8" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMw-Mo-AnU">
-                                                <rect key="frame" x="16" y="30" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="33" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-Ls-Qsr">
-                                                <rect key="frame" x="16" y="80" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="83" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVW-2j-DmI">
-                                                <rect key="frame" x="16" y="144" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="150" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="12"/>
                                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-ha-IOY">
-                                                <rect key="frame" x="16" y="102" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="108" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTG-ga-YVP">
-                                                <rect key="frame" x="16" y="166" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="175" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira a data do seu nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KG-3z-2bm">
-                                                <rect key="frame" x="16" y="188" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="200" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gênero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-cS-7ZV">
-                                                <rect key="frame" x="16" y="238" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="250" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione um gênero" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJ8-VD-IGJ">
-                                                <rect key="frame" x="16" y="260" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="275" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolaridade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcj-VN-HZ1">
-                                                <rect key="frame" x="16" y="310" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="325" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione uma escolaridade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-F1-534">
-                                                <rect key="frame" x="16" y="332" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="350" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVY-iV-8Fk">
-                                                <rect key="frame" x="16" y="382" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="400" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua ocupação" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-Ns-60l">
-                                                <rect key="frame" x="16" y="404" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="425" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6es-rc-w84">
-                                                <rect key="frame" x="16" y="454" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="475" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcT-Am-406">
-                                                <rect key="frame" x="16" y="476" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="500" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZD-dy-poE">
-                                                <rect key="frame" x="16" y="526" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="550" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="12"/>
                                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DnN-O1-of3">
-                                                <rect key="frame" x="16" y="548" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="575" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8Z-nh-huI">
-                                                <rect key="frame" x="16" y="606" width="343" height="36"/>
+                                                <rect key="frame" x="16" y="633" width="343" height="36"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Csy-Fm-7ed"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                 <state key="normal" title="Continuar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -598,14 +607,14 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oba! Você chegou ao X-mat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-Oq-d0h">
-                                <rect key="frame" x="16" y="395" width="343" height="14"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="377.5" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha a seguir qual tipo de usuário você deseja cadastrar." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKW-cI-JGb">
-                                <rect key="frame" x="16" y="433" width="343" height="28"/>
-                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="421.5" width="343" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -614,7 +623,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="aQo-Qy-I2y"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <state key="normal" title="Colaborador"/>
                                 <connections>
                                     <action selector="collaboratorButtonDidPressed:" destination="x7h-IQ-4VD" eventType="touchUpInside" id="T1r-NN-atB"/>
@@ -626,7 +635,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="uKs-bN-kb0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -639,7 +648,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para quem deseja analisar amostras" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etf-N0-QCA">
                                         <rect key="frame" x="0.0" y="0.0" width="163.5" height="32"/>
-                                        <fontDescription key="fontDescription" name="GTWalsheimUltraLight" family="GT Walsheim" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -658,7 +667,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para quem deseja cadastrar um material" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmJ-tN-xgi">
                                         <rect key="frame" x="0.0" y="0.0" width="163.5" height="32"/>
-                                        <fontDescription key="fontDescription" name="GTWalsheimUltraLight" family="GT Walsheim" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -677,7 +686,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="TUz-Of-4JA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <state key="normal" title="Pesquisador"/>
                                 <connections>
                                     <action selector="researcherButtonDidPressed:" destination="x7h-IQ-4VD" eventType="touchUpInside" id="zch-b0-qnt"/>
@@ -822,7 +831,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUn-75-doj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="1409"/>
+            <point key="canvasLocation" x="1457" y="1487"/>
         </scene>
         <!--Confirmação de cadastro-->
         <scene sceneID="w1q-ul-RHI">
@@ -894,30 +903,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETu-vj-0vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2324" y="1409"/>
+            <point key="canvasLocation" x="2244" y="1488"/>
         </scene>
         <!--First Presentation View Controller-->
         <scene sceneID="JPJ-fG-ssr">
             <objects>
                 <viewController id="QoG-i9-aX8" customClass="FirstPresentationViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bgp-yc-vfx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="Yi2-qA-Sl9">
-                                <rect key="frame" x="56" y="32" width="263" height="242"/>
+                                <rect key="frame" x="56" y="76" width="263" height="242"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="263" id="HQt-4z-JNj"/>
                                     <constraint firstAttribute="height" constant="242" id="ST9-cw-ccw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-DX-J84">
-                                <rect key="frame" x="16" y="587" width="343" height="36"/>
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="mjL-Nw-QwD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -926,8 +935,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O X-Materiais é uma ferramenta para apoiar profissionais na análise das formas com que as pessoas compreendem um material." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-2V-2gq">
-                                <rect key="frame" x="16" y="411" width="343" height="56"/>
-                                <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
+                                <rect key="frame" x="16" y="432" width="343" height="55"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -952,18 +961,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2c-80-UU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3871" y="1404"/>
+            <point key="canvasLocation" x="3846" y="1471"/>
         </scene>
         <!--Second Presentation View Controller-->
         <scene sceneID="Abu-z9-8Z4">
             <objects>
                 <viewController id="i1N-3G-e8t" customClass="SecondPresentationViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVB-yR-Ef7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-i3-UqS">
-                                <rect key="frame" x="56" y="32" width="263" height="242"/>
+                                <rect key="frame" x="56" y="76" width="263" height="242"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="OOJ-Tr-zZO"/>
                                     <constraint firstAttribute="height" constant="242" id="inw-ua-IMT"/>
@@ -972,19 +981,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvV-Pv-xi4">
-                                <rect key="frame" x="16" y="411" width="343" height="56"/>
+                                <rect key="frame" x="16" y="432" width="343" height="55"/>
                                 <string key="text">A análise é feita em diferentes níveis: interativo, sensorial interpretativo e afetivo e é composto por quatro etapas. Vamos começar?</string>
-                                <fontDescription key="fontDescription" name="GTWalsheim-Bold" family="GT Walsheim" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpI-hi-vjE">
-                                <rect key="frame" x="16" y="587" width="343" height="36"/>
+                                <rect key="frame" x="16" y="607" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="odM-3o-hj4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                 <state key="normal" title="Iniciar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1013,7 +1022,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Wb-iwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4623" y="1404"/>
+            <point key="canvasLocation" x="4598" y="1471"/>
         </scene>
         <!--LoggedCollaborator-->
         <scene sceneID="XR7-2l-JlJ">
@@ -1040,106 +1049,106 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asl-Mk-WiD">
-                                                <rect key="frame" x="16" y="8" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="8" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YbH-qq-HfC">
-                                                <rect key="frame" x="16" y="30" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="34.5" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMb-rX-FSw">
-                                                <rect key="frame" x="16" y="80" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="84.5" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail não reconhecido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwH-V8-rVt">
-                                                <rect key="frame" x="16" y="144" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="153" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="12"/>
                                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cYa-yb-pUU">
-                                                <rect key="frame" x="16" y="102" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="111" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2R-bl-Nxk">
-                                                <rect key="frame" x="16" y="166" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="178" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira a data do seu nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-jJ-T03">
-                                                <rect key="frame" x="16" y="188" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="204.5" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gênero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-uC-eS7">
-                                                <rect key="frame" x="16" y="238" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="254.5" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione um gênero" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDi-4Q-HjD">
-                                                <rect key="frame" x="16" y="260" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="281" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolaridade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVp-4Q-jra">
-                                                <rect key="frame" x="16" y="310" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="331" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione uma escolaridade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYO-lO-SHF">
-                                                <rect key="frame" x="16" y="332" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="357.5" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vx-9G-gmZ">
-                                                <rect key="frame" x="16" y="382" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="407.5" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua ocupação" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3d6-rM-A3k">
-                                                <rect key="frame" x="16" y="404" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="434" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMQ-JF-FdD">
-                                                <rect key="frame" x="16" y="526" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="560.5" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKa-p0-2E8">
-                                                <rect key="frame" x="16" y="548" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="587" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Sua senha precisa ter pelo menos 6 caracteres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLD-L1-L4Q">
-                                                <rect key="frame" x="16" y="598" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="637" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="12"/>
                                                 <color key="textColor" red="0.81960784310000001" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-F6-a07">
-                                                <rect key="frame" x="16" y="620" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="662" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eq-iU-Dvn">
-                                                <rect key="frame" x="16" y="678" width="343" height="36"/>
+                                                <rect key="frame" x="16" y="712" width="343" height="36"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="d7P-87-CaQ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                 <state key="normal" title="Continuar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1148,13 +1157,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instituição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zo-CA-wyr">
-                                                <rect key="frame" x="16" y="454" width="343" height="14"/>
-                                                <fontDescription key="fontDescription" name="GTWalsheimLight" family="GT Walsheim" pointSize="14"/>
+                                                <rect key="frame" x="16" y="484" width="343" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a instituição vinculada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptj-au-g6f">
-                                                <rect key="frame" x="16" y="476" width="343" height="34"/>
+                                                <rect key="frame" x="16" y="510.5" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1200,7 +1209,7 @@
                                             <constraint firstAttribute="trailing" secondItem="2vx-9G-gmZ" secondAttribute="trailing" constant="16" id="be4-lG-ArS"/>
                                             <constraint firstItem="zwH-V8-rVt" firstAttribute="top" secondItem="cYa-yb-pUU" secondAttribute="bottom" constant="8" id="beO-4d-j1O"/>
                                             <constraint firstItem="asl-Mk-WiD" firstAttribute="leading" secondItem="c2C-AN-Lyh" secondAttribute="leading" constant="16" id="eKI-Kh-5og"/>
-                                            <constraint firstItem="6eq-iU-Dvn" firstAttribute="top" secondItem="qPT-F6-a07" secondAttribute="bottom" constant="24" id="ekY-OX-ylA"/>
+                                            <constraint firstItem="6eq-iU-Dvn" firstAttribute="top" secondItem="qPT-F6-a07" secondAttribute="bottom" constant="16" id="ekY-OX-ylA"/>
                                             <constraint firstItem="gMb-rX-FSw" firstAttribute="top" secondItem="YbH-qq-HfC" secondAttribute="bottom" constant="16" id="fBc-E4-7OH"/>
                                             <constraint firstItem="CLD-L1-L4Q" firstAttribute="top" secondItem="mKa-p0-2E8" secondAttribute="bottom" constant="16" id="fE8-RN-m7B"/>
                                             <constraint firstItem="qPT-F6-a07" firstAttribute="top" secondItem="CLD-L1-L4Q" secondAttribute="bottom" constant="8" id="fqv-hS-uS6"/>
@@ -1263,7 +1272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mg7-51-jZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="570"/>
+            <point key="canvasLocation" x="2388" y="569.41529235382313"/>
         </scene>
     </scenes>
     <resources>
@@ -1272,7 +1281,7 @@
         <image name="xmat_logo" width="106" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dyc-23-94r"/>
+        <segue reference="VQe-1K-UbK"/>
         <segue reference="0tk-WE-Gka"/>
     </inferredMetricsTieBreakers>
 </document>

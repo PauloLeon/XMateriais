@@ -22,6 +22,12 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Poppins-Black</string>
+		<string>Poppins-SemiBold</string>
+		<string>Poppins-Bold</string>
+		<string>Poppins-ExtraLight</string>
+		<string>Poppins-Regular</string>
+		<string>Poppins-Light</string>
 		<string>GT-Walsheim-Bold-Oblique</string>
 		<string>GT-Walsheim-Bold</string>
 		<string>GT-Walsheim-Light-Oblique</string>
