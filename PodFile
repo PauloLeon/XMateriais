@@ -2,6 +2,7 @@ target 'XMateriais' do
   use_frameworks!
   pod 'SwiftLint'
   pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView'
   pod 'InputMask'
   pod 'lottie-ios'
   pod 'Firebase/Analytics'

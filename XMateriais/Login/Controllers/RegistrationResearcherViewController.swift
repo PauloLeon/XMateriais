@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import NVActivityIndicatorView
 
-class RegistrationResearcherViewController: UIViewController {
+class RegistrationResearcherViewController: UIViewController, NVActivityIndicatorViewable {
     
     // MARK: IBOutlet's
     @IBOutlet weak var nameTextField: UITextField!
@@ -165,13 +166,14 @@ class RegistrationResearcherViewController: UIViewController {
     
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
         if isFormValid() {
+            startAnimating()
             Auth.auth().createUser(withEmail: getEmail(), password: getPassword()) { (user, error) in
                 if let error = error {
                     print(error.localizedDescription)
-                }
-                else{
+                    self.stopAnimating()
+                } else{
                     self.ref!.child("users").child(user!.user.uid).setValue(self.setUserData())
-                    print("Sign Up Successfully.")
+                    self.stopAnimating()
                     self.performSegue(withIdentifier: self.kSegue, sender: self)
                 }
             }

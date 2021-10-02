@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import NVActivityIndicatorView
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, NVActivityIndicatorViewable {
     
     // MARK: IBOutlet's
 
@@ -94,6 +95,7 @@ class SignInViewController: UIViewController {
     }
     
     private func signIn() {
+        startAnimating()
         Auth.auth().signIn(withEmail: getEmailAddress(), password: getPassword()) { (authResult, error) in
             if let error = error as? NSError {
                 switch AuthErrorCode(rawValue: error.code) {
@@ -117,14 +119,17 @@ class SignInViewController: UIViewController {
                     self.createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
                     print("Error: \(error.localizedDescription)")
                 }
+                self.stopAnimating()
             } else {
                 let userID : String = (Auth.auth().currentUser?.uid)!
                 print("Current user ID is" + userID)
                 self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in
                     let type = (snapshot.value as! NSDictionary)["type"] as! Int
                     if type == 0 {
+                        self.stopAnimating()
                         self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
                     } else {
+                        self.stopAnimating()
                         self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
                     }
                 })

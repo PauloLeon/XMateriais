@@ -91,6 +91,9 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
   - PromisesObjC (1.2.8)
   - SwiftLint (0.38.2)
 
@@ -101,6 +104,7 @@ DEPENDENCIES:
   - InputMask
   - IQKeyboardManagerSwift
   - lottie-ios
+  - NVActivityIndicatorView
   - SwiftLint
 
 SPEC REPOS:
@@ -125,6 +129,7 @@ SPEC REPOS:
     - leveldb-library
     - lottie-ios
     - nanopb
+    - NVActivityIndicatorView
     - PromisesObjC
     - SwiftLint
 
@@ -149,9 +154,10 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
 
-PODFILE CHECKSUM: b73bc337e87b01fc5a200dec504166fc23c8b67e
+PODFILE CHECKSUM: 5d1e2c4ecd01658ad6a906bfec43170989a3bea9
 
 COCOAPODS: 1.5.3
