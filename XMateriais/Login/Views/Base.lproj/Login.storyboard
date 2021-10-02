@@ -905,6 +905,16 @@
             </objects>
             <point key="canvasLocation" x="2244" y="1488"/>
         </scene>
+        <!--LoggedResearcher-->
+        <scene sceneID="XZo-vR-Kk7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoggedResearcher" id="Azd-wb-u5s" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yvG-zt-gOh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVr-Ri-VPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3851" y="1908"/>
+        </scene>
         <!--First Presentation View Controller-->
         <scene sceneID="JPJ-fG-ssr">
             <objects>
@@ -931,7 +941,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="i1N-3G-e8t" kind="show" id="OXW-sV-WFb"/>
+                                    <action selector="continueButtonDidPressed:" destination="QoG-i9-aX8" eventType="touchUpInside" id="l7Y-RT-17W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O X-Materiais é uma ferramenta para apoiar profissionais na análise das formas com que as pessoas compreendem um material." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-2V-2gq">
@@ -957,11 +967,13 @@
                     <navigationItem key="navigationItem" id="2ju-BR-CAC"/>
                     <connections>
                         <outlet property="continueButton" destination="Rnm-DX-J84" id="qC1-GZ-egc"/>
+                        <segue destination="Azd-wb-u5s" kind="show" identifier="segueGoToLoggedResearcher" id="cRL-nf-hdU"/>
+                        <segue destination="i1N-3G-e8t" kind="show" identifier="segueContinueOnboarding" id="Ojy-pf-PPu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2c-80-UU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3846" y="1471"/>
+            <point key="canvasLocation" x="3687" y="1460"/>
         </scene>
         <!--Second Presentation View Controller-->
         <scene sceneID="Abu-z9-8Z4">
@@ -1022,7 +1034,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Wb-iwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4598" y="1471"/>
+            <point key="canvasLocation" x="4534" y="1460"/>
         </scene>
         <!--LoggedCollaborator-->
         <scene sceneID="XR7-2l-JlJ">
@@ -1032,7 +1044,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-EM-7h6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5347" y="1403"/>
+            <point key="canvasLocation" x="5180" y="1451"/>
         </scene>
         <!--Efetuar cadastro-->
         <scene sceneID="8k4-zg-e5D">
@@ -1281,7 +1293,7 @@
         <image name="xmat_logo" width="106" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VQe-1K-UbK"/>
+        <segue reference="grD-M6-Chl"/>
         <segue reference="0tk-WE-Gka"/>
     </inferredMetricsTieBreakers>
 </document>

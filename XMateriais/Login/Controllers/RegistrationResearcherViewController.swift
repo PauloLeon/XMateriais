@@ -49,6 +49,14 @@ class RegistrationResearcherViewController: UIViewController {
         removeNavigationBorder()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? FirstPresentationViewController {
+                    nextViewController.type = 1
+            }
+        }
+    }
+    
     // MARK: Private Functions
     
     private func setupView() {

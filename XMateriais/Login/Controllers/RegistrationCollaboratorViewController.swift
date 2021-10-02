@@ -48,6 +48,14 @@ class RegistrationCollaboratorViewController: UIViewController {
         removeNavigationBorder()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? FirstPresentationViewController {
+                    nextViewController.type = 0
+            }
+        }
+    }
+    
     // MARK: Private Functions
 
     private func setupView() {
