@@ -999,7 +999,7 @@
             </objects>
             <point key="canvasLocation" x="806" y="77"/>
         </scene>
-        <!--About View Controller-->
+        <!--Sobre-->
         <scene sceneID="h3A-6f-vLj">
             <objects>
                 <viewController id="R9l-lE-sSH" customClass="AboutViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
@@ -1177,7 +1177,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dW3-la-ruB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="G91-qH-rmJ"/>
+                    <navigationItem key="navigationItem" title="Sobre" id="G91-qH-rmJ"/>
                     <size key="freeformSize" width="375" height="960"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4w8-hm-mgr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

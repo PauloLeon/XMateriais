@@ -474,7 +474,7 @@ YWRvcyBwYXJhIG8gc2V1IGUtbWFpbC4
             </objects>
             <point key="canvasLocation" x="1833" y="-594"/>
         </scene>
-        <!--About View Controller-->
+        <!--Sobre-->
         <scene sceneID="t2z-YM-YVI">
             <objects>
                 <viewController id="ENy-Ze-xOx" customClass="AboutViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
@@ -652,7 +652,7 @@ YWRvcyBwYXJhIG8gc2V1IGUtbWFpbC4
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Izu-JP-Nqo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vE8-fo-k42"/>
+                    <navigationItem key="navigationItem" title="Sobre" id="vE8-fo-k42"/>
                     <size key="freeformSize" width="375" height="960"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8v-MW-Uop" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

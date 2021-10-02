@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class LoggedCollaboratorViewController: UIViewController {
     
@@ -20,26 +22,42 @@ class LoggedCollaboratorViewController: UIViewController {
     // MARK: Variable's
     
     let kSegue: String = "sensationSegue"
+    var ref: DatabaseReference?
     
     // MARK: Override Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initDataBase()
         setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+        setupNameLabel()
     }
     
     // MARK: Private Functions
+    
+    private func initDataBase() {
+        ref = Database.database().reference()
+    }
     
     private func setupView() {
         codeTextField.delegate = self
         errorCodeLabel.isHidden = true
         RoundedHelper.roundContinueButton(button: continueButton)
         renameNavigationBackButton()
+    }
+    
+    private func setupNameLabel() {
+        let userID : String = (Auth.auth().currentUser?.uid)!
+        print("Current user ID is" + userID)
+        self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in
+            let name = (snapshot.value as! NSDictionary)["name"] as! String
+            self.helloLabel.text = "Oi! \(name)"
+        })
     }
     
     private func renameNavigationBackButton() {
