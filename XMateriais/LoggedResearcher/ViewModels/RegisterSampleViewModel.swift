@@ -51,12 +51,11 @@ class RegisterSampleViewModel {
         return materialData
     }
     
-    func randomCode() -> String {
+    private func randomCode() -> String {
         var number = String()
         for _ in 1...3 {
            number += "\(Int.random(in: 1...9))"
         }
         return number
     }
-
 }
