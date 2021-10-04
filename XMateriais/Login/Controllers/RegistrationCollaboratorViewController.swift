@@ -160,6 +160,7 @@ class RegistrationCollaboratorViewController: UIViewController, NVActivityIndica
     }
     
     // MARK: IBActions's
+    
     @IBAction func continueButtonPressed(_ sender: Any) {
         if isFormValid() {
             startAnimating()

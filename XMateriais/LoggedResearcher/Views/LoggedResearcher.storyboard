@@ -192,17 +192,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto do material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFB-BA-8U6">
-                                <rect key="frame" x="16" y="355" width="343" height="18.5"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anexar foto do material" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDY-7r-scb">
-                                <rect key="frame" x="16" y="381.5" width="343" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição do material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qud-A6-2jw">
                                 <rect key="frame" x="16" y="168.5" width="343" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
@@ -223,10 +212,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="50x-um-lUO" firstAttribute="top" secondItem="XyL-Et-mch" secondAttribute="bottom" constant="8" id="1HC-pf-sHT"/>
-                            <constraint firstItem="gDY-7r-scb" firstAttribute="top" secondItem="OFB-BA-8U6" secondAttribute="bottom" constant="8" id="5hF-fi-mrc"/>
-                            <constraint firstItem="OFB-BA-8U6" firstAttribute="leading" secondItem="79q-2G-Ndl" secondAttribute="leading" constant="16" id="6RK-af-gCs"/>
-                            <constraint firstItem="OFB-BA-8U6" firstAttribute="top" secondItem="JJ1-l4-mKR" secondAttribute="bottom" constant="32" id="9P3-Bs-Ngb"/>
-                            <constraint firstItem="gDY-7r-scb" firstAttribute="leading" secondItem="79q-2G-Ndl" secondAttribute="leading" constant="16" id="DXf-MQ-w7n"/>
                             <constraint firstItem="XyL-Et-mch" firstAttribute="top" secondItem="79q-2G-Ndl" secondAttribute="top" constant="32" id="ETe-LP-Fhk"/>
                             <constraint firstItem="79q-2G-Ndl" firstAttribute="trailing" secondItem="gDc-2C-4lU" secondAttribute="trailing" constant="16" id="H3c-2F-0E6"/>
                             <constraint firstItem="50x-um-lUO" firstAttribute="leading" secondItem="79q-2G-Ndl" secondAttribute="leading" constant="16" id="I0S-ri-Kt2"/>
@@ -239,10 +224,8 @@
                             <constraint firstItem="79q-2G-Ndl" firstAttribute="trailing" secondItem="Qud-A6-2jw" secondAttribute="trailing" constant="16" id="bO7-05-VTk"/>
                             <constraint firstItem="JJ1-l4-mKR" firstAttribute="leading" secondItem="79q-2G-Ndl" secondAttribute="leading" constant="16" id="d61-kW-Mdq"/>
                             <constraint firstItem="79q-2G-Ndl" firstAttribute="trailing" secondItem="50x-um-lUO" secondAttribute="trailing" constant="16" id="dPr-1Q-pBi"/>
-                            <constraint firstItem="79q-2G-Ndl" firstAttribute="trailing" secondItem="gDY-7r-scb" secondAttribute="trailing" constant="16" id="ed9-aI-wgW"/>
                             <constraint firstItem="Qud-A6-2jw" firstAttribute="leading" secondItem="79q-2G-Ndl" secondAttribute="leading" constant="16" id="neD-Te-Tgx"/>
                             <constraint firstItem="79q-2G-Ndl" firstAttribute="bottom" secondItem="gDc-2C-4lU" secondAttribute="bottom" constant="24" id="qY5-La-TMO"/>
-                            <constraint firstItem="79q-2G-Ndl" firstAttribute="trailing" secondItem="OFB-BA-8U6" secondAttribute="trailing" constant="16" id="vd4-wb-wYU"/>
                             <constraint firstItem="JJ1-l4-mKR" firstAttribute="top" secondItem="Qud-A6-2jw" secondAttribute="bottom" constant="8" id="ye0-Gz-io1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="79q-2G-Ndl"/>
@@ -252,7 +235,6 @@
                         <outlet property="continueButton" destination="gDc-2C-4lU" id="zkg-N3-TXz"/>
                         <outlet property="descriptionMaterialTextView" destination="JJ1-l4-mKR" id="dHa-VX-VlF"/>
                         <outlet property="nameTextField" destination="50x-um-lUO" id="wsp-DI-aYt"/>
-                        <outlet property="photoTextField" destination="gDY-7r-scb" id="Pli-za-Yio"/>
                         <segue destination="994-O9-qfk" kind="show" identifier="sampleSucessSegue" id="8GA-sH-AVP"/>
                     </connections>
                 </viewController>

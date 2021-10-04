@@ -14,12 +14,11 @@ class RegisterSampleViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionMaterialTextView: UITextView!
-    @IBOutlet weak var photoTextField: UITextField!
     @IBOutlet weak var continueButton: UIButton!
     
     // MARK: Variables
 
-    let kTwo: CGFloat = 2.0
+    var viewModel: RegisterSampleViewModel = RegisterSampleViewModel()
 
     // MARK: Override Functions
 
@@ -32,8 +31,7 @@ class RegisterSampleViewController: UIViewController {
     
     private func setupView() {
         nameTextField.delegate = self
-        photoTextField.delegate = self
-        continueButton.layer.cornerRadius = kTwo
+        RoundedHelper.roundContinueButton(button: continueButton)
         renameNavigationBackButton()
     }
     
@@ -41,8 +39,15 @@ class RegisterSampleViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
+    private func setMaterial() {
+        viewModel.setNameMaterial(name: nameTextField?.text ?? "")
+        viewModel.setDescriptionMaterial(desc: descriptionMaterialTextView.text)
+    }
+    
     // MARK: IBActions's
     @IBAction func continueDidPressed(_ sender: Any) {
+        setMaterial()
+        viewModel.saveMaterial()
         self.performSegue(withIdentifier: "sampleSucessSegue", sender: self)        
     }
 }

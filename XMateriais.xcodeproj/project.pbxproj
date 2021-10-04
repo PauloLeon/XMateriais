@@ -42,6 +42,7 @@
 		0BB0C8D4270B3917001C9721 /* SensationAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */; };
 		0BB0C8D6270B3933001C9721 /* VisualAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */; };
 		0BB0C8D8270B4E37001C9721 /* RegisterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */; };
+		0BB0C8DA270B56BA001C9721 /* RegisterSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D9270B56BA001C9721 /* RegisterSampleViewModel.swift */; };
 		0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148DF2703515C004570A3 /* SampleResultViewController.swift */; };
 		0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */; };
 		0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E327035268004570A3 /* RegisterSampleViewController.swift */; };
@@ -135,6 +136,7 @@
 		0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensationAnalysisViewModel.swift; sourceTree = "<group>"; };
 		0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualAnalysisViewModel.swift; sourceTree = "<group>"; };
 		0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDataModel.swift; sourceTree = "<group>"; };
+		0BB0C8D9270B56BA001C9721 /* RegisterSampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewModel.swift; sourceTree = "<group>"; };
 		0BD148DF2703515C004570A3 /* SampleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleResultViewController.swift; sourceTree = "<group>"; };
 		0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSuccessViewController.swift; sourceTree = "<group>"; };
 		0BD148E327035268004570A3 /* RegisterSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewController.swift; sourceTree = "<group>"; };
@@ -459,6 +461,7 @@
 		0BFC6658270064990018E5D1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0BB0C8D9270B56BA001C9721 /* RegisterSampleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				0BA466D927039DA000885E00 /* VisualAnalysisViewController.swift in Sources */,
 				0BFC6661270070560018E5D1 /* LoggedResearcherViewController.swift in Sources */,
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
+				0BB0C8DA270B56BA001C9721 /* RegisterSampleViewModel.swift in Sources */,
 				0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */,
 				0BD148E627035274004570A3 /* RegisterSampleSuccessViewController.swift in Sources */,
 				0BFC665F270070450018E5D1 /* LoggedCollaboratorViewController.swift in Sources */,
