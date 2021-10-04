@@ -22,17 +22,15 @@ class SensationAnalysisViewModel {
     let kMinusThree: Int = -3
     
     var sensationsArray: [Int]?
-    var dataModel: RegisterDataModel?
-    
-    // MARK: Init Functions
+    var dataModel: RegisterDataModel = RegisterDataModel()
+   
+    // MARK: Public functions
     
     init() {
         sensationsArray = [kZero, kZero, kZero, kZero, kZero]
         dataModel = RegisterDataModel()
     }
-    
-    // MARK: Public functions
-    
+     
     func updateSensation(value: Int, radioGroup: RadioGroup) {
         switch radioGroup {
         case .RadioOne:
@@ -64,6 +62,6 @@ class SensationAnalysisViewModel {
     }
     
     func saveSensation() {
-        dataModel?.setSensationArray(sensationArray: sensationsArray ?? [])
+        dataModel.setSensationArray(sensationArray: sensationsArray ?? [])
     }
 }

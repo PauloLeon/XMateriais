@@ -70,6 +70,15 @@ class VisualAnalysisViewController: UIViewController {
         setupUI()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? IntensityAnalysisViewController {
+                viewModel?.saveSensation()
+                nextViewController.viewModel.dataModel = viewModel?.dataModel ?? RegisterDataModel()
+            }
+        }
+    }
+    
     // MARK: Private Functions
     
     private func setupUI() {
@@ -353,5 +362,7 @@ class VisualAnalysisViewController: UIViewController {
         viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioFour)
     }
 
-    @IBAction func continueButtonDidPressed(_ sender: Any) {}
+    @IBAction func continueButtonDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: kSegue, sender: nil)
+    }
 }

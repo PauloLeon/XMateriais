@@ -41,6 +41,14 @@ class LoggedCollaboratorViewController: UIViewController {
         setupNameLabel()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? SensationAnalysisViewController {
+                nextViewController.viewModel?.dataModel.setSampleCode(sampleCode: codeTextField.text ?? "")
+            }
+        }
+    }
+    
     // MARK: Private Functions
     
     private func initDataBase() {
@@ -86,7 +94,9 @@ class LoggedCollaboratorViewController: UIViewController {
     // MARK: IBAction's
     
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-        performSegue(withIdentifier: kSegue, sender: nil)
+        if codeTextField.text != nil {
+            performSegue(withIdentifier: kSegue, sender: nil)
+        }
     }
     
     @IBAction func logoutDidPressed(_ sender: Any) {

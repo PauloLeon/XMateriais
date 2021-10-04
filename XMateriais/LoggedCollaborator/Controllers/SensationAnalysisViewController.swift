@@ -74,14 +74,12 @@ class SensationAnalysisViewController: UIViewController {
     let kMinusThree: Int = -3
     let kSegue: String = "segueVisual"
     
-    var viewModel: SensationAnalysisViewModel?
-    
+    var viewModel: SensationAnalysisViewModel? = SensationAnalysisViewModel()
     
     // MARK: Override Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViewModel()
         setupUI()
     }
     
@@ -94,16 +92,12 @@ class SensationAnalysisViewController: UIViewController {
         if segue.identifier == kSegue {
             if let nextViewController = segue.destination as? VisualAnalysisViewController {
                 viewModel?.saveSensation()
-                nextViewController.viewModel?.dataModel = viewModel?.dataModel
+                nextViewController.viewModel?.dataModel = viewModel?.dataModel ?? RegisterDataModel()
             }
         }
     }
     
     // MARK: Private Functions
-    
-    private func setupViewModel() {
-        viewModel = SensationAnalysisViewModel()
-    }
     
     private func setupUI() {
         renameNavigationBackButton()

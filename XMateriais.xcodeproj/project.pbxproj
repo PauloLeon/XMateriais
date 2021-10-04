@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B097DB02707552600E26D74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B097DAF2707552600E26D74 /* GoogleService-Info.plist */; };
+		0B2914AF270BA8E100673406 /* LoggedCollaboratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */; };
 		0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23526EFBC150050A6C4 /* AppDelegate.swift */; };
 		0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23926EFBC150050A6C4 /* ViewController.swift */; };
 		0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E23B26EFBC150050A6C4 /* Login.storyboard */; };
@@ -93,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		0B097DAF2707552600E26D74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedCollaboratorViewModel.swift; sourceTree = "<group>"; };
 		0B39E23226EFBC150050A6C4 /* XMateriais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMateriais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39E23526EFBC150050A6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B39E23926EFBC150050A6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,14 @@
 			path = LottieAnimations;
 			sourceTree = "<group>";
 		};
+		0B58BF2A270BA6A10078D0FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0B5906B826FAB17F0021B47E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +420,7 @@
 		0BFC6653270064490018E5D1 /* LoggedCollaborator */ = {
 			isa = PBXGroup;
 			children = (
+				0B58BF2A270BA6A10078D0FE /* Models */,
 				0BF0720027060B15009EA47B /* Protocols */,
 				0BFC6654270064730018E5D1 /* Controllers */,
 				0BFC6655270064790018E5D1 /* ViewModels */,
@@ -434,12 +445,12 @@
 		0BFC6655270064790018E5D1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */,
 				0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */,
 				0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */,
 				0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */,
 				0BF0720427068849009EA47B /* InterpretativeAnalysisViewModel.swift */,
 				0BF0720927068D81009EA47B /* FinalViewModel.swift */,
-				0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -750,6 +761,7 @@
 				0BB0C8DA270B56BA001C9721 /* RegisterSampleViewModel.swift in Sources */,
 				0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */,
 				0BD148E627035274004570A3 /* RegisterSampleSuccessViewController.swift in Sources */,
+				0B2914AF270BA8E100673406 /* LoggedCollaboratorViewModel.swift in Sources */,
 				0BFC665F270070450018E5D1 /* LoggedCollaboratorViewController.swift in Sources */,
 				0BFC66632700706E0018E5D1 /* InstagramWebViewController.swift in Sources */,
 				0B78A547270038FC00DF6A0A /* SignUpViewController.swift in Sources */,

@@ -22,12 +22,13 @@ class VisualAnalysisViewModel {
     let kMinusThree: Int = -3
     
     var sensationsArray: [Int]?
-    var dataModel: RegisterDataModel?
+    var dataModel: RegisterDataModel = RegisterDataModel()
     
     // MARK: Init Functions
     
     init() {
         sensationsArray = [kZero, kZero, kZero, kZero]
+        dataModel = RegisterDataModel()
     }
     
     // MARK: Public functions
@@ -63,6 +64,6 @@ class VisualAnalysisViewModel {
     }
     
     func saveSensation() {
-        dataModel?.setVisualArray(visualArray: sensationsArray ?? [])
+        dataModel.setVisualArray(visualArray: sensationsArray ?? [])
     }
 }
