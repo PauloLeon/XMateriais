@@ -47,7 +47,16 @@ class RegisterSampleViewModel {
         guard let name = nameMaterial, let descMaterial = descriptionMaterial else {
             return [:]
         }
-        let materialData = ["nameMaterial": name, "descriptionMaterial": descMaterial, "code": "00t"]
+        let materialData = ["nameMaterial": name, "descriptionMaterial": descMaterial, "code": randomCode()]
         return materialData
     }
+    
+    func randomCode() -> String {
+        var number = String()
+        for _ in 1...3 {
+           number += "\(Int.random(in: 1...9))"
+        }
+        return number
+    }
+
 }
