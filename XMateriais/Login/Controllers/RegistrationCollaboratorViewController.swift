@@ -93,7 +93,7 @@ class RegistrationCollaboratorViewController: UIViewController, NVActivityIndica
     
     private func setDateType(){
         datePickerView.datePickerMode = .date
-        datePickerView.minimumDate = Date()
+        datePickerView.maximumDate = Date()
         datePickerView.locale = Locale(identifier: "pt_BR")
         birthdayTextField.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(RegistrationCollaboratorViewController.handelDatePicker), for: UIControl.Event.valueChanged)
