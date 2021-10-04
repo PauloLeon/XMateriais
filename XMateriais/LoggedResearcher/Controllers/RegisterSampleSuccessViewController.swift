@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import Lottie
 
 class RegisterSampleSuccessViewController: UIViewController {
     
     // MARK: IBOutlet's
 
+    @IBOutlet weak var lottieAnimation: AnimationView!
     @IBOutlet weak var continueButton: UIButton!
     
-    let kTwo: CGFloat = 2.0
-
     // MARK: Override Functions
 
     override func viewDidLoad() {
@@ -26,12 +26,20 @@ class RegisterSampleSuccessViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupView() {
-        continueButton.layer.cornerRadius = kTwo
+        setupLottie()
+        RoundedHelper.roundContinueButton(button: continueButton)
         renameNavigationBackButton()
     }
     
     private func renameNavigationBackButton() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    private func setupLottie() {
+        lottieAnimation.contentMode = .scaleAspectFit
+        lottieAnimation.loopMode = .loop
+        lottieAnimation.animationSpeed = 0.5
+        lottieAnimation.play()
     }
     
     // MARK: IBActions's

@@ -411,13 +411,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D9C-Lt-HqI">
-                                <rect key="frame" x="67.5" y="76" width="240" height="201"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="5Yj-9V-hU3"/>
-                                    <constraint firstAttribute="height" constant="201" id="kGK-jV-QMx"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEH-VM-5Sk">
                                 <rect key="frame" x="16" y="607" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -449,17 +442,28 @@ YWRvcyBwYXJhIG8gc2V1IGUtbWFpbC4
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNG-W3-K2u" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="95.5" y="68" width="184" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="7cd-Yl-N1q"/>
+                                    <constraint firstAttribute="width" constant="184" id="Unr-q3-B0g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="check"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="U91-HK-5Yn" firstAttribute="top" secondItem="D9C-Lt-HqI" secondAttribute="bottom" constant="64" id="2eY-uf-xDT"/>
                             <constraint firstItem="fEH-VM-5Sk" firstAttribute="leading" secondItem="rF1-Zj-J12" secondAttribute="leading" constant="16" id="3An-aw-RZU"/>
-                            <constraint firstItem="D9C-Lt-HqI" firstAttribute="top" secondItem="rF1-Zj-J12" secondAttribute="top" constant="32" id="7Rh-Tx-XIP"/>
-                            <constraint firstItem="D9C-Lt-HqI" firstAttribute="centerX" secondItem="EUJ-0P-04o" secondAttribute="centerX" id="9yw-T8-Vsw"/>
+                            <constraint firstItem="lNG-W3-K2u" firstAttribute="centerX" secondItem="EUJ-0P-04o" secondAttribute="centerX" id="EHm-EZ-KuG"/>
                             <constraint firstItem="v4V-uW-GEd" firstAttribute="leading" secondItem="rF1-Zj-J12" secondAttribute="leading" constant="16" id="Fm4-kN-RPL"/>
                             <constraint firstItem="v4V-uW-GEd" firstAttribute="top" secondItem="U91-HK-5Yn" secondAttribute="bottom" constant="42" id="H1r-SZ-Rkn"/>
                             <constraint firstItem="rF1-Zj-J12" firstAttribute="trailing" secondItem="U91-HK-5Yn" secondAttribute="trailing" constant="16" id="HXu-3p-7Ou"/>
+                            <constraint firstItem="lNG-W3-K2u" firstAttribute="top" secondItem="rF1-Zj-J12" secondAttribute="top" constant="24" id="Qcc-UY-HLg"/>
                             <constraint firstItem="U91-HK-5Yn" firstAttribute="leading" secondItem="rF1-Zj-J12" secondAttribute="leading" constant="16" id="b6Z-Mm-gfg"/>
+                            <constraint firstItem="U91-HK-5Yn" firstAttribute="top" secondItem="lNG-W3-K2u" secondAttribute="bottom" constant="89" id="dRp-fO-1t7"/>
                             <constraint firstItem="rF1-Zj-J12" firstAttribute="trailing" secondItem="fEH-VM-5Sk" secondAttribute="trailing" constant="16" id="eF0-s9-tVZ"/>
                             <constraint firstItem="rF1-Zj-J12" firstAttribute="trailing" secondItem="v4V-uW-GEd" secondAttribute="trailing" constant="16" id="fIi-F4-i2v"/>
                             <constraint firstItem="rF1-Zj-J12" firstAttribute="bottom" secondItem="fEH-VM-5Sk" secondAttribute="bottom" constant="24" id="jSe-Wj-tgE"/>
@@ -469,6 +473,7 @@ YWRvcyBwYXJhIG8gc2V1IGUtbWFpbC4
                     <navigationItem key="navigationItem" title="Cadastro de amostra" id="RTh-lh-nAV"/>
                     <connections>
                         <outlet property="continueButton" destination="fEH-VM-5Sk" id="AIr-28-OK4"/>
+                        <outlet property="lottieAnimation" destination="lNG-W3-K2u" id="R6O-Nq-Kb0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvq-bA-CaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

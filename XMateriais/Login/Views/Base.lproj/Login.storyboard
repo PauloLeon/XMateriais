@@ -920,18 +920,18 @@
             <objects>
                 <viewController id="QoG-i9-aX8" customClass="FirstPresentationViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bgp-yc-vfx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="Yi2-qA-Sl9">
-                                <rect key="frame" x="56" y="76" width="263" height="242"/>
+                                <rect key="frame" x="56" y="32" width="263" height="242"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="263" id="HQt-4z-JNj"/>
                                     <constraint firstAttribute="height" constant="242" id="ST9-cw-ccw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-DX-J84">
-                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <rect key="frame" x="16" y="587" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="mjL-Nw-QwD"/>
@@ -945,7 +945,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O X-Materiais é uma ferramenta para apoiar profissionais na análise das formas com que as pessoas compreendem um material." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-2V-2gq">
-                                <rect key="frame" x="16" y="432" width="343" height="55"/>
+                                <rect key="frame" x="16" y="412" width="343" height="55"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -980,11 +980,11 @@
             <objects>
                 <viewController id="i1N-3G-e8t" customClass="SecondPresentationViewController" customModule="XMateriais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVB-yR-Ef7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-i3-UqS">
-                                <rect key="frame" x="56" y="76" width="263" height="242"/>
+                                <rect key="frame" x="56" y="32" width="263" height="242"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="OOJ-Tr-zZO"/>
                                     <constraint firstAttribute="height" constant="242" id="inw-ua-IMT"/>
@@ -993,14 +993,14 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvV-Pv-xi4">
-                                <rect key="frame" x="16" y="432" width="343" height="55"/>
+                                <rect key="frame" x="16" y="412" width="343" height="55"/>
                                 <string key="text">A análise é feita em diferentes níveis: interativo, sensorial interpretativo e afetivo e é composto por quatro etapas. Vamos começar?</string>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpI-hi-vjE">
-                                <rect key="frame" x="16" y="607" width="343" height="36"/>
+                                <rect key="frame" x="16" y="587" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="odM-3o-hj4"/>
@@ -1293,7 +1293,7 @@
         <image name="xmat_logo" width="106" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="grD-M6-Chl"/>
+        <segue reference="Dyc-23-94r"/>
         <segue reference="0tk-WE-Gka"/>
     </inferredMetricsTieBreakers>
 </document>

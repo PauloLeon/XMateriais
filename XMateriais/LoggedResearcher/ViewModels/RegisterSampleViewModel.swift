@@ -38,7 +38,7 @@ class RegisterSampleViewModel {
     
     func saveMaterial() {
         let userID : String = (Auth.auth().currentUser?.uid)!
-        self.ref!.child("users/\(userID)/materials").child(userID).setValue(setMaterialData())
+        self.ref!.child("users/\(userID)/materials").childByAutoId().setValue(setMaterialData())
     }
     
     // MARK: Private Functions

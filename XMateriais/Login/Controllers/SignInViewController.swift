@@ -130,7 +130,7 @@ class SignInViewController: UIViewController, NVActivityIndicatorViewable {
                         self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
                     } else {
                         self.stopAnimating()
-                        self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
+                        self.performSegue(withIdentifier: self.kSegueResearcher, sender: self)
                     }
                 })
             }
