@@ -16,8 +16,8 @@ class FirstPresentationViewController: UIViewController {
     
     // MARK: Variable's
 
-    let kSegueResearcher = ""
-    let kSegueCollaborator = ""
+    let kSegueResearcher = "segueGoToLoggedResearcher"
+    let kSegueCollaborator = "segueContinueOnboarding"
     
     var type: Int?
     

@@ -13,9 +13,9 @@ enum RadioGroup {
 }
 
 class SensationAnalysisViewController: UIViewController {
-
+    
     // MARK: IBOutlet's
-
+    
     @IBOutlet weak var sensationOneView: UIView!
     @IBOutlet weak var sensationOneZeroButton: UIButton!
     @IBOutlet weak var sensationOneOneButton: UIButton!
@@ -65,12 +65,22 @@ class SensationAnalysisViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kTwo: CGFloat = 2.0
+    let kZero: Int = 0
+    let kOne: Int = 1
+    let kTwo: Int = 2
+    let kThree: Int = 3
+    let kMinusOne: Int = -1
+    let kMinusTwo: Int = -2
+    let kMinusThree: Int = -3
+    
+    var viewModel: SensationAnalysisViewModel?
+    
     
     // MARK: Override Functions
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewModel()
         setupUI()
     }
     
@@ -81,8 +91,11 @@ class SensationAnalysisViewController: UIViewController {
     
     // MARK: Private Functions
     
+    private func setupViewModel() {
+        viewModel = SensationAnalysisViewModel()
+    }
+    
     private func setupUI() {
-        continueButton.layer.cornerRadius = kTwo
         renameNavigationBackButton()
         roundedButtons()
         roundedView()
@@ -92,7 +105,7 @@ class SensationAnalysisViewController: UIViewController {
     private func renameNavigationBackButton() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
-
+    
     private func removeNavigationBorder() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -167,6 +180,7 @@ class SensationAnalysisViewController: UIViewController {
             deselectButton(button: sensationOneMinusOneButton)
             deselectButton(button: sensationOneMinusTwoButton)
             deselectButton(button: sensationOneMinusThreeButton)
+            viewModel?.resetSensation(radioGroup: RadioGroup.RadioOne)
         case .RadioTwo:
             deselectButton(button: sensationTwoZeroButton)
             deselectButton(button: sensationTwoOneButton)
@@ -175,6 +189,7 @@ class SensationAnalysisViewController: UIViewController {
             deselectButton(button: sensationTwoMinusOneButton)
             deselectButton(button: sensationTwoMinusTwoButton)
             deselectButton(button: sensationTwoMinusThreeButton)
+            viewModel?.resetSensation(radioGroup: RadioGroup.RadioTwo)
         case .RadioThree:
             deselectButton(button: sensationThreeZeroButton)
             deselectButton(button: sensationThreeOneButton)
@@ -183,6 +198,7 @@ class SensationAnalysisViewController: UIViewController {
             deselectButton(button: sensationThreeMinusOneButton)
             deselectButton(button: sensationThreeMinusTwoButton)
             deselectButton(button: sensationThreeMinusThreeButton)
+            viewModel?.resetSensation(radioGroup: RadioGroup.RadioThree)
         case .RadioFour:
             deselectButton(button: sensationFourZeroButton)
             deselectButton(button: sensationFourOneButton)
@@ -191,6 +207,7 @@ class SensationAnalysisViewController: UIViewController {
             deselectButton(button: sensationFourMinusOneButton)
             deselectButton(button: ssensationFourMinusTwoButton)
             deselectButton(button: sensationFourMinusThreeButton)
+            viewModel?.resetSensation(radioGroup: RadioGroup.RadioFour)
         case .RadioFive:
             deselectButton(button: sensationFiveZeroButton)
             deselectButton(button: sensationFiveOneButton)
@@ -199,6 +216,7 @@ class SensationAnalysisViewController: UIViewController {
             deselectButton(button: sensationFiveMinusOneButton)
             deselectButton(button: sensationFiveMinusTwoButton)
             deselectButton(button: sensationFiveMinusThreeButton)
+            viewModel?.resetSensation(radioGroup: RadioGroup.RadioFive)
         }
     }
     
@@ -207,176 +225,210 @@ class SensationAnalysisViewController: UIViewController {
     @IBAction func sensationOneZeroDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneZeroButton)
+        viewModel?.updateSensation(value: kZero, radioGroup: RadioGroup.RadioOne)
     }
     
     @IBAction func sensationOneOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneOneButton)
+        viewModel?.updateSensation(value: kOne, radioGroup: RadioGroup.RadioOne)
     }
-
+    
     @IBAction func sensationOneTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneTwoButton)
+        viewModel?.updateSensation(value: kTwo, radioGroup: RadioGroup.RadioOne)
     }
     
     @IBAction func sensationOneThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneThreeButton)
+        viewModel?.updateSensation(value: kThree, radioGroup: RadioGroup.RadioOne)
     }
     
     @IBAction func sensationOneMinusOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneMinusOneButton)
+        viewModel?.updateSensation(value: kMinusOne, radioGroup: RadioGroup.RadioOne)
     }
     
     @IBAction func sensationOneMinusTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneMinusTwoButton)
+        viewModel?.updateSensation(value: kMinusTwo, radioGroup: RadioGroup.RadioOne)
     }
     
     @IBAction func sensationOneMinusThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioOne)
         selectButton(button: sensationOneMinusThreeButton)
+        viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioOne)
     }
     
     @IBAction func sensationTwoZeroDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoZeroButton)
+        viewModel?.updateSensation(value: kZero, radioGroup: RadioGroup.RadioTwo)
     }
     
     @IBAction func sensationTwoOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoOneButton)
+        viewModel?.updateSensation(value: kOne, radioGroup: RadioGroup.RadioTwo)
     }
     
     @IBAction func sensationTwoTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoTwoButton)
+        viewModel?.updateSensation(value: kTwo, radioGroup: RadioGroup.RadioTwo)
     }
     
     @IBAction func sensationTwoThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoThreeButton)
+        viewModel?.updateSensation(value: kThree, radioGroup: RadioGroup.RadioTwo)
     }
     
     @IBAction func sensationTwoMinusOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoMinusOneButton)
+        viewModel?.updateSensation(value: kMinusOne, radioGroup: RadioGroup.RadioTwo)
     }
     
     @IBAction func sensationTwoMinusTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoMinusTwoButton)
+        viewModel?.updateSensation(value: kMinusTwo, radioGroup: RadioGroup.RadioTwo)
     }
     
     @IBAction func sensationTwoMinusThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioTwo)
         selectButton(button: sensationTwoMinusThreeButton)
+        viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioTwo)
     }
     
-
     @IBAction func sensationThreeZeroDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeZeroButton)
+        viewModel?.updateSensation(value: kZero, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationThreeOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeOneButton)
+        viewModel?.updateSensation(value: kOne, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationThreeTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeTwoButton)
+        viewModel?.updateSensation(value: kTwo, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationThreeThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeThreeButton)
+        viewModel?.updateSensation(value: kThree, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationThreeMinusOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeMinusOneButton)
+        viewModel?.updateSensation(value: kMinusOne, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationThreeMinusTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeMinusTwoButton)
+        viewModel?.updateSensation(value: kMinusTwo, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationThreeMinusThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioThree)
         selectButton(button: sensationThreeMinusThreeButton)
+        viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioThree)
     }
     
     @IBAction func sensationFourZeroDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: sensationFourZeroButton)
+        viewModel?.updateSensation(value: kZero, radioGroup: RadioGroup.RadioFour)
     }
     
     @IBAction func sensationFourOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: sensationFourOneButton)
+        viewModel?.updateSensation(value: kOne, radioGroup: RadioGroup.RadioFour)
     }
     
     @IBAction func sensationFourTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: sensationFourTwoButton)
+        viewModel?.updateSensation(value: kTwo, radioGroup: RadioGroup.RadioFour)
     }
     
     @IBAction func sensationFourThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: sensationFourThreeButton)
+        viewModel?.updateSensation(value: kThree, radioGroup: RadioGroup.RadioFour)
     }
     
     @IBAction func sensationFourMinusOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: sensationFourMinusOneButton)
+        viewModel?.updateSensation(value: kMinusOne, radioGroup: RadioGroup.RadioFour)
     }
     
     @IBAction func sensationFourMinusTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: ssensationFourMinusTwoButton)
+        viewModel?.updateSensation(value: kMinusTwo, radioGroup: RadioGroup.RadioFour)
     }
     
     @IBAction func sensationFourMinusThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFour)
         selectButton(button: sensationFourMinusThreeButton)
+        viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioFour)
     }
-
+    
     @IBAction func sensationFiveZeroDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveZeroButton)
+        viewModel?.updateSensation(value: kZero, radioGroup: RadioGroup.RadioFive)
     }
     @IBAction func ssensationFiveOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveOneButton)
+        viewModel?.updateSensation(value: kOne, radioGroup: RadioGroup.RadioFive)
     }
     
     @IBAction func sensationFiveTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveTwoButton)
+        viewModel?.updateSensation(value: kTwo, radioGroup: RadioGroup.RadioFive)
     }
     
     @IBAction func sensationFiveThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveThreeButton)
+        viewModel?.updateSensation(value: kThree, radioGroup: RadioGroup.RadioFive)
     }
     
     @IBAction func sensationFiveMinusOneDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveMinusOneButton)
+        viewModel?.updateSensation(value: kMinusOne, radioGroup: RadioGroup.RadioFive)
     }
     
     @IBAction func sensationFiveMinusTwoDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveMinusTwoButton)
+        viewModel?.updateSensation(value: kMinusTwo, radioGroup: RadioGroup.RadioFive)
     }
     
     @IBAction func sensationFiveMinusThreeDidPressed(_ sender: Any) {
         deselectGroup(type: RadioGroup.RadioFive)
         selectButton(button: sensationFiveMinusThreeButton)
+        viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioFive)
     }
     
     @IBAction func continueButtonDidPressed(_ sender: Any) {}
