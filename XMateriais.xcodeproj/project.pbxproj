@@ -41,6 +41,7 @@
 		0BA466DB2703A28F00885E00 /* RoundedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA466DA2703A28F00885E00 /* RoundedHelper.swift */; };
 		0BB0C8D4270B3917001C9721 /* SensationAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */; };
 		0BB0C8D6270B3933001C9721 /* VisualAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */; };
+		0BB0C8D8270B4E37001C9721 /* RegisterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */; };
 		0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148DF2703515C004570A3 /* SampleResultViewController.swift */; };
 		0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */; };
 		0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E327035268004570A3 /* RegisterSampleViewController.swift */; };
@@ -133,6 +134,7 @@
 		0BA466DA2703A28F00885E00 /* RoundedHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHelper.swift; sourceTree = "<group>"; };
 		0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensationAnalysisViewModel.swift; sourceTree = "<group>"; };
 		0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualAnalysisViewModel.swift; sourceTree = "<group>"; };
+		0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDataModel.swift; sourceTree = "<group>"; };
 		0BD148DF2703515C004570A3 /* SampleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleResultViewController.swift; sourceTree = "<group>"; };
 		0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSuccessViewController.swift; sourceTree = "<group>"; };
 		0BD148E327035268004570A3 /* RegisterSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewController.swift; sourceTree = "<group>"; };
@@ -424,11 +426,12 @@
 		0BFC6655270064790018E5D1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */,
+				0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */,
 				0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */,
 				0BF0720427068849009EA47B /* InterpretativeAnalysisViewModel.swift */,
 				0BF0720927068D81009EA47B /* FinalViewModel.swift */,
-				0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */,
-				0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */,
+				0BB0C8D7270B4E37001C9721 /* RegisterDataModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				0BA466D727039D7600885E00 /* SensationAnalysisViewController.swift in Sources */,
 				0B39E24026EFBC150050A6C4 /* XMateriais.xcdatamodeld in Sources */,
 				0BFC664F27005CA20018E5D1 /* ConfirmSIgnUpViewController.swift in Sources */,
+				0BB0C8D8270B4E37001C9721 /* RegisterDataModel.swift in Sources */,
 				0BFC66752702453B0018E5D1 /* RegistrationResearcherViewController+UIPickerViewDelegate.swift in Sources */,
 				0BB0C8D6270B3933001C9721 /* VisualAnalysisViewModel.swift in Sources */,
 				0BF0720A27068D81009EA47B /* FinalViewModel.swift in Sources */,

@@ -59,22 +59,18 @@ class VisualAnalysisViewController: UIViewController {
     let kMinusOne: Int = -1
     let kMinusTwo: Int = -2
     let kMinusThree: Int = -3
+    let kSegue: String = "segueList"
     
-    var viewModel: VisualAnalysisViewModel?
+    var viewModel: VisualAnalysisViewModel? = VisualAnalysisViewModel()
     
     // MARK: Override Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupViewModel()
     }
     
     // MARK: Private Functions
-    
-    private func setupViewModel() {
-        viewModel = VisualAnalysisViewModel()
-    }
     
     private func setupUI() {
         renameNavigationBackButton()

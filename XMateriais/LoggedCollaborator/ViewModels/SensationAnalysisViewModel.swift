@@ -22,11 +22,13 @@ class SensationAnalysisViewModel {
     let kMinusThree: Int = -3
     
     var sensationsArray: [Int]?
+    var dataModel: RegisterDataModel?
     
     // MARK: Init Functions
     
     init() {
         sensationsArray = [kZero, kZero, kZero, kZero, kZero]
+        dataModel = RegisterDataModel()
     }
     
     // MARK: Public functions
@@ -59,5 +61,9 @@ class SensationAnalysisViewModel {
         case .RadioFive:
             sensationsArray?[kFour] = kZero
         }
+    }
+    
+    func saveSensation() {
+        dataModel?.setSensationArray(sensationArray: sensationsArray ?? [])
     }
 }

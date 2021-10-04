@@ -72,6 +72,7 @@ class SensationAnalysisViewController: UIViewController {
     let kMinusOne: Int = -1
     let kMinusTwo: Int = -2
     let kMinusThree: Int = -3
+    let kSegue: String = "segueVisual"
     
     var viewModel: SensationAnalysisViewModel?
     
@@ -87,6 +88,15 @@ class SensationAnalysisViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? VisualAnalysisViewController {
+                viewModel?.saveSensation()
+                nextViewController.viewModel?.dataModel = viewModel?.dataModel
+            }
+        }
     }
     
     // MARK: Private Functions
@@ -431,5 +441,7 @@ class SensationAnalysisViewController: UIViewController {
         viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioFive)
     }
     
-    @IBAction func continueButtonDidPressed(_ sender: Any) {}
+    @IBAction func continueButtonDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: kSegue, sender: nil)
+    }
 }
