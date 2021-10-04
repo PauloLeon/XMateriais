@@ -37,11 +37,11 @@ class FirstPresentationViewController: UIViewController {
     
     private func setupUI() {
         RoundedHelper.roundContinueButton(button: continueButton)
-        renameNavigationBackButton()
+        removeNavigationBackButton()
     }
     
-    private func renameNavigationBackButton() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    private func removeNavigationBackButton() {
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
 
     private func removeNavigationBorder() {
