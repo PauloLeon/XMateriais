@@ -39,7 +39,7 @@ class SampleResultViewController: UIViewController {
     private func renameNavigationBackButton() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
-    
+
     // MARK: IBActions's
     
     @IBAction func continueButtonDidPressed(_ sender: Any) {

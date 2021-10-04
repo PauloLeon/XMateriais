@@ -28,11 +28,11 @@ class SampleSuccessViewController: UIViewController {
     private func setupView() {
         RoundedHelper.roundContinueButton(button: continueButton)
         setupLottie()
-        renameNavigationBackButton()
+        removeNavigationBackButton()
     }
     
-    private func renameNavigationBackButton() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    private func removeNavigationBackButton() {
+         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     private func setupLottie() {
