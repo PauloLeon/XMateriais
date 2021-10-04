@@ -16,6 +16,7 @@ class RegisterSampleViewModel {
     
     var nameMaterial: String?
     var descriptionMaterial: String?
+    var code: String?
     var ref: DatabaseReference?
     
     // MARK: Init Functions
@@ -47,7 +48,8 @@ class RegisterSampleViewModel {
         guard let name = nameMaterial, let descMaterial = descriptionMaterial else {
             return [:]
         }
-        let materialData = ["nameMaterial": name, "descriptionMaterial": descMaterial, "code": randomCode()]
+        code = randomCode()
+        let materialData = ["nameMaterial": name, "descriptionMaterial": descMaterial, "code": code]
         return materialData
     }
     

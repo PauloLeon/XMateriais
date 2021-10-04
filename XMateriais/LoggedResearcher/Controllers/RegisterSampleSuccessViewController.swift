@@ -14,7 +14,17 @@ class RegisterSampleSuccessViewController: UIViewController {
     // MARK: IBOutlet's
 
     @IBOutlet weak var lottieAnimation: AnimationView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
+    
+    // MARK: Variable's
+    
+    let kTitle1 = "Amostra"
+    let kTitle2 = "Cadastrada"
+    let kDesc = "Sua amostra foi cadastrada com sucesso! O seu código da amostra é:"
+
+    var code: String?
     
     // MARK: Override Functions
 
@@ -29,6 +39,10 @@ class RegisterSampleSuccessViewController: UIViewController {
         setupLottie()
         RoundedHelper.roundContinueButton(button: continueButton)
         renameNavigationBackButton()
+        
+        guard let sampleCode = code else { return }
+        titleLabel.text = "\(kTitle1) \(sampleCode) \(kTitle2)"
+        descriptionLabel.text = "\(kDesc) \(sampleCode)"
     }
     
     private func renameNavigationBackButton() {

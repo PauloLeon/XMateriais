@@ -20,6 +20,7 @@ class SampleListViewController: UIViewController, NVActivityIndicatorViewable {
     let kReusableIdentifier = "sampleCell"
     let kSegue = "segueEmail"
     let kNameMaterial = "nameMaterial"
+    let kCode = "code"
     
     var ref: DatabaseReference?
     var materials: [NSDictionary]? = []
@@ -73,8 +74,8 @@ extension SampleListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: kReusableIdentifier, for: indexPath) as! SampleTableViewCell
         if let dicMaterials = materials {
             let material: NSDictionary =  dicMaterials[indexPath.row]
-            if let name = material[kNameMaterial] as? String {
-                cell.configCell(text: name)
+            if let name = material[kNameMaterial] as? String, let code = material[kCode] as? String {
+                cell.configCell(nameMaterial: name, code: code)
             }
         }
         cell.accessoryType = .disclosureIndicator

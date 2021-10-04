@@ -18,6 +18,8 @@ class RegisterSampleViewController: UIViewController {
     
     // MARK: Variables
 
+    let kSegue = "sampleSucessSegue"
+    let kPlaceholder = "Informe a descrição"
     var viewModel: RegisterSampleViewModel = RegisterSampleViewModel()
 
     // MARK: Override Functions
@@ -26,11 +28,22 @@ class RegisterSampleViewController: UIViewController {
         super.viewDidLoad()
         setupView()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? RegisterSampleSuccessViewController {
+                nextViewController.code = viewModel.code
+            }
+        }
+    }
 
     // MARK: Private Functions
     
     private func setupView() {
         nameTextField.delegate = self
+        descriptionMaterialTextView.delegate = self
+        descriptionMaterialTextView.text = kPlaceholder
+        descriptionMaterialTextView.textColor = UIColor.lightGray
         RoundedHelper.roundContinueButton(button: continueButton)
         renameNavigationBackButton()
     }
@@ -48,7 +61,7 @@ class RegisterSampleViewController: UIViewController {
     @IBAction func continueDidPressed(_ sender: Any) {
         setMaterial()
         viewModel.saveMaterial()
-        self.performSegue(withIdentifier: "sampleSucessSegue", sender: self)        
+        self.performSegue(withIdentifier: kSegue, sender: self)
     }
 }
 
@@ -60,5 +73,21 @@ extension RegisterSampleViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+}
+
+extension RegisterSampleViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = kPlaceholder
+            textView.textColor = UIColor.lightGray
+        }
     }
 }

@@ -49,6 +49,9 @@ class FirstPresentationViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
+    
+    // MARK: IBAction's
+
     @IBAction func continueButtonDidPressed(_ sender: Any) {
         guard let typeRegister = type else { return }
         if typeRegister == 0 {
