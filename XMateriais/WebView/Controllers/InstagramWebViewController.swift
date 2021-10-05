@@ -13,6 +13,7 @@ class InstagramWebViewController: UIViewController, WKNavigationDelegate {
     
     // MARK: Variable's
 
+    let kInstaURL: String = "https://www.instagram.com/xmat.eriais/?hl=pt-br"
     var webview: WKWebView?
     
     // MARK: Override Functions
@@ -33,7 +34,7 @@ class InstagramWebViewController: UIViewController, WKNavigationDelegate {
         webview = WKWebView()
         webview?.navigationDelegate = self
         view = webview
-        let url = URL(string: "https://www.google.com.br")!
+        let url = URL(string: kInstaURL)!
         webview?.load(URLRequest(url: url))
         webview?.allowsBackForwardNavigationGestures = true
     }
