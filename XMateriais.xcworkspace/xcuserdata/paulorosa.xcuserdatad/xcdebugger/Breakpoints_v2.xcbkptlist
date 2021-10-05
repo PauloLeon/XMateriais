@@ -3,4 +3,70 @@
    uuid = "24661FCD-B57E-4C17-AB80-F906963EB99D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B30EBAE7-61E5-4D36-9ED4-08ECEEA4CE63"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XMateriais/LoggedCollaborator/Controllers/FinalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "saveFinalForm()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "014BDBE8-85D6-4F18-962D-16B114CC2B98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XMateriais/LoggedCollaborator/Controllers/FinalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "saveFinalForm()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "014BDBE8-85D6-4F18-962D-16B114CC2B98 - 12b70600407a2fd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XMateriais.FinalViewController.(saveFinalForm in _DD528748248565E729643FB57D47E225)() -&gt; ()"
+                  moduleName = "XMateriais"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulorosa/Documents/iOS/XMateriais/XMateriais/LoggedCollaborator/Controllers/FinalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1168">
+               </Location>
+               <Location
+                  uuid = "014BDBE8-85D6-4F18-962D-16B114CC2B98 - ff714155876c2219"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, __C.FIRDatabaseReference) -&gt; () in XMateriais.FinalViewController.(saveFinalForm in _DD528748248565E729643FB57D47E225)() -&gt; ()"
+                  moduleName = "XMateriais"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulorosa/Documents/iOS/XMateriais/XMateriais/LoggedCollaborator/Controllers/FinalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

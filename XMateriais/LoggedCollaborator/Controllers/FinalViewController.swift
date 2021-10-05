@@ -51,12 +51,6 @@ class FinalViewController: UIViewController, NVActivityIndicatorViewable {
     
     private func setupView() {
         RoundedHelper.roundContinueButton(button: continueButton)
-        if let firstWord = viewModel.firstChosenWord, let secondWord = viewModel.secondChosenWord,
-            let thirdWord = viewModel.thirdChosenWord {
-            firstWordTextLabel.attributedText =  viewModel.setAttributedText(choseWord: firstWord)
-            secondWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: secondWord)
-            thirdWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: thirdWord)
-        }
         setTextView()
         renameNavigationBackButton()
     }
@@ -74,7 +68,6 @@ class FinalViewController: UIViewController, NVActivityIndicatorViewable {
     }
     
     private func resetSensations() {
-        viewModel.resetAllSensations()
         FirstWordTextView.text = kPlaceholder
         secondWordTextView.text = kPlaceholder
         thirdWordTextView.text = kPlaceholder
@@ -104,7 +97,6 @@ class FinalViewController: UIViewController, NVActivityIndicatorViewable {
             self.createAlert(title: "Não conseguimos finalizar", message: "por favor, tente novamente")
           } else {
             print("Data saved successfully!")
-            self.createAlert(title: "Análise Gravada com sucesso", message: "ok")
             self.navigationController?.popToRootViewController(animated: true)
           }
             self.stopAnimating()

@@ -40,7 +40,7 @@ class InterpretativeWordsAnalysisViewController: UIViewController {
         if segue.identifier == kSegue {
             if let nextViewController = segue.destination as? InterpretativeAnalysisViewController {
                 viewModel?.saveAnalysis()
-//                nextViewController.viewModel.dataModel = viewModel?.dataModel ?? RegisterDataModel()
+                nextViewController.viewModel.dataModel = viewModel?.dataModel ?? RegisterDataModel()
             }
         }
     }

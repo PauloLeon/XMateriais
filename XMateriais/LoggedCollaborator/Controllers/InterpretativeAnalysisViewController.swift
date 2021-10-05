@@ -49,6 +49,7 @@ class InterpretativeAnalysisViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupView() {
+        viewModel.setWords()
         RoundedHelper.roundContinueButton(button: continueButton)
         if let firstWord = viewModel.firstChosenWord, let secondWord = viewModel.secondChosenWord {
             firstWordTextLabel.attributedText =  viewModel.setAttributedText(choseWord: firstWord)

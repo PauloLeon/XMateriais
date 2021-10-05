@@ -12,7 +12,8 @@ import UIKit
 class InterpretativeAnalysisViewModel {
     
     // MARK: Variable's Functions
-    
+    let kZero = 0
+    let kOne = 1
     let kTitleAttrbuted = "Por que você escolheu a palavra "
     let kQuestion = "?"
     let kPlaceholder = "Informe a descrição"
@@ -30,6 +31,12 @@ class InterpretativeAnalysisViewModel {
     }
     
     // MARK: Public Functions
+    
+    func setWords() {
+        let list = dataModel.getWordListTwo()
+        firstChosenWord = list[kZero]
+        secondChosenWord = list[kOne]
+    }
     
     public func setAttributedText(choseWord: String) -> NSMutableAttributedString {
         let attrBlack = [ NSAttributedString.Key.foregroundColor: UIColor.black]
