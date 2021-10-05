@@ -31,6 +31,11 @@ class AffectiveAnalysisViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetSensations()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == kSegue {
             if let nextViewController = segue.destination as? IntensityAnalysisViewController {
@@ -46,6 +51,11 @@ class AffectiveAnalysisViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         renameNavigationBackButton()
+    }
+    
+    private func resetSensations() {
+        viewModel?.resetSensations()
+        tableView.reloadData()
     }
     
     private func renameNavigationBackButton() {

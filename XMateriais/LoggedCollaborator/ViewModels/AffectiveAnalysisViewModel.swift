@@ -73,6 +73,11 @@ class AffectiveAnalysisViewModel {
         }
     }
     
+    public func resetSensations() {
+        switchList = [false, false, false, false, false , false , false , false , false , false , false , false , false, false, false, false, false, false, false, false]
+        finalList = []
+    }
+    
     public func saveAnalysis() {
         saveAnalysisInFinalList()
         dataModel.setWorldList(wordListOne: finalList ?? [])
