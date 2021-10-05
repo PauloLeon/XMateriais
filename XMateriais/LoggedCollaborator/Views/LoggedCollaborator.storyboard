@@ -2285,7 +2285,6 @@
                                 <connections>
                                     <action selector="continueButtonDidPressed:" destination="jEa-Ls-Mys" eventType="touchUpInside" id="L3v-LW-NB5"/>
                                     <action selector="continueButtonDidPressed:" destination="jdv-Nu-cqs" eventType="touchUpInside" id="X9q-1n-IgY"/>
-                                    <segue destination="3i4-SX-j0j" kind="show" id="aa7-iJ-4ts"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2321,6 +2320,7 @@
                         <outlet property="firstWordTextLabel" destination="XS1-VW-QJu" id="V1Y-pz-lG4"/>
                         <outlet property="secondWordTextLabel" destination="IdG-I6-YCB" id="BDP-K3-4zP"/>
                         <outlet property="secondWordTextView" destination="90V-6W-Jye" id="HJh-Fp-JfS"/>
+                        <segue destination="3i4-SX-j0j" kind="show" identifier="segueFinal" id="I83-zg-XRq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gua-WZ-az2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2420,7 +2420,7 @@
                                                     <constraint firstAttribute="height" constant="36" id="5am-jT-PSE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
-                                                <state key="normal" title="Continuar">
+                                                <state key="normal" title="Finalizar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>

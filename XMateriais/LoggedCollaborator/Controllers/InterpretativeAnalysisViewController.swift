@@ -9,9 +9,9 @@
 import UIKit
 
 class InterpretativeAnalysisViewController: UIViewController {
-
+    
     // MARK: IBOutlet's
-
+    
     @IBOutlet weak var firstWordTextLabel: UILabel!
     @IBOutlet weak var secondWordTextLabel: UILabel!
     @IBOutlet weak var FirstWordTextView: UITextView!
@@ -20,43 +20,86 @@ class InterpretativeAnalysisViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kSegue: String = ""
+    let kSegue: String = "segueFinal"
+    let kPlaceholder = "Informe a descrição"
     let viewModel: InterpretativeAnalysisViewModel = InterpretativeAnalysisViewModel()
     
     // MARK: Override Functions
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
-       
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         removeNavigationBorder()
+        resetSensations()
     }
-       
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == kSegue {
+            if let nextViewController = segue.destination as? FinalViewController {
+                viewModel.saveSensation(text1: FirstWordTextView.text ?? "", text2: secondWordTextView.text ?? "")
+                nextViewController.viewModel.dataModel = viewModel.dataModel
+            }
+        }
+    }
+    
     // MARK: Private Functions
-       
+    
     private func setupView() {
         RoundedHelper.roundContinueButton(button: continueButton)
         if let firstWord = viewModel.firstChosenWord, let secondWord = viewModel.secondChosenWord {
             firstWordTextLabel.attributedText =  viewModel.setAttributedText(choseWord: firstWord)
             secondWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: secondWord)
         }
+        FirstWordTextView.delegate = self
+        secondWordTextView.delegate = self
         renameNavigationBackButton()
+    }
+    
+    private func resetSensations() {
+        viewModel.resetAllSensations()
+        FirstWordTextView.text = kPlaceholder
+        secondWordTextView.text = kPlaceholder
     }
     
     private func renameNavigationBackButton() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
-
+    
     private func removeNavigationBorder() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
-       
+    
+    private func validTextView() -> Bool {
+        return viewModel.validForm(text1: FirstWordTextView.text ?? "", text2: secondWordTextView.text ?? "")
+    }
+    
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-        performSegue(withIdentifier: kSegue, sender: nil)
+        if validTextView() {
+            performSegue(withIdentifier: kSegue, sender: nil)
+        } else {
+            createAlert(title: "Por favor preencha os campos", message: "tente novamente")
+        }
+    }
+}
+
+extension InterpretativeAnalysisViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = kPlaceholder
+            textView.textColor = UIColor.lightGray
+        }
     }
 }

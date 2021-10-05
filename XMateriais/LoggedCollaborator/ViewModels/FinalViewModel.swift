@@ -11,12 +11,27 @@ import UIKit
 
 class FinalViewModel {
     
+    // MARK: Variable's Functions
+    
     let kTitleAttrbuted = "Por que você escolheu a palavra "
     let kQuestion = "?"
+    let kPlaceholder = "Informe a descrição"
     
     var firstChosenWord: String?
     var secondChosenWord: String?
     var thirdChosenWord: String?
+    var dataModel: RegisterDataModel = RegisterDataModel()
+    
+    // MARK: Init Functions
+    
+    init() {
+        firstChosenWord = ""
+        secondChosenWord = ""
+        thirdChosenWord = ""
+        dataModel = RegisterDataModel()
+    }
+    
+    // MARK: Public Functions
     
     func setAttributedText(choseWord: String) -> NSMutableAttributedString {
         let attrBlack = [ NSAttributedString.Key.foregroundColor: UIColor.black]
@@ -29,5 +44,24 @@ class FinalViewModel {
         combination.append(myAttrString2)
         combination.append(myAttrString3)
         return combination
+    }
+    
+    func resetAllSensations() {
+        firstChosenWord = ""
+        secondChosenWord = ""
+        thirdChosenWord = ""
+    }
+    
+    func validForm(text1: String, text2: String, text3: String) -> Bool {
+        if text1 != kPlaceholder || text1 != "" || text2 != kPlaceholder || text2 != "" || text3 != kPlaceholder || text3 != "" {
+            return true
+        }
+        return false
+    }
+        
+    func saveSensation(text1: String, text2: String, text3: String) {
+        dataModel.setFirstFinalExplanation(firstFinalExplanation: text1)
+        dataModel.setSecondFinalExplanation(secondFinalExplanation: text2)
+        dataModel.setThirdFinalExplanation(thirdFinalExplanation: text3)
     }
 }

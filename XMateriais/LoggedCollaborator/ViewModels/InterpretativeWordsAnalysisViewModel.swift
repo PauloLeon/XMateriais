@@ -83,6 +83,6 @@ class InterpretativeWordsAnalysisViewModel {
     
     public func saveAnalysis() {
         saveAnalysisInFinalList()
-        dataModel.setWorldList(wordListOne: finalList ?? [])
+        dataModel.setWorldListTwo(wordListTwo: finalList ?? [])
     }
 }
