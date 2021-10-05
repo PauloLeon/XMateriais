@@ -12,6 +12,7 @@
 		0B2914B1270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */; };
 		0B2914B3270BC59500673406 /* AffectiveAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */; };
 		0B2914B5270BC5C200673406 /* AffectiveAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B4270BC5C200673406 /* AffectiveAnalysisViewModel.swift */; };
+		0B2914B7270BF61A00673406 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B6270BF61A00673406 /* Defaults.swift */; };
 		0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23526EFBC150050A6C4 /* AppDelegate.swift */; };
 		0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23926EFBC150050A6C4 /* ViewController.swift */; };
 		0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E23B26EFBC150050A6C4 /* Login.storyboard */; };
@@ -101,6 +102,7 @@
 		0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisTableViewCell.swift; sourceTree = "<group>"; };
 		0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisViewController.swift; sourceTree = "<group>"; };
 		0B2914B4270BC5C200673406 /* AffectiveAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisViewModel.swift; sourceTree = "<group>"; };
+		0B2914B6270BF61A00673406 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		0B39E23226EFBC150050A6C4 /* XMateriais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMateriais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39E23526EFBC150050A6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B39E23926EFBC150050A6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				0B78A54B270042A900DF6A0A /* UIColor+Extensions.swift */,
 				0B78A54F2700524C00DF6A0A /* ViewController+Extensions.swift */,
 				0BA466DA2703A28F00885E00 /* RoundedHelper.swift */,
+				0B2914B6270BF61A00673406 /* Defaults.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -797,6 +800,7 @@
 				0BF072032706812B009EA47B /* InterpretativeAnalysisViewController.swift in Sources */,
 				0BFC666F27021CB20018E5D1 /* RegistrationCollaboratorViewController.swift in Sources */,
 				0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */,
+				0B2914B7270BF61A00673406 /* Defaults.swift in Sources */,
 				0BF071FB2705FFD8009EA47B /* IntensityAnalysisViewController.swift in Sources */,
 				0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */,
 				0B5906D026FAC75C0021B47E /* LoginViewController.swift in Sources */,

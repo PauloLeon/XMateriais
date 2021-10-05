@@ -173,6 +173,7 @@ class RegistrationResearcherViewController: UIViewController, NVActivityIndicato
                     self.stopAnimating()
                 } else{
                     self.ref!.child("users").child(user!.user.uid).setValue(self.setUserData())
+                    Defaults.saveTypeUser(type: 1)
                     self.stopAnimating()
                     self.performSegue(withIdentifier: self.kSegue, sender: self)
                 }

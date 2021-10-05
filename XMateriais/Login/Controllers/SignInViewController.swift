@@ -125,6 +125,7 @@ class SignInViewController: UIViewController, NVActivityIndicatorViewable {
                 print("Current user ID is" + userID)
                 self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in
                     let type = (snapshot.value as! NSDictionary)["type"] as! Int
+                    Defaults.saveTypeUser(type: type)
                     if type == 0 {
                         self.stopAnimating()
                         self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)

@@ -24,18 +24,18 @@ class IntensityAnalysisViewController: UIViewController {
     
     // MARK: Variable's
     
+    let kSegue = ""
     let viewModel: IntensityAnalysisViewModel  = IntensityAnalysisViewModel()
     
     // MARK: Override Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        removeNavigationBorder()
+        setupView()
     }
     
     // MARK: Private Functions
@@ -44,6 +44,7 @@ class IntensityAnalysisViewController: UIViewController {
         viewModel.setWords()
         setupChosenWord()
         renameNavigationBackButton()
+        removeNavigationBorder()
         roundedView()
         RoundedHelper.roundContinueButton(button: continueButton)
     }
@@ -84,6 +85,6 @@ class IntensityAnalysisViewController: UIViewController {
     
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
         print("Escolhas Debug: slider1 = \(viewModel.sliderValueOne?.rounded() ?? 0.0) slider2 = \(viewModel.sliderValueTwo?.rounded() ?? 0.0) slider3 = \(viewModel.sliderValueThree?.rounded() ?? 0.0)")
-        performSegue(withIdentifier: viewModel.kSegue, sender: nil)
+        performSegue(withIdentifier: kSegue, sender: nil)
     }
 }

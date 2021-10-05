@@ -79,6 +79,7 @@ class LoggedResearcherViewController: UIViewController {
     private func logOut() {
         do {
             try Auth.auth().signOut()
+            Defaults.clearUserData()
             self.performSegue(withIdentifier: kSegueTutorial, sender: self)
         } catch {
             createAlert(title: "Não conseguimos deslogar", message: "Tente novamente mais tarde")

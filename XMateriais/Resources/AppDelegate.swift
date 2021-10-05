@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var ref: DatabaseReference?
-    var typeLogged: Int?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -96,13 +95,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let userID : String = (Auth.auth().currentUser?.uid)!
         self.ref!.child("users").child(userID).observeSingleEvent(of: .value, with: {(snapshot) in
             let type = (snapshot.value as! NSDictionary)["type"] as! Int
-            self.typeLogged = type
+            Defaults.saveTypeUser(type: type)
         })
     }
     
     private func getLoginInformation() -> UINavigationController? {
         if isUserLoggedIn() {
-            if typeLogged == 0 {
+            getUserType()
+            if Defaults.getTypeUser() == 0 {
                 let storyboard = UIStoryboard(name: "LoggedCollaborator", bundle: nil)
                 let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
                 let rootViewController = storyboard.instantiateViewController(withIdentifier: "LoggedCollaboratorViewController")
@@ -118,6 +118,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return navigationController
             }
         } else {
+            Defaults.clearUserData()
             let storyboard = UIStoryboard(name: "Tutorial", bundle: nil)
             let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
             let rootViewController = storyboard.instantiateViewController(withIdentifier: "FirstTutorialViewController")

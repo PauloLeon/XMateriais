@@ -67,11 +67,7 @@ extension AffectiveAnalysisViewController: UITableViewDelegate, UITableViewDataS
         let cell = tableView.dequeueReusableCell(withIdentifier: kReusableIdentifier, for: indexPath) as! AffectiveAnalysisTableViewCell
         let word = viewModel?.wordsList?[indexPath.row] ?? ""
         let isOn = viewModel?.switchList?[indexPath.row] ?? false
-        //initialize cell and get back the actual Value of the switch and set it to my object???
-        let boolValue: Bool = cell.configCell(word: word, isSwithActive: isOn)
-
-        //this following value should be set in my object
-        viewModel?.switchList?[indexPath.row] = boolValue
+        cell.configCell(word: word, isSwithActive: isOn)
         cell.delegate = self
         
         return cell
@@ -94,7 +90,7 @@ extension AffectiveAnalysisViewController: AffectiveAnalysisTableViewCellDelegat
     func didChangeSwitchValue(value: Bool, word: String) {
         if viewModel?.isMaxChosenSwitch(isSwitchOff: value) ?? true {
             createAlert(title: "você deve escolher apenas 3", message: "")
-            viewModel?.chosenWord(chosenWord: word, chosenSwitch: !value)
+           viewModel?.chosenWord(chosenWord: word, chosenSwitch: !value)
             tableView.reloadData()
         } else {
             viewModel?.chosenWord(chosenWord: word, chosenSwitch: value)

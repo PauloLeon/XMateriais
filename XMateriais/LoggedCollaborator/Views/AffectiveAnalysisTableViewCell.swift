@@ -29,12 +29,11 @@ class AffectiveAnalysisTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    public func configCell(word: String, isSwithActive: Bool) -> Bool {
+    public func configCell(word: String, isSwithActive: Bool) {
         wordLabel.text = word
         chosenSwitch.onTintColor = UIColor.getPrimaryColor()
         value = isSwithActive
         chosenSwitch.isOn = value
-        return value
     }
 
     

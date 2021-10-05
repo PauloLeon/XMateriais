@@ -85,6 +85,7 @@ class LoggedCollaboratorViewController: UIViewController {
     private func logout() {
         do {
             try Auth.auth().signOut()
+            Defaults.clearUserData()
             performSegue(withIdentifier: kSegueTutorial, sender: nil)
         } catch {
             createAlert(title: "Não conseguimos deslogar", message: "Tente novamente mais tarde")

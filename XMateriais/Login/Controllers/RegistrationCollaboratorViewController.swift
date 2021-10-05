@@ -170,6 +170,7 @@ class RegistrationCollaboratorViewController: UIViewController, NVActivityIndica
                     self.stopAnimating()
                 } else {
                     self.ref!.child("users").child(user!.user.uid).setValue(self.setUserData())
+                    Defaults.saveTypeUser(type: 0)
                     self.stopAnimating()
                     self.performSegue(withIdentifier: self.kSegue, sender: self)
                 }
