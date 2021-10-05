@@ -54,9 +54,17 @@ class InterpretativeAnalysisViewController: UIViewController {
             firstWordTextLabel.attributedText =  viewModel.setAttributedText(choseWord: firstWord)
             secondWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: secondWord)
         }
+        setTextView()
+        renameNavigationBackButton()
+    }
+    
+    private func setTextView() {
         FirstWordTextView.delegate = self
         secondWordTextView.delegate = self
-        renameNavigationBackButton()
+        FirstWordTextView.text = kPlaceholder
+        FirstWordTextView.textColor = UIColor.lightGray
+        secondWordTextView.text = kPlaceholder
+        secondWordTextView.textColor = UIColor.lightGray
     }
     
     private func resetSensations() {

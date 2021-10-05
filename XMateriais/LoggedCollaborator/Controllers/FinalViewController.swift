@@ -48,10 +48,20 @@ class FinalViewController: UIViewController {
             secondWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: secondWord)
             thirdWordTextLabel.attributedText = viewModel.setAttributedText(choseWord: thirdWord)
         }
+        setTextView()
+        renameNavigationBackButton()
+    }
+    
+    private func setTextView() {
         FirstWordTextView.delegate = self
         secondWordTextView.delegate = self
         thirdWordTextView.delegate = self
-        renameNavigationBackButton()
+        FirstWordTextView.text = kPlaceholder
+        FirstWordTextView.textColor = UIColor.lightGray
+        secondWordTextView.text = kPlaceholder
+        secondWordTextView.textColor = UIColor.lightGray
+        thirdWordTextView.text = kPlaceholder
+        thirdWordTextView.textColor = UIColor.lightGray
     }
     
     private func resetSensations() {

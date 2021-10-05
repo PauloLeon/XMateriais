@@ -53,7 +53,7 @@ class FinalViewModel {
     }
     
     func validForm(text1: String, text2: String, text3: String) -> Bool {
-        if text1 != kPlaceholder || text1 != "" || text2 != kPlaceholder || text2 != "" || text3 != kPlaceholder || text3 != "" {
+        if text1 != kPlaceholder && text1 != "" && text2 != kPlaceholder && text2 != "" && text3 != kPlaceholder && text3 != "" {
             return true
         }
         return false

@@ -50,7 +50,7 @@ class InterpretativeAnalysisViewModel {
     }
     
     func validForm(text1: String, text2: String) -> Bool {
-        if text1 != kPlaceholder || text1 != "" || text2 != kPlaceholder || text2 != "" {
+        if text1 != kPlaceholder && text1 != "" && text2 != kPlaceholder && text2 != "" {
             return true
         }
         return false
