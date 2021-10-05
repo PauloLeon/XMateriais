@@ -35,10 +35,8 @@ class LoginViewController: UIViewController {
     // MARK: Private Functions
 
     private func setupView() {
-        signInButton.layer.cornerRadius = kThree
-        signUpButton.layer.cornerRadius = kThree
-        signUpButton.layer.borderWidth = kBorderWidth
-        signUpButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
+        RoundedHelper.roundContinueButton(button: signInButton)
+        RoundedHelper.roundDisableContinueButton(button: signUpButton)
         self.navigationController?.navigationBar.tintColor = UIColor.getPrimaryColor()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
