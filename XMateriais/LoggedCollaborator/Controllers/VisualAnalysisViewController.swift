@@ -70,6 +70,12 @@ class VisualAnalysisViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavigationBorder()
+        resetSensations()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == kSegue {
             if let nextViewController = segue.destination as? AffectiveAnalysisViewController {
@@ -87,6 +93,18 @@ class VisualAnalysisViewController: UIViewController {
         roundedButtons()
         roundedView()
         RoundedHelper.roundContinueButton(button: continueButton)
+    }
+    
+    private func resetSensations() {
+        viewModel?.resetAllSensations()
+        deselectGroup(type: RadioGroup.RadioOne)
+        deselectGroup(type: RadioGroup.RadioTwo)
+        deselectGroup(type: RadioGroup.RadioThree)
+        deselectGroup(type: RadioGroup.RadioFour)
+        selectButton(button: sensationOneZeroButton)
+        selectButton(button: sensationTwoZeroButton)
+        selectButton(button: sensationThreeZeroButton)
+        selectButton(button: sensationFourZeroButton)
     }
     
     private func renameNavigationBackButton() {
@@ -361,8 +379,12 @@ class VisualAnalysisViewController: UIViewController {
         selectButton(button: sensationFourMinusThreeButton)
         viewModel?.updateSensation(value: kMinusThree, radioGroup: RadioGroup.RadioFour)
     }
-
+    
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-        performSegue(withIdentifier: kSegue, sender: nil)
+        if viewModel?.validForm() ?? false {
+            performSegue(withIdentifier: kSegue, sender: nil)
+        } else {
+            createAlert(title: "Você deve escolher ao menos uma reação", message: "tente novamente")
+        }
     }
 }

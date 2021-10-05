@@ -63,6 +63,19 @@ class VisualAnalysisViewModel {
         }
     }
     
+    func resetAllSensations() {
+        sensationsArray = [kZero, kZero, kZero, kZero, kZero]
+    }
+    
+    func validForm() -> Bool {
+        for sensation in sensationsArray ?? [] {
+            if sensation != kZero {
+                return true
+            }
+        }
+        return false
+    }
+    
     func saveSensation() {
         dataModel.setVisualArray(visualArray: sensationsArray ?? [])
     }
