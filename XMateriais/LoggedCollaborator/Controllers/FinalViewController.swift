@@ -6,9 +6,12 @@
 //  Copyright © 2021 Paulo Rosa. All rights reserved.
 //
 
+import Firebase
+import FirebaseDatabase
+import NVActivityIndicatorView
 import UIKit
 
-class FinalViewController: UIViewController {
+class FinalViewController: UIViewController, NVActivityIndicatorViewable {
     
     // MARK: IBOutlet's
     
@@ -24,11 +27,13 @@ class FinalViewController: UIViewController {
     
     let kPlaceholder = "Informe a descrição"
     let viewModel: FinalViewModel = FinalViewModel()
+    var ref: DatabaseReference?
     
     // MARK: Override Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupDatabase()
         setupView()
     }
     
@@ -39,6 +44,10 @@ class FinalViewController: UIViewController {
     }
     
     // MARK: Private Functions
+    
+    private func setupDatabase() {
+        ref = Database.database().reference()
+    }
     
     private func setupView() {
         RoundedHelper.roundContinueButton(button: continueButton)
@@ -85,14 +94,29 @@ class FinalViewController: UIViewController {
         return viewModel.validForm(text1: FirstWordTextView.text ?? "", text2: secondWordTextView.text ?? "", text3: thirdWordTextView.text ?? "")
     }
     
+    private func saveFinalForm() {
+        startAnimating()
+        let userID : String = (Auth.auth().currentUser?.uid)!
+        let data = viewModel.getRegisterModelData()
+        self.ref!.child("users/\(userID)/analysis").childByAutoId().setValue(data) { (error:Error?, ref:DatabaseReference) in
+          if let error = error {
+            print("Data could not be saved: \(error).")
+            self.createAlert(title: "Não conseguimos finalizar", message: "por favor, tente novamente")
+          } else {
+            print("Data saved successfully!")
+            self.createAlert(title: "Análise Gravada com sucesso", message: "ok")
+            self.navigationController?.popToRootViewController(animated: true)
+          }
+            self.stopAnimating()
+        }
+    }
+    
+    // MARK: IBAction's
+    
     @IBAction func continueButtonDidPressed(_ sender: Any) {
         if validTextView() {
             viewModel.saveSensation(text1: FirstWordTextView.text ?? "", text2: secondWordTextView.text ?? "", text3: thirdWordTextView.text ?? "")
-            
-            // save DATABASE
-            
-            //back to root!
-            //navigationController?.popToRootViewController(animated: true)
+            saveFinalForm()
         } else {
             createAlert(title: "Por favor preencha os campos", message: "tente novamente")
         }

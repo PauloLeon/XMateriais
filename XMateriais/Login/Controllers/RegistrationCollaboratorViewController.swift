@@ -6,10 +6,10 @@
 //  Copyright © 2021 Paulo Rosa. All rights reserved.
 //
 
-import UIKit
 import Firebase
 import FirebaseDatabase
 import NVActivityIndicatorView
+import UIKit
 
 class RegistrationCollaboratorViewController: UIViewController, NVActivityIndicatorViewable {
     

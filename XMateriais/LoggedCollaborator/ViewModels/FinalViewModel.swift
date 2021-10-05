@@ -64,4 +64,8 @@ class FinalViewModel {
         dataModel.setSecondFinalExplanation(secondFinalExplanation: text2)
         dataModel.setThirdFinalExplanation(thirdFinalExplanation: text3)
     }
+    
+    func getRegisterModelData() -> [String: Any] {
+        return dataModel.getRegisterData()
+    }
 }

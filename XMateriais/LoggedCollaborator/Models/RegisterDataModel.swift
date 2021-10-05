@@ -108,4 +108,19 @@ class RegisterDataModel {
     func setThirdFinalExplanation(thirdFinalExplanation: String) {
         self.thirdFinalExplanation = thirdFinalExplanation
     }
+    
+    func getRegisterData() -> [String : Any] {
+        let materialData: [String : Any] = ["sampleCode": sampleCode ?? "",
+                            "sensationArray": sensationArray ?? [],
+                            "visualArray": visualArray ?? [],
+                            "wordListOne": wordListOne ?? [],
+                            "intensityArray": intensityArray ?? [],
+                            "wordListTwo": wordListTwo ?? [],
+                            "firstChosenWordExplanation": firstChosenWordExplanation ?? "",
+                            "secondChosenWordExplanation": secondChosenWordExplanation ?? "",
+                            "firstFinalExplanation": firstFinalExplanation ?? "",
+                            "secondFinalExplanation": secondFinalExplanation ?? "",
+                            "thirdFinalExplanation": thirdFinalExplanation ?? ""]
+        return materialData
+    }
 }
