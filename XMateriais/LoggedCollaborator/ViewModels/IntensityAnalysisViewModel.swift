@@ -16,6 +16,7 @@ class IntensityAnalysisViewModel {
     let kOne: Int = 1
     let kTwo: Int = 2
     let kZeroFloat: Float = 0.0
+    let kSliderDefaultValue: Float = 5.5
     let kChosenWordText = "Palavra escolhida"
     
     var firstChosenWord: String?
@@ -60,17 +61,30 @@ class IntensityAnalysisViewModel {
     
     func setSliderValueOne(value: Float) {
         sliderValueOne = value
-        sliderArray?[kZero] = value
+        sliderArray?[kZero] = value.rounded()
     }
     
     func setSliderValueTwo(value: Float) {
         sliderValueTwo = value
-        sliderArray?[kOne] = value
+        sliderArray?[kOne] = value.rounded()
     }
     
     func setSliderValueThree(value: Float) {
         sliderValueThree = value
-        sliderArray?[kTwo] = value
+        sliderArray?[kTwo] = value.rounded()
+    }
+    
+    func resetSensations() {
+        sliderArray = [kZeroFloat, kZeroFloat, kZeroFloat]
+    }
+    
+    func validForm() -> Bool {
+        for sensation in sliderArray ?? [] {
+            if sensation != kZeroFloat {
+                return true
+            }
+        }
+        return false
     }
     
     func saveSensation() {

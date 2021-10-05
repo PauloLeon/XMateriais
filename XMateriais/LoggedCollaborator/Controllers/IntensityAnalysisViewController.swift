@@ -24,7 +24,7 @@ class IntensityAnalysisViewController: UIViewController {
     
     // MARK: Variable's
     
-    let kSegue = ""
+    let kSegue = "segueInterpretativeWords"
     let viewModel: IntensityAnalysisViewModel  = IntensityAnalysisViewModel()
     
     // MARK: Override Functions
@@ -35,8 +35,18 @@ class IntensityAnalysisViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        resetSensations()
         setupView()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if segue.identifier == kSegue {
+             if let nextViewController = segue.destination as? InterpretativeWordsAnalysisViewController {
+                viewModel.saveSensation()
+                nextViewController.viewModel?.dataModel = viewModel.dataModel ?? RegisterDataModel()
+             }
+         }
+     }
     
     // MARK: Private Functions
     
@@ -47,6 +57,17 @@ class IntensityAnalysisViewController: UIViewController {
         removeNavigationBorder()
         roundedView()
         RoundedHelper.roundContinueButton(button: continueButton)
+    }
+    
+    private func resetSensations() {
+        viewModel.resetSensations()
+        resetSlider()
+    }
+    
+    private func resetSlider() {
+        firstSlider.value = viewModel.kSliderDefaultValue
+        secondSlider.value = viewModel.kSliderDefaultValue
+        thirdSlider.value = viewModel.kSliderDefaultValue
     }
     
     private func roundedView() {
@@ -84,7 +105,10 @@ class IntensityAnalysisViewController: UIViewController {
     }
     
     @IBAction func continueButtonDidPressed(_ sender: UIButton) {
-        print("Escolhas Debug: slider1 = \(viewModel.sliderValueOne?.rounded() ?? 0.0) slider2 = \(viewModel.sliderValueTwo?.rounded() ?? 0.0) slider3 = \(viewModel.sliderValueThree?.rounded() ?? 0.0)")
-        performSegue(withIdentifier: kSegue, sender: nil)
+        if viewModel.validForm() {
+            performSegue(withIdentifier: kSegue, sender: nil)
+        } else {
+            createAlert(title: "Você deve definir ao menos uma reação no slider", message: "tente novamente")
+        }
     }
 }
