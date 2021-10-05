@@ -72,9 +72,9 @@ class VisualAnalysisViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == kSegue {
-            if let nextViewController = segue.destination as? IntensityAnalysisViewController {
+            if let nextViewController = segue.destination as? AffectiveAnalysisViewController {
                 viewModel?.saveSensation()
-                nextViewController.viewModel.dataModel = viewModel?.dataModel ?? RegisterDataModel()
+                nextViewController.viewModel?.dataModel = viewModel?.dataModel ?? RegisterDataModel()
             }
         }
     }

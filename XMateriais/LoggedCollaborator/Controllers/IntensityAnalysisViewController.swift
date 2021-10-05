@@ -41,6 +41,7 @@ class IntensityAnalysisViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupView() {
+        viewModel.setWords()
         setupChosenWord()
         renameNavigationBackButton()
         roundedView()

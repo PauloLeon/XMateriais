@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B097DB02707552600E26D74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B097DAF2707552600E26D74 /* GoogleService-Info.plist */; };
 		0B2914AF270BA8E100673406 /* LoggedCollaboratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */; };
+		0B2914B1270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */; };
+		0B2914B3270BC59500673406 /* AffectiveAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */; };
+		0B2914B5270BC5C200673406 /* AffectiveAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B4270BC5C200673406 /* AffectiveAnalysisViewModel.swift */; };
 		0B39E23626EFBC150050A6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23526EFBC150050A6C4 /* AppDelegate.swift */; };
 		0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39E23926EFBC150050A6C4 /* ViewController.swift */; };
 		0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39E23B26EFBC150050A6C4 /* Login.storyboard */; };
@@ -95,6 +98,9 @@
 /* Begin PBXFileReference section */
 		0B097DAF2707552600E26D74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedCollaboratorViewModel.swift; sourceTree = "<group>"; };
+		0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisTableViewCell.swift; sourceTree = "<group>"; };
+		0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisViewController.swift; sourceTree = "<group>"; };
+		0B2914B4270BC5C200673406 /* AffectiveAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisViewModel.swift; sourceTree = "<group>"; };
 		0B39E23226EFBC150050A6C4 /* XMateriais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMateriais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39E23526EFBC150050A6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B39E23926EFBC150050A6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -435,6 +441,7 @@
 				0BFC665E270070450018E5D1 /* LoggedCollaboratorViewController.swift */,
 				0BA466D627039D7600885E00 /* SensationAnalysisViewController.swift */,
 				0BA466D827039DA000885E00 /* VisualAnalysisViewController.swift */,
+				0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */,
 				0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */,
 				0BF072022706812B009EA47B /* InterpretativeAnalysisViewController.swift */,
 				0BF0720727068D6A009EA47B /* FinalViewController.swift */,
@@ -448,6 +455,7 @@
 				0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */,
 				0BB0C8D3270B3917001C9721 /* SensationAnalysisViewModel.swift */,
 				0BB0C8D5270B3933001C9721 /* VisualAnalysisViewModel.swift */,
+				0B2914B4270BC5C200673406 /* AffectiveAnalysisViewModel.swift */,
 				0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */,
 				0BF0720427068849009EA47B /* InterpretativeAnalysisViewModel.swift */,
 				0BF0720927068D81009EA47B /* FinalViewModel.swift */,
@@ -459,6 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				0BFC665A2700655A0018E5D1 /* LoggedCollaborator.storyboard */,
+				0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -757,6 +766,7 @@
 			files = (
 				0BA466D927039DA000885E00 /* VisualAnalysisViewController.swift in Sources */,
 				0BFC6661270070560018E5D1 /* LoggedResearcherViewController.swift in Sources */,
+				0B2914B1270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift in Sources */,
 				0B39E23A26EFBC150050A6C4 /* ViewController.swift in Sources */,
 				0BB0C8DA270B56BA001C9721 /* RegisterSampleViewModel.swift in Sources */,
 				0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */,
@@ -783,6 +793,7 @@
 				0BD148E02703515C004570A3 /* SampleResultViewController.swift in Sources */,
 				0B78A545270038EC00DF6A0A /* SignInViewController.swift in Sources */,
 				0BFC666D2702002F0018E5D1 /* SecondPresentationViewController.swift in Sources */,
+				0B2914B5270BC5C200673406 /* AffectiveAnalysisViewModel.swift in Sources */,
 				0BF072032706812B009EA47B /* InterpretativeAnalysisViewController.swift in Sources */,
 				0BFC666F27021CB20018E5D1 /* RegistrationCollaboratorViewController.swift in Sources */,
 				0B78A5502700524C00DF6A0A /* ViewController+Extensions.swift in Sources */,
@@ -798,6 +809,7 @@
 				0BB0C8D6270B3933001C9721 /* VisualAnalysisViewModel.swift in Sources */,
 				0BF0720A27068D81009EA47B /* FinalViewModel.swift in Sources */,
 				0BFC66692701FF050018E5D1 /* AboutViewController.swift in Sources */,
+				0B2914B3270BC59500673406 /* AffectiveAnalysisViewController.swift in Sources */,
 				0BFC665127005F2F0018E5D1 /* ConfirmSuccessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

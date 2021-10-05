@@ -57,6 +57,7 @@ class RegisterSampleSuccessViewController: UIViewController {
     }
     
     // MARK: IBActions's
+    
     @IBAction func continueButtonDidPressed(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }

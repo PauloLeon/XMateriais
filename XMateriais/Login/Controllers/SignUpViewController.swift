@@ -66,18 +66,10 @@ class SignUpViewController: UIViewController {
     private func continueButtonState(isDisable: Bool) {
         if isDisable {
             continueButton.isEnabled = false
-            continueButton.layer.cornerRadius = kThree
-            continueButton.layer.borderWidth = kBorderWidth
-            continueButton.backgroundColor = UIColor.getDisableColor()
-            continueButton.layer.borderColor = UIColor.getDisableBorderColor().cgColor
-            continueButton.setTitleColor(UIColor.getDisableTextColor(), for: .disabled)
+            RoundedHelper.roundDisableContinueButton(button: continueButton, titleColor: UIColor.getDisableTextColor())
         } else {
             continueButton.isEnabled = true
-            continueButton.layer.cornerRadius = kThree
-            continueButton.layer.borderWidth = kBorderWidth
-            continueButton.backgroundColor = UIColor.getPrimaryColor()
-            continueButton.layer.borderColor = UIColor.getPrimaryColor().cgColor
-            continueButton.setTitleColor(UIColor.white, for: .normal)
+            RoundedHelper.roundContinueButton(button: continueButton)
         }
     }
     

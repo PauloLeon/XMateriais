@@ -10,24 +10,35 @@ import Foundation
 
 class RegisterDataModel {
     
+    // MARK: Variable's
+    
     var sampleCode: String?
     var sensationArray: [Int]?
     var visualArray: [Int]?
+    var wordListOne: [String]?
     var intensityArray: [Float]?
+    
+    // MARK: Init's
+
     
     init() {
         self.sampleCode = ""
         self.sensationArray = []
         self.visualArray = []
+        self.wordListOne = []
         self.intensityArray = []
     }
     
-    init(sampleCode: String?, sensationArray: [Int]?, visualArray: [Int]?,  intensityArray: [Float]?) {
+    init(sampleCode: String?, sensationArray: [Int]?, visualArray: [Int]?, wordListOne: [String]?,  intensityArray: [Float]?) {
         self.sampleCode = sampleCode
         self.sensationArray = sensationArray
         self.visualArray = visualArray
+        self.wordListOne = wordListOne
         self.intensityArray = intensityArray
     }
+    
+    // MARK: Public Functions
+
     
     func setSampleCode(sampleCode: String) {
         self.sampleCode = sampleCode
@@ -41,7 +52,15 @@ class RegisterDataModel {
         self.visualArray = visualArray
     }
     
+    func setWorldList(wordListOne: [String]) {
+        self.wordListOne = wordListOne
+    }
+
     func setIntensityArray(intensityArray: [Float]) {
         self.intensityArray = intensityArray
+    }
+    
+    func getWordListOne() -> [String] {
+        return wordListOne ?? []
     }
 }

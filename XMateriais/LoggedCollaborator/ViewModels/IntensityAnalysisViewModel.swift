@@ -17,7 +17,6 @@ class IntensityAnalysisViewModel {
     let kTwo: Int = 2
     let kZeroFloat: Float = 0.0
     let kChosenWordText = "Palavra escolhida"
-    let kSegue = "segueInterpretative"
     
     var firstChosenWord: String?
     var secondChosenWord: String?
@@ -26,16 +25,23 @@ class IntensityAnalysisViewModel {
     var sliderValueTwo: Float?
     var sliderValueThree: Float?
     var sliderArray: [Float]?
-    var dataModel: RegisterDataModel?
-    
+    var dataModel: RegisterDataModel? = RegisterDataModel()
     
     // MARK: Init Functions
     
     init() {
         sliderArray = [kZeroFloat, kZeroFloat, kZeroFloat]
+        dataModel = RegisterDataModel()
     }
     
     // MARK: Public Functions
+    
+    func setWords() {
+        let list = dataModel?.getWordListOne()
+        firstChosenWord = list?[kZero]
+        secondChosenWord = list?[kOne]
+        thirdChosenWord = list?[kTwo]
+    }
     
     func setFirstChosenWord() -> String {
         let word = "\(kChosenWordText) \(firstChosenWord ?? "[1]")"

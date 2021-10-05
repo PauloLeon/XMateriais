@@ -11,13 +11,17 @@ import UIKit
 
 class InterpretativeAnalysisViewModel {
     
+    // MARK: Variable's Functions
+
     let kTitleAttrbuted = "Por que você escolheu a palavra "
     let kQuestion = "?"
     
     var firstChosenWord: String?
     var secondChosenWord: String?
     
-    func setAttributedText(choseWord: String) -> NSMutableAttributedString {
+    // MARK: Public Functions
+
+    public func setAttributedText(choseWord: String) -> NSMutableAttributedString {
         let attrBlack = [ NSAttributedString.Key.foregroundColor: UIColor.black]
         let attrOrange = [ NSAttributedString.Key.foregroundColor: UIColor.getPrimaryColor()]
         let myAttrString = NSAttributedString(string: kTitleAttrbuted, attributes: attrBlack)
