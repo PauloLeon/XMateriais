@@ -95,7 +95,7 @@ class LoggedCollaboratorViewController: UIViewController {
     // MARK: IBAction's
     
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-        if codeTextField.text != nil {
+        if codeTextField.text != nil && codeTextField.text != "" {
             performSegue(withIdentifier: kSegue, sender: nil)
         }
     }
