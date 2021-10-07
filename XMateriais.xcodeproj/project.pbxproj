@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B097DB02707552600E26D74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B097DAF2707552600E26D74 /* GoogleService-Info.plist */; };
 		0B2914AF270BA8E100673406 /* LoggedCollaboratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */; };
 		0B2914B1270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */; };
 		0B2914B3270BC59500673406 /* AffectiveAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */; };
@@ -57,6 +56,7 @@
 		0BD148E2270351F3004570A3 /* SampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */; };
 		0BD148E427035268004570A3 /* RegisterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E327035268004570A3 /* RegisterSampleViewController.swift */; };
 		0BD148E627035274004570A3 /* RegisterSampleSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */; };
+		0BE34B52270E80F900224356 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BE34B51270E80F900224356 /* GoogleService-Info.plist */; };
 		0BF071FB2705FFD8009EA47B /* IntensityAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */; };
 		0BF071FD27060A92009EA47B /* IntensityAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */; };
 		0BF071FF27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */; };
@@ -99,7 +99,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B097DAF2707552600E26D74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B2914AE270BA8E100673406 /* LoggedCollaboratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedCollaboratorViewModel.swift; sourceTree = "<group>"; };
 		0B2914B0270BC56C00673406 /* AffectiveAnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisTableViewCell.swift; sourceTree = "<group>"; };
 		0B2914B2270BC59500673406 /* AffectiveAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectiveAnalysisViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +160,7 @@
 		0BD148E1270351F3004570A3 /* SampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSuccessViewController.swift; sourceTree = "<group>"; };
 		0BD148E327035268004570A3 /* RegisterSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleViewController.swift; sourceTree = "<group>"; };
 		0BD148E527035274004570A3 /* RegisterSampleSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSampleSuccessViewController.swift; sourceTree = "<group>"; };
+		0BE34B51270E80F900224356 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BF071FA2705FFD8009EA47B /* IntensityAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewController.swift; sourceTree = "<group>"; };
 		0BF071FC27060A92009EA47B /* IntensityAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewModel.swift; sourceTree = "<group>"; };
 		0BF071FE27060B0F009EA47B /* IntensityAnalysisViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityAnalysisViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -389,7 +389,7 @@
 				0B39E24126EFBC170050A6C4 /* Assets.xcassets */,
 				0B39E24626EFBC170050A6C4 /* Info.plist */,
 				0B39E24326EFBC170050A6C4 /* LaunchScreen.storyboard */,
-				0B097DAF2707552600E26D74 /* GoogleService-Info.plist */,
+				0BE34B51270E80F900224356 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -674,11 +674,11 @@
 				0B39E24526EFBC170050A6C4 /* LaunchScreen.storyboard in Resources */,
 				0B5906C826FAB1B10021B47E /* GT-Walsheim-Regular-Oblique.otf in Resources */,
 				0B5906C326FAB1B10021B47E /* GT-Walsheim-Medium.otf in Resources */,
+				0BE34B52270E80F900224356 /* GoogleService-Info.plist in Resources */,
 				0B39E24226EFBC170050A6C4 /* Assets.xcassets in Resources */,
 				0B5906C626FAB1B10021B47E /* GT-Walsheim-Bold.otf in Resources */,
 				0B5906C226FAB1B10021B47E /* GT-Walsheim-Light-Oblique.otf in Resources */,
 				0B5906C526FAB1B10021B47E /* GT-Walsheim-Ultra-Light-Oblique.otf in Resources */,
-				0B097DB02707552600E26D74 /* GoogleService-Info.plist in Resources */,
 				0B63D52B26FAAB81005599FA /* Tutorial.storyboard in Resources */,
 				0B39E23D26EFBC150050A6C4 /* Login.storyboard in Resources */,
 				0B410DA927069266004EEE74 /* email.json in Resources */,
@@ -999,7 +999,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9JEP8CH6G;
 				INFOPLIST_FILE = XMateriais/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1019,7 +1019,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9JEP8CH6G;
 				INFOPLIST_FILE = XMateriais/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
