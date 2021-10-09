@@ -20,6 +20,8 @@ class EmailViewController: UIViewController {
     // MARK: Variables's
 
     let kSegue = "segueSuccess"
+    let kNameMaterial = "nameMaterial"
+    let kCode = "code"
     var material: NSDictionary?
     
     // MARK: Override Functions
@@ -50,7 +52,7 @@ class EmailViewController: UIViewController {
     
     // MARK: IBActions's
     @IBAction func continueButtonDidPressed(_ sender: Any) {
-        performSegue(withIdentifier: kSegue, sender: nil)
+        sendEmail()
     }
 }
 
@@ -59,10 +61,11 @@ extension EmailViewController: MFMailComposeViewControllerDelegate {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["you@yoursite.com"])
-            mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+            mail.setToRecipients(["amandasousamonteiro@usp.br"])
+            mail.setSubject("Solicitação de resultado")
+            mail.setMessageBody("<p>Olá XMateriais!</p><br>Gostaria de solicitar os resultados para a amostra \(material?[kCode] ?? "")", isHTML: true)
 
-            present(mail, animated: true)
+            present(mail, animated: true) { self.performSegue(withIdentifier: self.kSegue, sender: nil) }
         } else {
             createAlert(title: "Erro ao tentar enviar e-mail", message: "tente novamente mais tarde")
         }
