@@ -129,6 +129,7 @@
 		0B437B092708E2A600075202 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0B437B0A2708E2A600075202 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		0B437B0B2708E7B200075202 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		0B5385B027112AD300858D92 /* XMateriais.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XMateriais.entitlements; sourceTree = "<group>"; };
 		0B58BF28270B91460078D0FE /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		0B5906B926FAB1B00021B47E /* GT-Walsheim-Light-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Light-Oblique.otf"; sourceTree = "<group>"; };
 		0B5906BA26FAB1B00021B47E /* GT-Walsheim-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.otf"; sourceTree = "<group>"; };
@@ -238,6 +239,7 @@
 		0B39E23426EFBC150050A6C4 /* XMateriais */ = {
 			isa = PBXGroup;
 			children = (
+				0B5385B027112AD300858D92 /* XMateriais.entitlements */,
 				0B63D52926FAAB6C005599FA /* Tutorial */,
 				0B63D52D26FAABB5005599FA /* Login */,
 				0BFC6653270064490018E5D1 /* LoggedCollaborator */,
@@ -988,6 +990,7 @@
 			baseConfigurationReference = 5A72365F8456804CE9CF7AEC /* Pods-XMateriais.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XMateriais/XMateriais.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LZ5AFJRFZS;
@@ -997,11 +1000,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.XMateriais;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1010,6 +1014,7 @@
 			baseConfigurationReference = CF7FB2B438B297F6F33B95F6 /* Pods-XMateriais.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XMateriais/XMateriais.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LZ5AFJRFZS;
@@ -1019,11 +1024,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.XMateriais;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
