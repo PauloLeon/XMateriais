@@ -168,6 +168,7 @@ class RegistrationCollaboratorViewController: UIViewController, NVActivityIndica
                 if let error = error {
                     print(error.localizedDescription)
                     self.stopAnimating()
+                    self.createAlert(title: error.localizedDescription, message: "")
                 } else {
                     self.ref!.child("users").child(user!.user.uid).setValue(self.setUserData())
                     Defaults.saveTypeUser(type: 0)
@@ -175,8 +176,6 @@ class RegistrationCollaboratorViewController: UIViewController, NVActivityIndica
                     self.performSegue(withIdentifier: self.kSegue, sender: self)
                 }
             }
-        } else {
-            createAlert(title: "Serviço fora do ar", message: "tente novamente mais tarde")
         }
     }
 }

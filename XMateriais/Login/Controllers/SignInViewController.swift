@@ -25,6 +25,7 @@ class SignInViewController: UIViewController, NVActivityIndicatorViewable {
     
     let kSegueCollaborator: String = "segueCollaboratorLogin"
     let kSegueResearcher: String = "segueResearcherLogin"
+    let kSegueDemo: String = "segueDemo"
     
     var ref: DatabaseReference?
     
@@ -129,6 +130,9 @@ class SignInViewController: UIViewController, NVActivityIndicatorViewable {
                     if type == 0 {
                         self.stopAnimating()
                         self.performSegue(withIdentifier: self.kSegueCollaborator, sender: self)
+                    } else if type == 3 {
+                        self.stopAnimating()
+                        self.performSegue(withIdentifier: self.kSegueDemo, sender: self)
                     } else {
                         self.stopAnimating()
                         self.performSegue(withIdentifier: self.kSegueResearcher, sender: self)

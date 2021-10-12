@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z3Z-B8-4tk">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Demo Version Tester-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DemoModeViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="HHG-NW-dAC">
+                                <rect key="frame" x="35.5" y="52" width="304" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="3Td-WI-b7V"/>
+                                    <constraint firstAttribute="width" constant="304" id="DYd-yd-Ngc"/>
+                                    <constraint firstAttribute="height" constant="304" id="MXL-I8-9ql"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="304" id="wH9-Jg-bH8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-o3-Qn6">
+                                <rect key="frame" x="16" y="615" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="C0U-n3-nyF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <state key="normal" title="Researcher Mode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="daa-z9-2DS" kind="show" id="w6K-XW-Bkd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICV-yv-obn">
+                                <rect key="frame" x="16" y="563" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.41960784309999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="owO-jE-r8E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <state key="normal" title="Collaborator Mode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y1b-T0-Kec" kind="show" id="Dfr-vq-dAY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Tester, this screen is just to guide you through all the features of the App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj5-nl-a5E">
+                                <rect key="frame" x="16" y="380" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ICV-yv-obn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="3Dv-cA-Sic"/>
+                            <constraint firstItem="QQz-o3-Qn6" firstAttribute="top" secondItem="ICV-yv-obn" secondAttribute="bottom" constant="16" id="4lW-cA-mkO"/>
+                            <constraint firstItem="HHG-NW-dAC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="5Fd-Qw-IMl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vj5-nl-a5E" secondAttribute="trailing" constant="16" id="J3a-VA-c7p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ICV-yv-obn" secondAttribute="trailing" constant="16" id="JKK-6g-u6n"/>
+                            <constraint firstItem="QQz-o3-Qn6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="LAh-cv-gJK"/>
+                            <constraint firstItem="vj5-nl-a5E" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="LoS-Na-AG2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QQz-o3-Qn6" secondAttribute="trailing" constant="16" id="cTj-hz-7Fs"/>
+                            <constraint firstItem="vj5-nl-a5E" firstAttribute="top" secondItem="HHG-NW-dAC" secondAttribute="bottom" constant="24" id="otp-f5-8Ik"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QQz-o3-Qn6" secondAttribute="bottom" constant="16" id="q5Z-Db-RmV"/>
+                            <constraint firstItem="HHG-NW-dAC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="u98-pK-Vfa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo Version Tester" id="krY-FD-Dok"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.399999999999999" y="69.715142428785612"/>
+        </scene>
+        <!--LoggedCollaborator-->
+        <scene sceneID="Iz5-Nv-dD8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoggedCollaborator" id="y1b-T0-Kec" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nUv-x4-coO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCQ-VW-7lV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="46"/>
+        </scene>
+        <!--LoggedResearcher-->
+        <scene sceneID="JQ1-XF-TkH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoggedResearcher" id="daa-z9-2DS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T1v-yv-t6e"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yE1-d5-dSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="93"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yIz-7F-v8i">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="z3Z-B8-4tk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DQ1-YV-bdm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="c8Z-VH-mmx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtC-eg-2FB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="character1" width="304" height="304"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

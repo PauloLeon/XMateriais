@@ -97,6 +97,8 @@ class LoggedCollaboratorViewController: UIViewController {
     @IBAction func continueButtonDidPressed(_ sender: Any) {
         if codeTextField.text != nil && codeTextField.text != "" {
             performSegue(withIdentifier: kSegue, sender: nil)
+        } else {
+            createAlert(title: "Por Favor preencha o código recebido", message: "Tente novamente mais tarde")
         }
     }
     

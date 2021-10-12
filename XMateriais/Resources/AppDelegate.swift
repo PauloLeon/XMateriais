@@ -109,10 +109,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 navigationController?.viewControllers = [rootViewController]
                 navigationController?.modalPresentationStyle = .fullScreen
                 return navigationController
-            } else {
+            } else if Defaults.getTypeUser() == 1 {
                 let storyboard = UIStoryboard(name: "LoggedResearcher", bundle: nil)
                 let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
                 let rootViewController = storyboard.instantiateViewController(withIdentifier: "LoggedResearcherViewController")
+                navigationController?.viewControllers = [rootViewController]
+                navigationController?.modalPresentationStyle = .fullScreen
+                return navigationController
+            } else {
+                let storyboard = UIStoryboard(name: "DemoMode", bundle: nil)
+                let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController
+                let rootViewController = storyboard.instantiateViewController(withIdentifier: "DemoModeViewController")
                 navigationController?.viewControllers = [rootViewController]
                 navigationController?.modalPresentationStyle = .fullScreen
                 return navigationController
