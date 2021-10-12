@@ -23,12 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="HHG-NW-dAC">
-                                <rect key="frame" x="35.5" y="52" width="304" height="304"/>
+                                <rect key="frame" x="85.5" y="52" width="204" height="204"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="3Td-WI-b7V"/>
-                                    <constraint firstAttribute="width" constant="304" id="DYd-yd-Ngc"/>
-                                    <constraint firstAttribute="height" constant="304" id="MXL-I8-9ql"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="304" id="wH9-Jg-bH8"/>
+                                    <constraint firstAttribute="width" constant="204" id="DYd-yd-Ngc"/>
+                                    <constraint firstAttribute="height" constant="204" id="MXL-I8-9ql"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-o3-Qn6">
@@ -59,8 +57,9 @@
                                     <segue destination="y1b-T0-Kec" kind="show" id="Dfr-vq-dAY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Tester, this screen is just to guide you through all the features of the App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj5-nl-a5E">
-                                <rect key="frame" x="16" y="380" width="343" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj5-nl-a5E">
+                                <rect key="frame" x="16" y="280" width="343" height="101.5"/>
+                                <string key="text">Hello Tester! you can test both the collaborator mode and the researcher mode and their functionalities on the app using the same login we sent you (please log out and log in again to change the option).</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
